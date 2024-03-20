@@ -1,0 +1,269 @@
+**********************************************************
+This is submission #7
+Submitted @ 22:55 on 2024-3-9 (Chicago time)
+
+Submission history:
+ Submission #6: score=80, submitted @ 22:15 on 2024-3-9 (Chicago time)
+ Submission #5: score=0, submitted @ 21:35 on 2024-3-9 (Chicago time)
+ Submission #4: score=-1, submitted @ 18:18 on 2024-3-9 (Chicago time)
+ Submission #3: score=0, submitted @ 23:59 on 2024-3-8 (Chicago time)
+ Submission #2: score=-1, submitted @ 23:39 on 2024-3-8 (Chicago time)
+ Submission #1: score=-1, submitted @ 23:38 on 2024-3-8 (Chicago time)
+
+Total # of valid submissions so far: 3
+# of valid submissions since midnight: 2
+# of minutes since last valid submission: 40
+**********************************************************
+You have 2 submissions this 24-hr period.
+
+
+*******************************************************************
+** Number of Submissions This Time Period                        **
+*******************************************************************
+ 
+This is submission #3 in current time period
+ 
+You are allowed a total of 4 submissions per 24-hr time period.
+ 
+*******************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 1 **
+ 
+ 
+********************************************************************
+** TEST CASE PASSED!                                              **
+********************************************************************
+ 
+ 
+** Test output (first 100 lines) **
+[==========] Running 13 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 13 tests from myset
+[ RUN      ] myset.empty_set
+[       OK ] myset.empty_set (0 ms)
+[ RUN      ] myset.set_with_one
+[       OK ] myset.set_with_one (0 ms)
+[ RUN      ] myset.set_with_four_strings
+[       OK ] myset.set_with_four_strings (0 ms)
+[ RUN      ] myset.set_with_movies
+[       OK ] myset.set_with_movies (0 ms)
+[ RUN      ] myset.set_from_class_with_nine
+[       OK ] myset.set_from_class_with_nine (0 ms)
+[ RUN      ] myset.set_no_duplicates
+[       OK ] myset.set_no_duplicates (0 ms)
+[ RUN      ] myset.toVector
+[       OK ] myset.toVector (0 ms)
+[ RUN      ] myset.copy_empty
+[       OK ] myset.copy_empty (0 ms)
+[ RUN      ] myset.copy_constructor
+[       OK ] myset.copy_constructor (0 ms)
+[ RUN      ] myset.find_empty
+[       OK ] myset.find_empty (0 ms)
+[ RUN      ] myset.find_one
+[       OK ] myset.find_one (0 ms)
+[ RUN      ] myset.find_with_set_from_class
+[       OK ] myset.find_with_set_from_class (0 ms)
+[ RUN      ] myset.stress_test
+[       OK ] myset.stress_test (2541 ms)
+[----------] 13 tests from myset (2541 ms total)
+
+[----------] Global test environment tear-down
+[==========] 13 tests from 1 test suite ran. (2541 ms total)
+[  PASSED  ] 13 tests.
+ 
+ 
+** End of Test 1 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 2 **
+ 
+ 
+********************************************************************
+** TEST CASE PASSED!                                              **
+********************************************************************
+ 
+ 
+** Test output (first 100 lines) **
+[==========] Running 5 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 5 tests from myset
+[ RUN      ] myset.to_pairs_empty
+[       OK ] myset.to_pairs_empty (0 ms)
+[ RUN      ] myset.to_pairs_one
+[       OK ] myset.to_pairs_one (0 ms)
+[ RUN      ] myset.to_pairs_two
+[       OK ] myset.to_pairs_two (0 ms)
+[ RUN      ] myset.to_pairs_four
+[       OK ] myset.to_pairs_four (0 ms)
+[ RUN      ] myset.to_pairs_with_set_from_class
+[       OK ] myset.to_pairs_with_set_from_class (0 ms)
+[----------] 5 tests from myset (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 5 tests.
+ 
+ 
+** End of Test 2 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 3 **
+ 
+ 
+********************************************************************
+** TEST CASE PASSED!                                              **
+********************************************************************
+ 
+ 
+** Test output (first 100 lines) **
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from myset
+[ RUN      ] myset.to_pairs_with_edge_case_to_right
+[       OK ] myset.to_pairs_with_edge_case_to_right (0 ms)
+[ RUN      ] myset.to_pairs_with_edge_case_to_left
+[       OK ] myset.to_pairs_with_edge_case_to_left (0 ms)
+[ RUN      ] myset.stress_to_pairs
+[       OK ] myset.stress_to_pairs (135 ms)
+[----------] 3 tests from myset (135 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (135 ms total)
+[  PASSED  ] 3 tests.
+ 
+ 
+** End of Test 3 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 4 **
+ 
+ 
+********************************************************************
+** TEST CASE PASSED!                                              **
+********************************************************************
+ 
+ 
+** Test output (first 100 lines) **
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from myset
+[ RUN      ] myset.foreach_empty
+[       OK ] myset.foreach_empty (0 ms)
+[ RUN      ] myset.foreach_one_element
+[       OK ] myset.foreach_one_element (0 ms)
+[ RUN      ] myset.foreach_set_from_class
+[       OK ] myset.foreach_set_from_class (0 ms)
+[----------] 3 tests from myset (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 3 tests.
+ 
+ 
+** End of Test 4 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 5 **
+ 
+ 
+********************************************************************
+** TEST CASE PASSED!                                              **
+********************************************************************
+ 
+ 
+** Test output (first 100 lines) **
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from myset
+[ RUN      ] myset.stress_iterator
+[       OK ] myset.stress_iterator (2317 ms)
+[----------] 1 test from myset (2317 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2317 ms total)
+[  PASSED  ] 1 test.
+ 
+ 
+** End of Test 5 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 6 **
+ 
+ 
+********************************************************************
+** VALGRIND TEST for errors AND memory leaks...                   **
+********************************************************************
+ 
+ 
+********************************************************************
+** TEST CASE PASSED, with no memory errors or leaks!              **
+********************************************************************
+ 
+ 
+** Test output (first 100 lines) **
+[==========] Running 21 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 21 tests from myset
+[ RUN      ] myset.empty_set
+[       OK ] myset.empty_set (0 ms)
+[ RUN      ] myset.set_with_one
+[       OK ] myset.set_with_one (0 ms)
+[ RUN      ] myset.set_with_four_strings
+[       OK ] myset.set_with_four_strings (0 ms)
+[ RUN      ] myset.set_with_movies
+[       OK ] myset.set_with_movies (0 ms)
+[ RUN      ] myset.set_from_class_with_nine
+[       OK ] myset.set_from_class_with_nine (0 ms)
+[ RUN      ] myset.set_no_duplicates
+[       OK ] myset.set_no_duplicates (0 ms)
+[ RUN      ] myset.toVector
+[       OK ] myset.toVector (0 ms)
+[ RUN      ] myset.copy_empty
+[       OK ] myset.copy_empty (0 ms)
+[ RUN      ] myset.copy_constructor
+[       OK ] myset.copy_constructor (0 ms)
+[ RUN      ] myset.find_empty
+[       OK ] myset.find_empty (0 ms)
+[ RUN      ] myset.find_one
+[       OK ] myset.find_one (0 ms)
+[ RUN      ] myset.find_with_set_from_class
+[       OK ] myset.find_with_set_from_class (0 ms)
+[ RUN      ] myset.stress_test
+[       OK ] myset.stress_test (2527 ms)
+[ RUN      ] myset.to_pairs_empty
+[       OK ] myset.to_pairs_empty (0 ms)
+[ RUN      ] myset.to_pairs_one
+[       OK ] myset.to_pairs_one (0 ms)
+[ RUN      ] myset.to_pairs_two
+[       OK ] myset.to_pairs_two (0 ms)
+[ RUN      ] myset.to_pairs_four
+[       OK ] myset.to_pairs_four (0 ms)
+[ RUN      ] myset.to_pairs_with_set_from_class
+[       OK ] myset.to_pairs_with_set_from_class (0 ms)
+[ RUN      ] myset.foreach_empty
+[       OK ] myset.foreach_empty (0 ms)
+[ RUN      ] myset.foreach_one_element
+[       OK ] myset.foreach_one_element (0 ms)
+[ RUN      ] myset.foreach_set_from_class
+[       OK ] myset.foreach_set_from_class (0 ms)
+[----------] 21 tests from myset (2527 ms total)
+
+[----------] Global test environment tear-down
+[==========] 21 tests from 1 test suite ran. (2527 ms total)
+[  PASSED  ] 21 tests.
+ 
+ 
+** End of Test 6 **
+********************************************************************

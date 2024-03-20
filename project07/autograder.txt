@@ -1,0 +1,363 @@
+**************************************************************************
+** Running lizard to analyze coding style, looking to see if functions  **
+** exceed 100 lines of code, which is considered too long...            **
+**                                                                      **
+** We are also using lizard to identify nested loops, which are not     **
+** allowed...                                                           **
+**                                                                      **
+** If you see no warnings below, all is well.                           **
+**************************************************************************
+ 
+**********************************************************
+This is submission #2
+Submitted @ 22:31 on 2024-3-3 (Chicago time)
+
+Submission history:
+ Submission #1: score=0, submitted @ 21:56 on 2024-3-3 (Chicago time)
+
+Total # of valid submissions so far: 1
+# of valid submissions since midnight: 1
+# of minutes since last valid submission: 35
+**********************************************************
+You have 1 submission this 24-hr period.
+
+
+*******************************************************************
+** Number of Submissions This Time Period                        **
+*******************************************************************
+ 
+This is submission #2 in current time period
+ 
+You are allowed a total of 4 submissions per 24-hr time period.
+ 
+*******************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 1 **
+ 
+ 
+** Test Input:
+nu.osm
+@
+Mudd
+$
+ 
+ 
+** Your output (first 600 lines) **
+** NU open street map **
+
+Enter map filename> 
+# of nodes: 15070
+# of buildings: 103
+# of bus stops: 12
+
+Enter building name (partial or complete), or * to list, or @ for bus stops, or $ to end> 
+14403: bus 201, Chicago Ave & Church, Southbound, NW corner, location (42.048, -87.679)
+14692: bus 201, Chicago Ave & Davis, Southbound, NW corner, location (42.0464, -87.6797)
+15318: bus 201, Chicago & Clark, Southbound, NW corner, location (42.0497, -87.6782)
+15924: bus 201, Central & Sheridan, Eastbound, SW corner, location (42.064, -87.6773)
+17295: bus 201, Sheridan & Foster, Southbound, SW corner, location (42.0539, -87.6774)
+17296: bus 201, Sheridan & Foster, Northbound, East side, location (42.0542, -87.6771)
+17301: bus 201, Sheridan & Lincoln, Southbound, SW corner, location (42.0614, -87.6773)
+17302: bus 201, Chicago & Sheridan, Southbound, SW corner, location (42.0509, -87.6776)
+18354: bus 201, Sheridan & Emerson, Northbound, East side, location (42.0523, -87.6771)
+18355: bus 201, Sheridan & Haven, Northbound, East side, location (42.0576, -87.677)
+18356: bus 201, Sheridan & Lincoln, Northbound, NE corner, location (42.0618, -87.677)
+18357: bus 201, Sheridan & Haven, Southbound, NW corner, location (42.0581, -87.6771)
+
+Enter building name (partial or complete), or * to list, or @ for bus stops, or $ to end> 
+Seeley G. Mudd Science and Engineering Library
+Address: 2233 Tech Drive
+Building ID: 42703541
+# perimeter nodes: 14
+Location: (42.0581, -87.6741)
+Closest southbound bus stop:
+  18357: Sheridan & Haven, bus #201, NW corner, 0.154706 miles
+  vehicle #1808 on route 201 travelling Eastbound to arrive in 5 mins
+Closest northbound bus stop:
+  18355: Sheridan & Haven, bus #201, East side, 0.155197 miles
+  vehicle #1177 on route 201 travelling Westbound to arrive in 22 mins
+  vehicle #1932 on route 201 travelling Westbound to arrive in 24 mins
+
+Enter building name (partial or complete), or * to list, or @ for bus stops, or $ to end> 
+
+** Done **
+ 
+ 
+**************************************************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** memory/logic errors (we are ignoring memory  **
+** leaks due to the CURL library)...            **
+**************************************************
+ 
+ 
+** Well done, no memory/logic errors! **
+ 
+ 
+** End of Test 1 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 2 **
+ 
+ 
+** Test Input:
+nu.osm
+Segal
+University Library
+Tech
+fred
+@
+$
+ 
+ 
+** Your output (first 600 lines) **
+** NU open street map **
+
+Enter map filename> 
+# of nodes: 15070
+# of buildings: 103
+# of bus stops: 14
+
+Enter building name (partial or complete), or * to list, or @ for bus stops, or $ to end> 
+Segal Visitors Center/Parking Garage
+Address: 1841 Sheridan Road
+Building ID: 275851101
+# perimeter nodes: 34
+Location: (42.0505, -87.6735)
+Closest southbound bus stop:
+  17302: Chicago & Sheridan, bus #201, SW corner, 0.211051 miles
+  vehicle #1893 on route 201 travelling Eastbound to arrive in 10 mins
+Closest northbound bus stop:
+  18354: Sheridan & Emerson, bus #201, East side, 0.223246 miles
+  <<no predictions available>>
+
+Enter building name (partial or complete), or * to list, or @ for bus stops, or $ to end> 
+Northwestern University Library
+Address: 1970 Campus Drive
+Building ID: 175187764
+# perimeter nodes: 268
+Location: (42.0531, -87.6742)
+Closest southbound bus stop:
+  17295: Sheridan & Foster, bus #201, SW corner, 0.170603 miles
+  vehicle #1890 on route 201 travelling Eastbound to arrive in 8 mins
+  vehicle #1922 on route 201 travelling Eastbound to arrive in 9 mins
+  vehicle #17 on route 201 travelling Eastbound to arrive in 11 mins
+Closest northbound bus stop:
+  18354: Sheridan & Emerson, bus #201, East side, 0.159381 miles
+  <<no predictions available>>
+
+Enter building name (partial or complete), or * to list, or @ for bus stops, or $ to end> 
+Northwestern University Technological Institute
+Address: 2145 Sheridan Road
+Building ID: 35598594
+# perimeter nodes: 42
+Location: (42.0578, -87.6759)
+Closest southbound bus stop:
+  18357: Sherida & Have, bus #201, NW corner, 0.0642461 miles
+  vehicle #1808 on route 201 travelling Eastbound to arrive in 5 mins
+Closest northbound bus stop:
+  18355: Sheridann & Havenn, bus #201, East side, 0.0595626 miles
+  vehicle #1177 on route 201 travelling Westbound to arrive in 22 mins
+  vehicle #1932 on route 201 travelling Westbound to arrive in 24 mins
+
+Enter building name (partial or complete), or * to list, or @ for bus stops, or $ to end> 
+No such building
+
+Enter building name (partial or complete), or * to list, or @ for bus stops, or $ to end> 
+12345: bus 201, Sheridan & Nothing, Southbound, Some corner, location (43.9509, -86.6776)
+14403: bus 201, Chicago Ave & Church, Southbound, NW corner, location (42.048, -87.679)
+14692: bus 201, Chicago Ave & Davis, Southbound, NW corner, location (42.0464, -87.6797)
+15318: bus 201, Chicago & Clark, Southbound, NW corner, location (42.0497, -87.6782)
+15924: bus 201, Central & Sheridan, Eastbound, SW corner, location (42.064, -87.6773)
+17295: bus 201, Sheridan & Foster, Southbound, SW corner, location (42.0539, -87.6774)
+17296: bus 201, Sheridn & Fosterr, Northbound, East side, location (42.0542, -87.6771)
+17301: bus 201, Sheridan & Lincoln, Southbound, SW corner, location (42.0614, -87.6773)
+17302: bus 201, Chicago & Sheridan, Southbound, SW corner, location (42.0509, -87.6776)
+18354: bus 201, Sheridan & Emerson, Northbound, East side, location (42.0523, -87.6771)
+18355: bus 201, Sheridann & Havenn, Northbound, East side, location (42.0576, -87.677)
+18356: bus 201, Sheridan & Lincoln, Northbound, NE corner, location (42.0618, -87.677)
+18357: bus 201, Sherida & Have, Southbound, NW corner, location (42.0581, -87.6771)
+56789: bus 201, Chicago & Nothing, Northbound, Another corner, location (41.9509, -88.6776)
+
+Enter building name (partial or complete), or * to list, or @ for bus stops, or $ to end> 
+
+** Done **
+ 
+ 
+**************************************************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** memory/logic errors (we are ignoring memory  **
+** leaks due to the CURL library)...            **
+**************************************************
+ 
+ 
+** Well done, no memory/logic errors! **
+ 
+ 
+** End of Test 2 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 3 **
+ 
+ 
+** Test Input:
+nu.osm
+@
+FRED
+Annie May
+Mudd
+Segal
+Swift
+The frank zizza center for mathematics
+Tech
+University Library
+$
+ 
+ 
+** Your output (first 600 lines) **
+** NU open street map **
+
+Enter map filename> 
+# of nodes: 15070
+# of buildings: 103
+# of bus stops: 12
+
+Enter building name (partial or complete), or * to list, or @ for bus stops, or $ to end> 
+14403: bus 201, Chicago Ave & Church, Northbound, NW corner, location (42.048, -87.679)
+14692: bus 201, Chicago Ave & Davis, Northbound, NW corner, location (42.0464, -87.6797)
+15318: bus 201, Chicago & Clark, Northbound, NW corner, location (42.0497, -87.6782)
+15924: bus 201, Central & Sheridan, Westbound, SW corner, location (42.064, -87.6773)
+17295: bus 201, Sheridan & Foster, Northbound, SW corner, location (42.0539, -87.6774)
+17296: bus 201, Sheridan & Foster, Southbound, East side, location (42.0542, -87.6771)
+17301: bus 201, Sheridan & Lincoln, Northbound, SW corner, location (42.0614, -87.6773)
+17302: bus 201, Chicago & Sheridan, Northbound, SW corner, location (42.0509, -87.6776)
+18354: bus 201, Sheridan & Emerson, Southbound, East side, location (42.0523, -87.6771)
+18355: bus 201, Sheridan & Haven, Southbound, East side, location (42.0576, -87.677)
+18356: bus 201, Sheridan & Lincoln, Southbound, NE corner, location (42.0618, -87.677)
+18357: bus 201, Sheridan & Haven, Northbound, NW corner, location (42.0581, -87.6771)
+
+Enter building name (partial or complete), or * to list, or @ for bus stops, or $ to end> 
+No such building
+
+Enter building name (partial or complete), or * to list, or @ for bus stops, or $ to end> 
+Annie May Swift Hall
+Address: 1920 Campus Drive
+Building ID: 33908908
+# perimeter nodes: 11
+Location: (42.0524, -87.6751)
+Closest southbound bus stop:
+  18354: Sheridan & Emerson, bus #201, East side, 0.105091 miles
+  vehicle #1818 on route 201 travelling Westbound to arrive in 24 mins
+Closest northbound bus stop:
+  17295: Sheridan & Foster, bus #201, SW corner, 0.156074 miles
+  vehicle #1893 on route 201 travelling Eastbound to arrive in 11 mins
+
+Enter building name (partial or complete), or * to list, or @ for bus stops, or $ to end> 
+Seeley G. Mudd Science and Engineering Library
+Address: 2233 Tech Drive
+Building ID: 42703541
+# perimeter nodes: 14
+Location: (42.0581, -87.6741)
+Closest southbound bus stop:
+  18355: Sheridan & Haven, bus #201, East side, 0.155197 miles
+  vehicle #1023 on route 201 travelling Westbound to arrive in 2 mins
+  vehicle #1933 on route 201 travelling Westbound to arrive in 7 mins
+Closest northbound bus stop:
+  18357: Sheridan & Haven, bus #201, NW corner, 0.154706 miles
+  <<no predictions available>>
+
+Enter building name (partial or complete), or * to list, or @ for bus stops, or $ to end> 
+Segal Visitors Center/Parking Garage
+Address: 1841 Sheridan Road
+Building ID: 275851101
+# perimeter nodes: 34
+Location: (42.0505, -87.6735)
+Closest southbound bus stop:
+  18354: Sheridan & Emerson, bus #201, East side, 0.223246 miles
+  vehicle #1818 on route 201 travelling Westbound to arrive in 24 mins
+Closest northbound bus stop:
+  17302: Chicago & Sheridan, bus #201, SW corner, 0.211051 miles
+  vehicle #1893 on route 201 travelling Eastbound to arrive in 10 mins
+
+Enter building name (partial or complete), or * to list, or @ for bus stops, or $ to end> 
+Annie May Swift Hall
+Address: 1920 Campus Drive
+Building ID: 33908908
+# perimeter nodes: 11
+Location: (42.0524, -87.6751)
+Closest southbound bus stop:
+  18354: Sheridan & Emerson, bus #201, East side, 0.105091 miles
+  vehicle #1818 on route 201 travelling Westbound to arrive in 24 mins
+Closest northbound bus stop:
+  17295: Sheridan & Foster, bus #201, SW corner, 0.156074 miles
+  vehicle #1893 on route 201 travelling Eastbound to arrive in 11 mins
+Swift Hall
+Address: 2029 Sheridan Road
+Building ID: 214618520
+# perimeter nodes: 25
+Location: (42.0551, -87.6749)
+Closest southbound bus stop:
+  17296: Sheridan & Foster, bus #201, East side, 0.128767 miles
+  vehicle #1818 on route 201 travelling Westbound to arrive in 18 mins
+Closest northbound bus stop:
+  17295: Sheridan & Foster, bus #201, SW corner, 0.15194 miles
+  vehicle #1893 on route 201 travelling Eastbound to arrive in 11 mins
+
+Enter building name (partial or complete), or * to list, or @ for bus stops, or $ to end> 
+No such building
+
+Enter building name (partial or complete), or * to list, or @ for bus stops, or $ to end> 
+Northwestern University Technological Institute
+Address: 2145 Sheridan Road
+Building ID: 35598594
+# perimeter nodes: 42
+Location: (42.0578, -87.6759)
+Closest southbound bus stop:
+  18355: Sheridan & Haven, bus #201, East side, 0.0595626 miles
+  vehicle #1023 on route 201 travelling Westbound to arrive in 2 mins
+  vehicle #1933 on route 201 travelling Westbound to arrive in 7 mins
+Closest northbound bus stop:
+  18357: Sheridan & Haven, bus #201, NW corner, 0.0642461 miles
+  <<no predictions available>>
+
+Enter building name (partial or complete), or * to list, or @ for bus stops, or $ to end> 
+Northwestern University Library
+Address: 1970 Campus Drive
+Building ID: 175187764
+# perimeter nodes: 268
+Location: (42.0531, -87.6742)
+Closest southbound bus stop:
+  18354: Sheridan & Emerson, bus #201, East side, 0.159381 miles
+  vehicle #1818 on route 201 travelling Westbound to arrive in 24 mins
+Closest northbound bus stop:
+  17295: Sheridan & Foster, bus #201, SW corner, 0.170603 miles
+  vehicle #1893 on route 201 travelling Eastbound to arrive in 11 mins
+
+Enter building name (partial or complete), or * to list, or @ for bus stops, or $ to end> 
+
+** Done **
+ 
+ 
+**************************************************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** memory/logic errors (we are ignoring memory  **
+** leaks due to the CURL library)...            **
+**************************************************
+ 
+ 
+** Well done, no memory/logic errors! **
+ 
+ 
+** End of Test 3 **
+********************************************************************

@@ -1,0 +1,486 @@
+**************************************************************************
+** Running lizard to analyze coding style, just as feedback to you...   **
+**************************************************************************
+ 
+================================================
+  NLOC    CCN   token  PARAM  length  location  
+------------------------------------------------
+      35      8    310      1      43 expand_memory@30-72@ram.c
+      14      2    123      1      16 ram_init@85-100@ram.c
+      17      4     98      1      17 ram_destroy@110-126@ram.c
+      12      3     69      2      13 ram_get_addr@142-154@ram.c
+      26      9    216      2      28 ram_read_cell_by_addr@172-199@ram.c
+      13      3     54      2      13 ram_read_cell_by_id@213-225@ram.c
+      12      3     43      1      13 ram_free_value@234-246@ram.c
+      33     10    243      3      37 ram_write_cell_by_addr@265-301@ram.c
+      15      2    117      3      18 ram_write_cell_by_id@319-336@ram.c
+      42      7    280      1      47 ram_print@344-390@ram.c
+1 file analyzed.
+==============================================================
+NLOC    Avg.NLOC  AvgCCN  Avg.token  function_cnt    file
+--------------------------------------------------------------
+    225      21.9     5.1      155.3        10     ram.c
+
+=============================================================================================
+No thresholds exceeded (cyclomatic_complexity > 15 or length > 1000 or parameter_count > 100)
+==========================================================================================
+Total nloc   Avg.NLOC  AvgCCN  Avg.token   Fun Cnt  Warning cnt   Fun Rt   nloc Rt
+------------------------------------------------------------------------------------------
+       225      21.9     5.1      155.3       10            0      0.00    0.00
+
+**************************************************************************
+
+
+**********************************************************
+This is submission #3
+Submitted @ 21:15 on 2024-2-6 (Chicago time)
+
+Submission history:
+ Submission #2: score=25, submitted @ 20:43 on 2024-2-6 (Chicago time)
+ Submission #1: score=10, submitted @ 23:12 on 2024-2-5 (Chicago time)
+
+Total # of valid submissions so far: 2
+# of valid submissions since midnight: 1
+# of minutes since last valid submission: 32
+**********************************************************
+You have 1 submission this 24-hr period.
+
+
+*******************************************************************
+** Number of Submissions This Time Period                        **
+*******************************************************************
+ 
+This is submission #2 in current time period
+ 
+You are allowed a total of 6 submissions per 24-hr time period.
+ 
+*******************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 1 **
+ 
+ 
+********************************************************************
+** TEST CASE PASSED, with no memory errors!                       **
+********************************************************************
+ 
+ 
+** Test output (first 100 lines) **
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from memory_module
+[ RUN      ] memory_module.empty_memory
+[       OK ] memory_module.empty_memory (0 ms)
+[ RUN      ] memory_module.write_one_int_no_free
+[       OK ] memory_module.write_one_int_no_free (0 ms)
+[ RUN      ] memory_module.write_four_values_no_free
+[       OK ] memory_module.write_four_values_no_free (0 ms)
+[ RUN      ] memory_module.write_four_then_overwrite_no_free
+[       OK ] memory_module.write_four_then_overwrite_no_free (0 ms)
+[----------] 4 tests from memory_module (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 4 tests.
+ 
+ 
+** End of Test 1 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 2 **
+ 
+ 
+********************************************************************
+** TEST CASE PASSED, with no memory errors!                       **
+********************************************************************
+ 
+ 
+** Test output (first 100 lines) **
+[==========] Running 7 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 7 tests from memory_module
+[ RUN      ] memory_module.empty_memory
+[       OK ] memory_module.empty_memory (0 ms)
+[ RUN      ] memory_module.write_one_int_no_free
+[       OK ] memory_module.write_one_int_no_free (0 ms)
+[ RUN      ] memory_module.write_four_values_no_free
+[       OK ] memory_module.write_four_values_no_free (0 ms)
+[ RUN      ] memory_module.write_four_then_overwrite_no_free
+[       OK ] memory_module.write_four_then_overwrite_no_free (0 ms)
+[ RUN      ] memory_module.write_one_int_id_addr_no_free
+[       OK ] memory_module.write_one_int_id_addr_no_free (0 ms)
+[ RUN      ] memory_module.write_four_values_id_addr_no_free
+[       OK ] memory_module.write_four_values_id_addr_no_free (0 ms)
+[ RUN      ] memory_module.write_four_then_overwrite_id_addr_no_free
+[       OK ] memory_module.write_four_then_overwrite_id_addr_no_free (0 ms)
+[----------] 7 tests from memory_module (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 7 tests.
+ 
+ 
+** End of Test 2 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 3 **
+ 
+ 
+********************************************************************
+** TEST CASE PASSED, with no memory errors!                       **
+********************************************************************
+ 
+ 
+** Test output (first 100 lines) **
+[==========] Running 9 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 9 tests from memory_module
+[ RUN      ] memory_module.empty_memory
+[       OK ] memory_module.empty_memory (0 ms)
+[ RUN      ] memory_module.write_one_int_no_free
+[       OK ] memory_module.write_one_int_no_free (0 ms)
+[ RUN      ] memory_module.write_four_values_no_free
+[       OK ] memory_module.write_four_values_no_free (0 ms)
+[ RUN      ] memory_module.write_four_then_overwrite_no_free
+[       OK ] memory_module.write_four_then_overwrite_no_free (0 ms)
+[ RUN      ] memory_module.write_one_int_id_addr_no_free
+[       OK ] memory_module.write_one_int_id_addr_no_free (0 ms)
+[ RUN      ] memory_module.write_four_values_id_addr_no_free
+[       OK ] memory_module.write_four_values_id_addr_no_free (0 ms)
+[ RUN      ] memory_module.write_four_then_overwrite_id_addr_no_free
+[       OK ] memory_module.write_four_then_overwrite_id_addr_no_free (0 ms)
+[ RUN      ] memory_module.handling_identifiers
+[       OK ] memory_module.handling_identifiers (0 ms)
+[ RUN      ] memory_module.handling_string_values
+[       OK ] memory_module.handling_string_values (0 ms)
+[----------] 9 tests from memory_module (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 9 tests.
+ 
+ 
+** End of Test 3 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 4 **
+ 
+ 
+********************************************************************
+** TEST CASE PASSED, with no memory errors!                       **
+********************************************************************
+ 
+ 
+** Test output (first 100 lines) **
+[==========] Running 12 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 12 tests from memory_module
+[ RUN      ] memory_module.empty_memory
+[       OK ] memory_module.empty_memory (0 ms)
+[ RUN      ] memory_module.write_one_int_no_free
+[       OK ] memory_module.write_one_int_no_free (0 ms)
+[ RUN      ] memory_module.write_four_values_no_free
+[       OK ] memory_module.write_four_values_no_free (0 ms)
+[ RUN      ] memory_module.write_four_then_overwrite_no_free
+[       OK ] memory_module.write_four_then_overwrite_no_free (0 ms)
+[ RUN      ] memory_module.write_one_int_id_addr_no_free
+[       OK ] memory_module.write_one_int_id_addr_no_free (0 ms)
+[ RUN      ] memory_module.write_four_values_id_addr_no_free
+[       OK ] memory_module.write_four_values_id_addr_no_free (0 ms)
+[ RUN      ] memory_module.write_four_then_overwrite_id_addr_no_free
+[       OK ] memory_module.write_four_then_overwrite_id_addr_no_free (0 ms)
+[ RUN      ] memory_module.handling_identifiers
+[       OK ] memory_module.handling_identifiers (0 ms)
+[ RUN      ] memory_module.handling_string_values
+[       OK ] memory_module.handling_string_values (0 ms)
+[ RUN      ] memory_module.write_one_int_read_no_free
+[       OK ] memory_module.write_one_int_read_no_free (0 ms)
+[ RUN      ] memory_module.write_four_values_read_no_free
+[       OK ] memory_module.write_four_values_read_no_free (0 ms)
+[ RUN      ] memory_module.write_four_then_overwrite_then_read_no_free
+[       OK ] memory_module.write_four_then_overwrite_then_read_no_free (0 ms)
+[----------] 12 tests from memory_module (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 12 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 12 tests.
+ 
+ 
+** End of Test 4 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 5 **
+ 
+ 
+********************************************************************
+** TEST CASE PASSED, with no memory errors!                       **
+********************************************************************
+ 
+ 
+** Test output (first 100 lines) **
+[==========] Running 14 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 14 tests from memory_module
+[ RUN      ] memory_module.empty_memory
+[       OK ] memory_module.empty_memory (0 ms)
+[ RUN      ] memory_module.write_one_int_no_free
+[       OK ] memory_module.write_one_int_no_free (0 ms)
+[ RUN      ] memory_module.write_four_values_no_free
+[       OK ] memory_module.write_four_values_no_free (0 ms)
+[ RUN      ] memory_module.write_four_then_overwrite_no_free
+[       OK ] memory_module.write_four_then_overwrite_no_free (0 ms)
+[ RUN      ] memory_module.write_one_int_id_addr_no_free
+[       OK ] memory_module.write_one_int_id_addr_no_free (0 ms)
+[ RUN      ] memory_module.write_four_values_id_addr_no_free
+[       OK ] memory_module.write_four_values_id_addr_no_free (0 ms)
+[ RUN      ] memory_module.write_four_then_overwrite_id_addr_no_free
+[       OK ] memory_module.write_four_then_overwrite_id_addr_no_free (0 ms)
+[ RUN      ] memory_module.handling_identifiers
+[       OK ] memory_module.handling_identifiers (0 ms)
+[ RUN      ] memory_module.handling_string_values
+[       OK ] memory_module.handling_string_values (0 ms)
+[ RUN      ] memory_module.write_one_int_read_no_free
+[       OK ] memory_module.write_one_int_read_no_free (0 ms)
+[ RUN      ] memory_module.write_four_values_read_no_free
+[       OK ] memory_module.write_four_values_read_no_free (0 ms)
+[ RUN      ] memory_module.write_four_then_overwrite_then_read_no_free
+[       OK ] memory_module.write_four_then_overwrite_then_read_no_free (0 ms)
+[ RUN      ] memory_module.write_one_str_read_str_no_free
+[       OK ] memory_module.write_one_str_read_str_no_free (0 ms)
+[ RUN      ] memory_module.write_four_str_read_four_str_no_free
+[       OK ] memory_module.write_four_str_read_four_str_no_free (0 ms)
+[----------] 14 tests from memory_module (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 14 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 14 tests.
+ 
+ 
+** End of Test 5 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 6 **
+ 
+ 
+********************************************************************
+** TEST CASE PASSED, with no memory errors!                       **
+********************************************************************
+ 
+ 
+** Test output (first 100 lines) **
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from memory_module
+[ RUN      ] memory_module.handling_identifiers_more_than_four_no_free
+[       OK ] memory_module.handling_identifiers_more_than_four_no_free (0 ms)
+[----------] 1 test from memory_module (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+ 
+ 
+** End of Test 6 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 7 **
+ 
+ 
+********************************************************************
+** TEST CASE PASSED, with no memory errors!                       **
+********************************************************************
+ 
+ 
+** Test output (first 100 lines) **
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from memory_module
+[ RUN      ] memory_module.handling_identifiers_more_than_four_no_free
+[       OK ] memory_module.handling_identifiers_more_than_four_no_free (0 ms)
+[ RUN      ] memory_module.handling_N_values_no_free
+[       OK ] memory_module.handling_N_values_no_free (0 ms)
+[ RUN      ] memory_module.write_N_read_N_no_free
+[       OK ] memory_module.write_N_read_N_no_free (0 ms)
+[----------] 3 tests from memory_module (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 3 tests.
+ 
+ 
+** End of Test 7 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 8 **
+ 
+ 
+********************************************************************
+** TEST CASE PASSED, with no memory errors!                       **
+********************************************************************
+ 
+ 
+** Test output (first 100 lines) **
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from memory_module
+[ RUN      ] memory_module.stress_test_no_free
+[       OK ] memory_module.stress_test_no_free (921 ms)
+[----------] 1 test from memory_module (921 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (921 ms total)
+[  PASSED  ] 1 test.
+ 
+ 
+** End of Test 8 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 9 **
+ 
+ 
+********************************************************************
+** VALGRIND TEST for errors AND memory leaks...                   **
+********************************************************************
+ 
+ 
+********************************************************************
+** TEST CASE PASSED, with no memory errors or leaks!              **
+********************************************************************
+ 
+ 
+** Test output (first 100 lines) **
+[==========] Running 7 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 7 tests from memory_module
+[ RUN      ] memory_module.empty_memory
+[       OK ] memory_module.empty_memory (0 ms)
+[ RUN      ] memory_module.write_one_int
+[       OK ] memory_module.write_one_int (0 ms)
+[ RUN      ] memory_module.write_four_values
+[       OK ] memory_module.write_four_values (0 ms)
+[ RUN      ] memory_module.write_four_then_overwrite
+[       OK ] memory_module.write_four_then_overwrite (0 ms)
+[ RUN      ] memory_module.write_one_int_id_addr
+[       OK ] memory_module.write_one_int_id_addr (0 ms)
+[ RUN      ] memory_module.write_four_values_id_addr
+[       OK ] memory_module.write_four_values_id_addr (0 ms)
+[ RUN      ] memory_module.write_four_then_overwrite_id_addr
+[       OK ] memory_module.write_four_then_overwrite_id_addr (0 ms)
+[----------] 7 tests from memory_module (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 7 tests.
+ 
+ 
+** End of Test 9 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 10 **
+ 
+ 
+********************************************************************
+** VALGRIND TEST for errors AND memory leaks...                   **
+********************************************************************
+ 
+ 
+********************************************************************
+** TEST CASE PASSED, with no memory errors or leaks!              **
+********************************************************************
+ 
+ 
+** Test output (first 100 lines) **
+[==========] Running 14 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 14 tests from memory_module
+[ RUN      ] memory_module.empty_memory
+[       OK ] memory_module.empty_memory (0 ms)
+[ RUN      ] memory_module.write_one_int
+[       OK ] memory_module.write_one_int (0 ms)
+[ RUN      ] memory_module.write_four_values
+[       OK ] memory_module.write_four_values (0 ms)
+[ RUN      ] memory_module.write_four_then_overwrite
+[       OK ] memory_module.write_four_then_overwrite (0 ms)
+[ RUN      ] memory_module.write_one_int_id_addr
+[       OK ] memory_module.write_one_int_id_addr (0 ms)
+[ RUN      ] memory_module.write_four_values_id_addr
+[       OK ] memory_module.write_four_values_id_addr (0 ms)
+[ RUN      ] memory_module.write_four_then_overwrite_id_addr
+[       OK ] memory_module.write_four_then_overwrite_id_addr (0 ms)
+[ RUN      ] memory_module.handling_identifiers
+[       OK ] memory_module.handling_identifiers (0 ms)
+[ RUN      ] memory_module.handling_string_values
+[       OK ] memory_module.handling_string_values (0 ms)
+[ RUN      ] memory_module.write_one_int_read
+[       OK ] memory_module.write_one_int_read (0 ms)
+[ RUN      ] memory_module.write_four_values_read
+[       OK ] memory_module.write_four_values_read (0 ms)
+[ RUN      ] memory_module.write_four_then_overwrite_then_read
+[       OK ] memory_module.write_four_then_overwrite_then_read (0 ms)
+[ RUN      ] memory_module.write_one_str_read_str
+[       OK ] memory_module.write_one_str_read_str (0 ms)
+[ RUN      ] memory_module.write_four_str_read_four_str
+[       OK ] memory_module.write_four_str_read_four_str (0 ms)
+[----------] 14 tests from memory_module (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 14 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 14 tests.
+ 
+ 
+** End of Test 10 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 11 **
+ 
+ 
+********************************************************************
+** VALGRIND TEST for errors AND memory leaks...                   **
+********************************************************************
+ 
+ 
+********************************************************************
+** TEST CASE PASSED, with no memory errors or leaks!              **
+********************************************************************
+ 
+ 
+** Test output (first 100 lines) **
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from memory_module
+[ RUN      ] memory_module.handling_identifiers_more_than_four
+[       OK ] memory_module.handling_identifiers_more_than_four (0 ms)
+[ RUN      ] memory_module.handling_N_values
+[       OK ] memory_module.handling_N_values (0 ms)
+[ RUN      ] memory_module.write_N_read_N
+[       OK ] memory_module.write_N_read_N (0 ms)
+[----------] 3 tests from memory_module (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 3 tests.
+ 
+ 
+** End of Test 11 **
+********************************************************************

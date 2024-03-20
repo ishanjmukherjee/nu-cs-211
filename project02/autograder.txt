@@ -1,0 +1,933 @@
+**********************************************************
+This is submission #2
+Submitted @ 23:4 on 2024-1-19 (Chicago time)
+
+Submission history:
+ Submission #1: score=70, submitted @ 22:5 on 2024-1-19 (Chicago time)
+
+Total # of valid submissions so far: 1
+# of valid submissions since midnight: 1
+# of minutes since last valid submission: 59
+**********************************************************
+You have 1 submission this 24-hr period.
+
+
+*******************************************************************
+** Number of Submissions This Time Period                        **
+*******************************************************************
+ 
+This is submission #2 in current time period
+ 
+You are allowed a total of 6 submissions per 24-hr time period.
+ 
+*******************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 0 **
+ 
+ 
+** Test Input:
+#
+# test03.py
+#
+# a nuPython program of binary expressions
+#
+print("")
+print("TEST CASE: test03.py")
+print("")
+
+x = 3 * 4     # 12
+y = x ** 2    # 144
+z = 288 / y   # 2
+x = 5         # overwrite x to now be 5
+remainder = x % z    # 1
+
+print(x)
+print(y)
+print(z)
+print(remainder)
+
+print("")
+print("DONE")
+print("")
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+1:
+2:
+3:
+4:
+5:
+6: print('')
+7: print('TEST CASE: test03.py')
+8: print('')
+9:
+10: x = 3 * 4
+11: y = x ** 2
+12: z = 288 / y
+13: x = 5
+14: remainder = x % z
+15:
+16: print(x)
+17: print(y)
+18: print(z)
+19: print(remainder)
+20:
+21: print('')
+22: print('DONE')
+23: print('')
+24: $
+**END PRINT**
+**executing...
+
+TEST CASE: test03.py
+
+5
+144
+2
+1
+
+DONE
+
+**done
+**MEMORY PRINT**
+Capacity: 4
+Num values: 4
+Contents:
+ 0: x, int, 5
+ 1: y, int, 144
+ 2: z, int, 2
+ 3: remainder, int, 1
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 0 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 1 **
+ 
+ 
+** Test Input:
+#
+# test01.py
+#
+# a simple nuPython program of print("...") calls
+#
+print("")
+print("TEST CASE: test01.py")
+print("")
+
+print('a simple program')
+print('that')
+print("consists")
+print('of')
+print('calls to print(STRING)')
+
+print("")
+print("DONE")
+print("")
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+1:
+2:
+3:
+4:
+5:
+6: print('')
+7: print('TEST CASE: test01.py')
+8: print('')
+9:
+10: print('a simple program')
+11: print('that')
+12: print('consists')
+13: print('of')
+14: print('calls to print(STRING)')
+15:
+16: print('')
+17: print('DONE')
+18: print('')
+19: $
+**END PRINT**
+**executing...
+
+TEST CASE: test01.py
+
+a simple program
+that
+consists
+of
+calls to print(STRING)
+
+DONE
+
+**done
+**MEMORY PRINT**
+Capacity: 4
+Num values: 0
+Contents:
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 1 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 2 **
+ 
+ 
+** Test Input:
+#
+# test02.py
+#
+# a nuPython program of simple assignment and print(variable)
+#
+print()
+print("TEST CASE: test02.py")
+print()
+
+x = 123
+y = 456
+print(x)
+print(y)
+
+print()
+print("DONE")
+print()
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+1:
+2:
+3:
+4:
+5:
+6: print()
+7: print('TEST CASE: test02.py')
+8: print()
+9:
+10: x = 123
+11: y = 456
+12: print(x)
+13: print(y)
+14:
+15: print()
+16: print('DONE')
+17: print()
+18: $
+**END PRINT**
+**executing...
+
+TEST CASE: test02.py
+
+123
+456
+
+DONE
+
+**done
+**MEMORY PRINT**
+Capacity: 4
+Num values: 2
+Contents:
+ 0: x, int, 123
+ 1: y, int, 456
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 2 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 3 **
+ 
+ 
+** Test Input:
+#
+# test03.py
+#
+# a nuPython program of binary expressions
+#
+print("")
+print("TEST CASE: test03.py")
+print("")
+
+x = 3 * 4     # 12
+y = x ** 2    # 144
+z = 288 / y   # 2
+x = 5         # overwrite x to now be 5
+remainder = x % z    # 1
+
+print(x)
+print(y)
+print(z)
+print(remainder)
+
+print("")
+print("DONE")
+print("")
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+1:
+2:
+3:
+4:
+5:
+6: print('')
+7: print('TEST CASE: test03.py')
+8: print('')
+9:
+10: x = 3 * 4
+11: y = x ** 2
+12: z = 288 / y
+13: x = 5
+14: remainder = x % z
+15:
+16: print(x)
+17: print(y)
+18: print(z)
+19: print(remainder)
+20:
+21: print('')
+22: print('DONE')
+23: print('')
+24: $
+**END PRINT**
+**executing...
+
+TEST CASE: test03.py
+
+5
+144
+2
+1
+
+DONE
+
+**done
+**MEMORY PRINT**
+Capacity: 4
+Num values: 4
+Contents:
+ 0: x, int, 5
+ 1: y, int, 144
+ 2: z, int, 2
+ 3: remainder, int, 1
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 3 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 4 **
+ 
+ 
+** Test Input:
+#
+# test04.py
+#
+# a nuPython program with semantic error
+#
+print("")
+print("TEST CASE: test04.py")
+print("")
+
+x = 123
+print(y)   # error
+y = 456
+print(y)
+
+print("")
+print("DONE")
+print("")
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+1:
+2:
+3:
+4:
+5:
+6: print('')
+7: print('TEST CASE: test04.py')
+8: print('')
+9:
+10: x = 123
+11: print(y)
+12: y = 456
+13: print(y)
+14:
+15: print('')
+16: print('DONE')
+17: print('')
+18: $
+**END PRINT**
+**executing...
+
+TEST CASE: test04.py
+
+**SEMANTIC ERROR: name 'y' is not defined (line 11)
+**done
+**MEMORY PRINT**
+Capacity: 4
+Num values: 1
+Contents:
+ 0: x, int, 123
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 4 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 5 **
+ 
+ 
+** Test Input:
+#
+# test05.py
+#
+# a nuPython program of binary expr with semantic error
+#
+print("")
+print("TEST CASE: test05.py")
+print("")
+
+x = 3 * 4     # 12
+y = x ** 2    # 144
+z = 288 / fred   # ERROR
+x = 5         # overwrite x to now be 5
+remainder = x % z    # 1
+
+print(x)
+print(y)
+print(z)
+print(remainder)
+
+print("")
+print("DONE")
+print("")
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+1:
+2:
+3:
+4:
+5:
+6: print('')
+7: print('TEST CASE: test05.py')
+8: print('')
+9:
+10: x = 3 * 4
+11: y = x ** 2
+12: z = 288 / fred
+13: x = 5
+14: remainder = x % z
+15:
+16: print(x)
+17: print(y)
+18: print(z)
+19: print(remainder)
+20:
+21: print('')
+22: print('DONE')
+23: print('')
+24: $
+**END PRINT**
+**executing...
+
+TEST CASE: test05.py
+
+**SEMANTIC ERROR: name 'fred' is not defined (line 12)
+**done
+**MEMORY PRINT**
+Capacity: 4
+Num values: 2
+Contents:
+ 0: x, int, 12
+ 1: y, int, 144
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 5 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 6 **
+ 
+ 
+** Test Input:
+#
+# test06.py
+#
+# a nuPython program of binary expr with semantic error
+#
+print("")
+print("TEST CASE: test06.py")
+print("")
+
+x = 3 * 4     # 12
+y = abc ** 2    # ERROR
+z = 288 / y   # 2
+x = 5         # overwrite x to now be 5
+remainder = x % z    # 1
+
+print(x)
+print(y)
+print(z)
+print(remainder)
+
+print("")
+print("DONE")
+print("")
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+1:
+2:
+3:
+4:
+5:
+6: print('')
+7: print('TEST CASE: test06.py')
+8: print('')
+9:
+10: x = 3 * 4
+11: y = abc ** 2
+12: z = 288 / y
+13: x = 5
+14: remainder = x % z
+15:
+16: print(x)
+17: print(y)
+18: print(z)
+19: print(remainder)
+20:
+21: print('')
+22: print('DONE')
+23: print('')
+24: $
+**END PRINT**
+**executing...
+
+TEST CASE: test06.py
+
+**SEMANTIC ERROR: name 'abc' is not defined (line 11)
+**done
+**MEMORY PRINT**
+Capacity: 4
+Num values: 1
+Contents:
+ 0: x, int, 12
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 6 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 7 **
+ 
+ 
+** Test Input:
+#
+# test07.py
+#
+# a nuPython program of binary expressions
+#
+print("TEST CASE: test07.py")
+print()
+
+# random comment
+
+x = 100        # 100
+y = x - 140    # -40
+
+print("x is:")
+print(x)
+print('y is:')
+print(y)
+
+z = y * y      # 1600
+print("and now for z:")
+print(z)
+
+test1 = x + y    # 60
+x = 1
+test2 = x + y    # -39
+y = 123
+test3 = x * y    # 123
+test4 = z / 3    # 533
+test5 = z % 11   # 5
+x = 4
+test6 = test5 ** x   # 625
+
+print("test variables:")
+print(test1)
+print(test2)
+print(test3)
+print(test4)
+print(test5)
+print(test6)
+
+# another random comment
+
+print()
+print("DONE")
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+1:
+2:
+3:
+4:
+5:
+6: print('TEST CASE: test07.py')
+7: print()
+8:
+9:
+10:
+11: x = 100
+12: y = x - 140
+13:
+14: print('x is:')
+15: print(x)
+16: print('y is:')
+17: print(y)
+18:
+19: z = y * y
+20: print('and now for z:')
+21: print(z)
+22:
+23: test1 = x + y
+24: x = 1
+25: test2 = x + y
+26: y = 123
+27: test3 = x * y
+28: test4 = z / 3
+29: test5 = z % 11
+30: x = 4
+31: test6 = test5 ** x
+32:
+33: print('test variables:')
+34: print(test1)
+35: print(test2)
+36: print(test3)
+37: print(test4)
+38: print(test5)
+39: print(test6)
+40:
+41:
+42:
+43: print()
+44: print('DONE')
+45: $
+**END PRINT**
+**executing...
+TEST CASE: test07.py
+
+x is:
+100
+y is:
+-40
+and now for z:
+1600
+test variables:
+60
+-39
+123
+533
+5
+625
+
+DONE
+**done
+**MEMORY PRINT**
+Capacity: 16
+Num values: 9
+Contents:
+ 0: x, int, 4
+ 1: y, int, 123
+ 2: z, int, 1600
+ 3: test1, int, 60
+ 4: test2, int, -39
+ 5: test3, int, 123
+ 6: test4, int, 533
+ 7: test5, int, 5
+ 8: test6, int, 625
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 7 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 8 **
+ 
+ 
+** Test Input:
+#
+# test07.py
+#
+# a nuPython program of binary expressions
+#
+print("TEST CASE: test07.py")
+print()
+
+# random comment
+
+x = 100        # 100
+y = x - 140    # -40
+
+print("x is:")
+print(x)
+print('y is:')
+print(y)
+
+z = y * y      # 1600
+print("and now for z:")
+print(z)
+
+test1 = x + y    # 60
+x = 1
+test2 = x + y    # -39
+y = 123
+test3 = x * y    # 123
+test4 = z / 3    # 533
+test5 = z % 11   # 5
+x = 4
+test6 = test5 ** x   # 625
+test7 = x * xx       # ERROR
+
+print("test variables:")
+print(test1)
+print(test2)
+print(test3)
+print(test4)
+print(test5)
+print(test6)
+print(test7)
+
+# another random comment
+
+print()
+print("DONE")
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+1:
+2:
+3:
+4:
+5:
+6: print('TEST CASE: test07.py')
+7: print()
+8:
+9:
+10:
+11: x = 100
+12: y = x - 140
+13:
+14: print('x is:')
+15: print(x)
+16: print('y is:')
+17: print(y)
+18:
+19: z = y * y
+20: print('and now for z:')
+21: print(z)
+22:
+23: test1 = x + y
+24: x = 1
+25: test2 = x + y
+26: y = 123
+27: test3 = x * y
+28: test4 = z / 3
+29: test5 = z % 11
+30: x = 4
+31: test6 = test5 ** x
+32: test7 = x * xx
+33:
+34: print('test variables:')
+35: print(test1)
+36: print(test2)
+37: print(test3)
+38: print(test4)
+39: print(test5)
+40: print(test6)
+41: print(test7)
+42:
+43:
+44:
+45: print()
+46: print('DONE')
+47: $
+**END PRINT**
+**executing...
+TEST CASE: test07.py
+
+x is:
+100
+y is:
+-40
+and now for z:
+1600
+**SEMANTIC ERROR: name 'xx' is not defined (line 32)
+**done
+**MEMORY PRINT**
+Capacity: 16
+Num values: 9
+Contents:
+ 0: x, int, 4
+ 1: y, int, 123
+ 2: z, int, 1600
+ 3: test1, int, 60
+ 4: test2, int, -39
+ 5: test3, int, 123
+ 6: test4, int, 533
+ 7: test5, int, 5
+ 8: test6, int, 625
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 8 **
+********************************************************************

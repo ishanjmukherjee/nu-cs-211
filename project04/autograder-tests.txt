@@ -1,0 +1,557 @@
+*************************************************************
+**                                                         **
+** We are evaluating your unit tests, for this you have    **
+** unlimited submissions. Writing good tests is often      **
+** harder than writing the problem solution itself...      **
+**                                                         **
+** Hints:                                                  **
+**  Test 01: C strings are so annoying...                  **
+**  Test 02: off by one error...                           **
+**  Test 03: another off by one error...                   **
+**  Test 04: growing up is so hard to do                   **
+**  Test 05: omg another off by one error?                 **
+**                                                         **
+*************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 0 **
+ 
+ 
+** CORRECT. All tests passed, as they should since you are 
+** running against a working RAM module implementation. 
+ 
+ 
+[==========] Running 23 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 23 tests from memory_module
+[ RUN      ] memory_module.write_one_int
+[       OK ] memory_module.write_one_int (0 ms)
+[ RUN      ] memory_module.write_one_int_then_invalid_address_read
+[       OK ] memory_module.write_one_int_then_invalid_address_read (0 ms)
+[ RUN      ] memory_module.ram_get_addr
+[       OK ] memory_module.ram_get_addr (0 ms)
+[ RUN      ] memory_module.write_and_read_empty_memory
+[       OK ] memory_module.write_and_read_empty_memory (0 ms)
+[ RUN      ] memory_module.write_free_and_read_one_int
+[       OK ] memory_module.write_free_and_read_one_int (0 ms)
+[ RUN      ] memory_module.write_and_read_one_int
+[       OK ] memory_module.write_and_read_one_int (0 ms)
+[ RUN      ] memory_module.write_and_read_one_ptr
+[       OK ] memory_module.write_and_read_one_ptr (0 ms)
+[ RUN      ] memory_module.write_one_str
+[       OK ] memory_module.write_one_str (0 ms)
+[ RUN      ] memory_module.write_and_read_one_str
+[       OK ] memory_module.write_and_read_one_str (0 ms)
+[ RUN      ] memory_module.write_one_str_and_overwrite
+[       OK ] memory_module.write_one_str_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_two_int_and_overwrite
+[       OK ] memory_module.write_two_int_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_four_int
+[       OK ] memory_module.write_four_int (0 ms)
+[ RUN      ] memory_module.write_four_int_then_expand
+[       OK ] memory_module.write_four_int_then_expand (0 ms)
+[ RUN      ] memory_module.write_four_str
+[       OK ] memory_module.write_four_str (0 ms)
+[ RUN      ] memory_module.write_and_read_nine_int
+[       OK ] memory_module.write_and_read_nine_int (0 ms)
+[ RUN      ] memory_module.write_and_read_nine_values_of_different_types_then_overwrite
+[       OK ] memory_module.write_and_read_nine_values_of_different_types_then_overwrite (0 ms)
+[ RUN      ] memory_module.write_five_str
+[       OK ] memory_module.write_five_str (0 ms)
+[ RUN      ] memory_module.write_five_str_then_overwrite_with_none
+[       OK ] memory_module.write_five_str_then_overwrite_with_none (0 ms)
+[ RUN      ] memory_module.write_seven_str
+[       OK ] memory_module.write_seven_str (0 ms)
+[ RUN      ] memory_module.write_seven_str_and_overwrite
+[       OK ] memory_module.write_seven_str_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_and_read_seven_str_and_overwrite
+[       OK ] memory_module.write_and_read_seven_str_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_nine_str
+[       OK ] memory_module.write_nine_str (0 ms)
+[ RUN      ] memory_module.write_thirty_three_str
+[       OK ] memory_module.write_thirty_three_str (0 ms)
+[----------] 23 tests from memory_module (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 23 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 23 tests.
+ 
+ 
+********************************************************************
+** Double-checking things...
+********************************************************************
+ 
+ 
+** End of Test 0 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 1 **
+ 
+ 
+*******************************************
+** one or more tests FAILED, YAY!        **
+*******************************************
+ 
+ 
+** CORRECT! This is actually a good thing, since you are 
+** running against an incorrect RAM module.  So your 
+** test has correctly identified the flawed implementation.
+ 
+ 
+[==========] Running 23 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 23 tests from memory_module
+[ RUN      ] memory_module.write_one_int
+[       OK ] memory_module.write_one_int (0 ms)
+[ RUN      ] memory_module.write_one_int_then_invalid_address_read
+[       OK ] memory_module.write_one_int_then_invalid_address_read (0 ms)
+[ RUN      ] memory_module.ram_get_addr
+[       OK ] memory_module.ram_get_addr (0 ms)
+[ RUN      ] memory_module.write_and_read_empty_memory
+[       OK ] memory_module.write_and_read_empty_memory (0 ms)
+[ RUN      ] memory_module.write_free_and_read_one_int
+[       OK ] memory_module.write_free_and_read_one_int (0 ms)
+[ RUN      ] memory_module.write_and_read_one_int
+[       OK ] memory_module.write_and_read_one_int (0 ms)
+[ RUN      ] memory_module.write_and_read_one_ptr
+[       OK ] memory_module.write_and_read_one_ptr (0 ms)
+[ RUN      ] memory_module.write_one_str
+[       OK ] memory_module.write_one_str (0 ms)
+[ RUN      ] memory_module.write_and_read_one_str
+[       OK ] memory_module.write_and_read_one_str (0 ms)
+[ RUN      ] memory_module.write_one_str_and_overwrite
+[       OK ] memory_module.write_one_str_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_two_int_and_overwrite
+[       OK ] memory_module.write_two_int_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_four_int
+[       OK ] memory_module.write_four_int (0 ms)
+[ RUN      ] memory_module.write_four_int_then_expand
+[       OK ] memory_module.write_four_int_then_expand (0 ms)
+[ RUN      ] memory_module.write_four_str
+tests.c:653: Failure
+Value of: strcmp(memory->cells[i].value.types.s, var_vals[i]) == 0
+  Actual: false
+Expected: true
+[  FAILED  ] memory_module.write_four_str (0 ms)
+[ RUN      ] memory_module.write_and_read_nine_int
+[       OK ] memory_module.write_and_read_nine_int (0 ms)
+[ RUN      ] memory_module.write_and_read_nine_values_of_different_types_then_overwrite
+[       OK ] memory_module.write_and_read_nine_values_of_different_types_then_overwrite (0 ms)
+[ RUN      ] memory_module.write_five_str
+tests.c:892: Failure
+Value of: strcmp(memory->cells[j].value.types.s, var_vals[j]) == 0
+  Actual: false
+Expected: true
+[  FAILED  ] memory_module.write_five_str (0 ms)
+[ RUN      ] memory_module.write_five_str_then_overwrite_with_none
+tests.c:961: Failure
+Value of: strcmp(memory->cells[j].value.types.s, var_vals[j]) == 0
+  Actual: false
+Expected: true
+[  FAILED  ] memory_module.write_five_str_then_overwrite_with_none (0 ms)
+[ RUN      ] memory_module.write_seven_str
+tests.c:1041: Failure
+Value of: strcmp(memory->cells[j].value.types.s, var_vals[j]) == 0
+  Actual: false
+Expected: true
+[  FAILED  ] memory_module.write_seven_str (0 ms)
+[ RUN      ] memory_module.write_seven_str_and_overwrite
+tests.c:1140: Failure
+Value of: strcmp(memory->cells[i].value.types.s, var_vals[i]) == 0
+  Actual: false
+Expected: true
+[  FAILED  ] memory_module.write_seven_str_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_and_read_seven_str_and_overwrite
+tests.c:1221: Failure
+Value of: strcmp(memory->cells[i].value.types.s, var_vals[i]) == 0
+  Actual: false
+Expected: true
+[  FAILED  ] memory_module.write_and_read_seven_str_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_nine_str
+tests.c:1319: Failure
+Value of: strcmp(memory->cells[j].value.types.s, var_vals[j]) == 0
+  Actual: false
+Expected: true
+[  FAILED  ] memory_module.write_nine_str (0 ms)
+[ RUN      ] memory_module.write_thirty_three_str
+tests.c:1396: Failure
+Value of: strcmp(memory->cells[i].value.types.s, var_vals[i]) == 0
+  Actual: false
+Expected: true
+[  FAILED  ] memory_module.write_thirty_three_str (0 ms)
+[----------] 23 tests from memory_module (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 23 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 15 tests.
+[  FAILED  ] 8 tests, listed below:
+[  FAILED  ] memory_module.write_four_str
+[  FAILED  ] memory_module.write_five_str
+[  FAILED  ] memory_module.write_five_str_then_overwrite_with_none
+[  FAILED  ] memory_module.write_seven_str
+[  FAILED  ] memory_module.write_seven_str_and_overwrite
+[  FAILED  ] memory_module.write_and_read_seven_str_and_overwrite
+[  FAILED  ] memory_module.write_nine_str
+[  FAILED  ] memory_module.write_thirty_three_str
+
+ 8 FAILED TESTS
+ 
+ 
+** End of Test 1 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 2 **
+ 
+ 
+*******************************************
+** one or more tests FAILED, YAY!        **
+*******************************************
+ 
+ 
+** CORRECT! This is actually a good thing, since you are 
+** running against an incorrect RAM module.  So your 
+** test has correctly identified the flawed implementation.
+ 
+ 
+[==========] Running 23 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 23 tests from memory_module
+[ RUN      ] memory_module.write_one_int
+[       OK ] memory_module.write_one_int (0 ms)
+[ RUN      ] memory_module.write_one_int_then_invalid_address_read
+[       OK ] memory_module.write_one_int_then_invalid_address_read (0 ms)
+[ RUN      ] memory_module.ram_get_addr
+[       OK ] memory_module.ram_get_addr (0 ms)
+[ RUN      ] memory_module.write_and_read_empty_memory
+[       OK ] memory_module.write_and_read_empty_memory (0 ms)
+[ RUN      ] memory_module.write_free_and_read_one_int
+[       OK ] memory_module.write_free_and_read_one_int (0 ms)
+[ RUN      ] memory_module.write_and_read_one_int
+[       OK ] memory_module.write_and_read_one_int (0 ms)
+[ RUN      ] memory_module.write_and_read_one_ptr
+[       OK ] memory_module.write_and_read_one_ptr (0 ms)
+[ RUN      ] memory_module.write_one_str
+[       OK ] memory_module.write_one_str (0 ms)
+[ RUN      ] memory_module.write_and_read_one_str
+[       OK ] memory_module.write_and_read_one_str (0 ms)
+[ RUN      ] memory_module.write_one_str_and_overwrite
+[       OK ] memory_module.write_one_str_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_two_int_and_overwrite
+[       OK ] memory_module.write_two_int_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_four_int
+[       OK ] memory_module.write_four_int (0 ms)
+[ RUN      ] memory_module.write_four_int_then_expand
+[       OK ] memory_module.write_four_int_then_expand (0 ms)
+[ RUN      ] memory_module.write_four_str
+[       OK ] memory_module.write_four_str (0 ms)
+[ RUN      ] memory_module.write_and_read_nine_int
+[       OK ] memory_module.write_and_read_nine_int (0 ms)
+[ RUN      ] memory_module.write_and_read_nine_values_of_different_types_then_overwrite
+tests.c:825: Failure
+Value of: value->value_type == RAM_TYPE_STR
+  Actual: false
+Expected: true
+[  FAILED  ] memory_module.write_and_read_nine_values_of_different_types_then_overwrite (0 ms)
+[ RUN      ] memory_module.write_five_str
+[       OK ] memory_module.write_five_str (0 ms)
+[ RUN      ] memory_module.write_five_str_then_overwrite_with_none
+[       OK ] memory_module.write_five_str_then_overwrite_with_none (0 ms)
+[ RUN      ] memory_module.write_seven_str
+[       OK ] memory_module.write_seven_str (0 ms)
+[ RUN      ] memory_module.write_seven_str_and_overwrite
+tests.c:1125: Failure
+Value of: memory->cells[1].value.value_type == RAM_TYPE_INT
+  Actual: false
+Expected: true
+[  FAILED  ] memory_module.write_seven_str_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_and_read_seven_str_and_overwrite
+tests.c:1207: Failure
+Value of: memory->cells[1].value.value_type == RAM_TYPE_INT
+  Actual: false
+Expected: true
+[  FAILED  ] memory_module.write_and_read_seven_str_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_nine_str
+[       OK ] memory_module.write_nine_str (0 ms)
+[ RUN      ] memory_module.write_thirty_three_str
+[       OK ] memory_module.write_thirty_three_str (0 ms)
+[----------] 23 tests from memory_module (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 23 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 20 tests.
+[  FAILED  ] 3 tests, listed below:
+[  FAILED  ] memory_module.write_and_read_nine_values_of_different_types_then_overwrite
+[  FAILED  ] memory_module.write_seven_str_and_overwrite
+[  FAILED  ] memory_module.write_and_read_seven_str_and_overwrite
+
+ 3 FAILED TESTS
+ 
+ 
+** End of Test 2 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 3 **
+ 
+ 
+*******************************************
+** one or more tests FAILED, YAY!        **
+*******************************************
+ 
+ 
+** CORRECT! This is actually a good thing, since you are 
+** running against an incorrect RAM module.  So your 
+** test has correctly identified the flawed implementation.
+ 
+ 
+[==========] Running 23 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 23 tests from memory_module
+[ RUN      ] memory_module.write_one_int
+[       OK ] memory_module.write_one_int (0 ms)
+[ RUN      ] memory_module.write_one_int_then_invalid_address_read
+[       OK ] memory_module.write_one_int_then_invalid_address_read (0 ms)
+[ RUN      ] memory_module.ram_get_addr
+[       OK ] memory_module.ram_get_addr (0 ms)
+[ RUN      ] memory_module.write_and_read_empty_memory
+[       OK ] memory_module.write_and_read_empty_memory (0 ms)
+[ RUN      ] memory_module.write_free_and_read_one_int
+[       OK ] memory_module.write_free_and_read_one_int (0 ms)
+[ RUN      ] memory_module.write_and_read_one_int
+[       OK ] memory_module.write_and_read_one_int (0 ms)
+[ RUN      ] memory_module.write_and_read_one_ptr
+[       OK ] memory_module.write_and_read_one_ptr (0 ms)
+[ RUN      ] memory_module.write_one_str
+[       OK ] memory_module.write_one_str (0 ms)
+[ RUN      ] memory_module.write_and_read_one_str
+[       OK ] memory_module.write_and_read_one_str (0 ms)
+[ RUN      ] memory_module.write_one_str_and_overwrite
+[       OK ] memory_module.write_one_str_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_two_int_and_overwrite
+[       OK ] memory_module.write_two_int_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_four_int
+[       OK ] memory_module.write_four_int (0 ms)
+[ RUN      ] memory_module.write_four_int_then_expand
+[       OK ] memory_module.write_four_int_then_expand (0 ms)
+[ RUN      ] memory_module.write_four_str
+[       OK ] memory_module.write_four_str (0 ms)
+[ RUN      ] memory_module.write_and_read_nine_int
+tests.c:709: Failure
+Value of: value->types.i == var_vals[j]
+  Actual: false
+Expected: true
+[  FAILED  ] memory_module.write_and_read_nine_int (0 ms)
+[ RUN      ] memory_module.write_and_read_nine_values_of_different_types_then_overwrite
+tests.c:787: Failure
+Value of: value->types.i == var_vals[j]
+  Actual: false
+Expected: true
+[  FAILED  ] memory_module.write_and_read_nine_values_of_different_types_then_overwrite (0 ms)
+[ RUN      ] memory_module.write_five_str
+[       OK ] memory_module.write_five_str (0 ms)
+[ RUN      ] memory_module.write_five_str_then_overwrite_with_none
+[       OK ] memory_module.write_five_str_then_overwrite_with_none (0 ms)
+[ RUN      ] memory_module.write_seven_str
+[       OK ] memory_module.write_seven_str (0 ms)
+[ RUN      ] memory_module.write_seven_str_and_overwrite
+[       OK ] memory_module.write_seven_str_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_and_read_seven_str_and_overwrite
+tests.c:1265: Failure
+Value of: strcmp(value->types.s, var_vals[i]) == 0
+  Actual: false
+Expected: true
+[  FAILED  ] memory_module.write_and_read_seven_str_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_nine_str
+[       OK ] memory_module.write_nine_str (0 ms)
+[ RUN      ] memory_module.write_thirty_three_str
+[       OK ] memory_module.write_thirty_three_str (0 ms)
+[----------] 23 tests from memory_module (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 23 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 20 tests.
+[  FAILED  ] 3 tests, listed below:
+[  FAILED  ] memory_module.write_and_read_nine_int
+[  FAILED  ] memory_module.write_and_read_nine_values_of_different_types_then_overwrite
+[  FAILED  ] memory_module.write_and_read_seven_str_and_overwrite
+
+ 3 FAILED TESTS
+ 
+ 
+** End of Test 3 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 4 **
+ 
+ 
+*******************************************
+** one or more tests FAILED, YAY!        **
+*******************************************
+ 
+ 
+** CORRECT! This is actually a good thing, since you are 
+** running against an incorrect RAM module.  So your 
+** test has correctly identified the flawed implementation.
+ 
+ 
+[==========] Running 23 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 23 tests from memory_module
+[ RUN      ] memory_module.write_one_int
+[       OK ] memory_module.write_one_int (0 ms)
+[ RUN      ] memory_module.write_one_int_then_invalid_address_read
+[       OK ] memory_module.write_one_int_then_invalid_address_read (0 ms)
+[ RUN      ] memory_module.ram_get_addr
+[       OK ] memory_module.ram_get_addr (0 ms)
+[ RUN      ] memory_module.write_and_read_empty_memory
+[       OK ] memory_module.write_and_read_empty_memory (0 ms)
+[ RUN      ] memory_module.write_free_and_read_one_int
+[       OK ] memory_module.write_free_and_read_one_int (0 ms)
+[ RUN      ] memory_module.write_and_read_one_int
+[       OK ] memory_module.write_and_read_one_int (0 ms)
+[ RUN      ] memory_module.write_and_read_one_ptr
+[       OK ] memory_module.write_and_read_one_ptr (0 ms)
+[ RUN      ] memory_module.write_one_str
+[       OK ] memory_module.write_one_str (0 ms)
+[ RUN      ] memory_module.write_and_read_one_str
+[       OK ] memory_module.write_and_read_one_str (0 ms)
+[ RUN      ] memory_module.write_one_str_and_overwrite
+[       OK ] memory_module.write_one_str_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_two_int_and_overwrite
+[       OK ] memory_module.write_two_int_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_four_int
+[       OK ] memory_module.write_four_int (0 ms)
+[ RUN      ] memory_module.write_four_int_then_expand
+tests.c:576: Failure
+Value of: memory->capacity == 8
+  Actual: false
+Expected: true
+[  FAILED  ] memory_module.write_four_int_then_expand (0 ms)
+[ RUN      ] memory_module.write_four_str
+[       OK ] memory_module.write_four_str (0 ms)
+[ RUN      ] memory_module.write_and_read_nine_int
+[       OK ] memory_module.write_and_read_nine_int (0 ms)
+[ RUN      ] memory_module.write_and_read_nine_values_of_different_types_then_overwrite
+tests.c:796: Failure
+Value of: memory->capacity == 16
+  Actual: false
+Expected: true
+[  FAILED  ] memory_module.write_and_read_nine_values_of_different_types_then_overwrite (0 ms)
+[ RUN      ] memory_module.write_five_str
+[       OK ] memory_module.write_five_str (0 ms)
+[ RUN      ] memory_module.write_five_str_then_overwrite_with_none
+[       OK ] memory_module.write_five_str_then_overwrite_with_none (0 ms)
+[ RUN      ] memory_module.write_seven_str
+[       OK ] memory_module.write_seven_str (0 ms)
+[ RUN      ] memory_module.write_seven_str_and_overwrite
+[       OK ] memory_module.write_seven_str_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_and_read_seven_str_and_overwrite
+[       OK ] memory_module.write_and_read_seven_str_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_nine_str
+[       OK ] memory_module.write_nine_str (0 ms)
+[ RUN      ] memory_module.write_thirty_three_str
+[       OK ] memory_module.write_thirty_three_str (0 ms)
+[----------] 23 tests from memory_module (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 23 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 21 tests.
+[  FAILED  ] 2 tests, listed below:
+[  FAILED  ] memory_module.write_four_int_then_expand
+[  FAILED  ] memory_module.write_and_read_nine_values_of_different_types_then_overwrite
+
+ 2 FAILED TESTS
+ 
+ 
+** End of Test 4 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 5 **
+ 
+ 
+*******************************************
+** one or more tests FAILED, YAY!        **
+*******************************************
+ 
+ 
+** CORRECT! This is actually a good thing, since you are 
+** running against an incorrect RAM module.  So your 
+** test has correctly identified the flawed implementation.
+ 
+ 
+[==========] Running 23 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 23 tests from memory_module
+[ RUN      ] memory_module.write_one_int
+[       OK ] memory_module.write_one_int (0 ms)
+[ RUN      ] memory_module.write_one_int_then_invalid_address_read
+tests.c:92: Failure
+Value of: value == __null
+  Actual: false
+Expected: true
+[  FAILED  ] memory_module.write_one_int_then_invalid_address_read (0 ms)
+[ RUN      ] memory_module.ram_get_addr
+[       OK ] memory_module.ram_get_addr (0 ms)
+[ RUN      ] memory_module.write_and_read_empty_memory
+[       OK ] memory_module.write_and_read_empty_memory (0 ms)
+[ RUN      ] memory_module.write_free_and_read_one_int
+[       OK ] memory_module.write_free_and_read_one_int (0 ms)
+[ RUN      ] memory_module.write_and_read_one_int
+[       OK ] memory_module.write_and_read_one_int (0 ms)
+[ RUN      ] memory_module.write_and_read_one_ptr
+[       OK ] memory_module.write_and_read_one_ptr (0 ms)
+[ RUN      ] memory_module.write_one_str
+[       OK ] memory_module.write_one_str (0 ms)
+[ RUN      ] memory_module.write_and_read_one_str
+[       OK ] memory_module.write_and_read_one_str (0 ms)
+[ RUN      ] memory_module.write_one_str_and_overwrite
+[       OK ] memory_module.write_one_str_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_two_int_and_overwrite
+[       OK ] memory_module.write_two_int_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_four_int
+[       OK ] memory_module.write_four_int (0 ms)
+[ RUN      ] memory_module.write_four_int_then_expand
+[       OK ] memory_module.write_four_int_then_expand (0 ms)
+[ RUN      ] memory_module.write_four_str
+[       OK ] memory_module.write_four_str (0 ms)
+[ RUN      ] memory_module.write_and_read_nine_int
+[       OK ] memory_module.write_and_read_nine_int (0 ms)
+[ RUN      ] memory_module.write_and_read_nine_values_of_different_types_then_overwrite
+[       OK ] memory_module.write_and_read_nine_values_of_different_types_then_overwrite (0 ms)
+[ RUN      ] memory_module.write_five_str
+[       OK ] memory_module.write_five_str (0 ms)
+[ RUN      ] memory_module.write_five_str_then_overwrite_with_none
+[       OK ] memory_module.write_five_str_then_overwrite_with_none (0 ms)
+[ RUN      ] memory_module.write_seven_str
+[       OK ] memory_module.write_seven_str (0 ms)
+[ RUN      ] memory_module.write_seven_str_and_overwrite
+[       OK ] memory_module.write_seven_str_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_and_read_seven_str_and_overwrite
+[       OK ] memory_module.write_and_read_seven_str_and_overwrite (0 ms)
+[ RUN      ] memory_module.write_nine_str
+[       OK ] memory_module.write_nine_str (0 ms)
+[ RUN      ] memory_module.write_thirty_three_str
+[       OK ] memory_module.write_thirty_three_str (0 ms)
+[----------] 23 tests from memory_module (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 23 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 22 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] memory_module.write_one_int_then_invalid_address_read
+
+ 1 FAILED TEST
+ 
+ 
+** End of Test 5 **
+********************************************************************

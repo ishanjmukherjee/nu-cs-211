@@ -1,0 +1,922 @@
+**********************************************************
+This is submission #1
+Submitted @ 15:39 on 2024-2-18 (Chicago time)
+
+Submission history:
+
+Total # of valid submissions so far: 0
+# of valid submissions since midnight: 0
+# of minutes since last valid submission: -1
+**********************************************************
+You have 0 submissions this 24-hr period.
+
+
+*******************************************************************
+** Number of Submissions This Time Period                        **
+*******************************************************************
+ 
+This is submission #1 in current time period
+ 
+You are allowed a total of 4 submissions per 24-hr time period.
+ 
+*******************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 1 **
+ 
+ 
+** Test Input:
+nu.osm
+$
+ 
+ 
+** Your output (first 600 lines) **
+OSM file > # of nodes: 15070
+# of buildings: 103
+Enter building name(partial or complete), or * to list, or $ to end>
+** Done **
+ 
+ 
+**************************************************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** memory errors and memory leaks...            **
+**************************************************
+ 
+ 
+** Well done, no memory errors! **
+ 
+ 
+** End of Test 1 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 2 **
+ 
+ 
+** Test Input:
+nu.osm
+*
+$
+ 
+ 
+** Your output (first 600 lines) **
+OSM file > # of nodes: 15070
+# of buildings: 103
+Enter building name(partial or complete), or * to list, or $ to end>
+33908908: Annie May Swift Hall, 1920 Campus Drive
+33908911: Norris University Center, 1999 Campus Drive
+33908912: Pick-Staiger Concert Hall, 50 Arts Circle Drive
+33908919: Fisk Hall, 1845 Sheridan Road
+33908921: Locy Hall, 1850 Campus Drive
+33908926: Harris Hall, 1881 Sheridan Road
+33908928: University Hall, 1897 Sheridan Road
+33908930: Lunt Hall, 2033 Sheridan Road
+33908933: Loder Hall, 2121 Sheridan Road
+33908935: Allen Center, 2169 Campus Drive
+33908936: Pancoe-ENH Life Sciences Pavilion, 2200 Campus Drive
+35598594: Northwestern University Technological Institute, 2145 Sheridan Road
+42701585: Blomquist Recreation Center, 617 Foster Street
+42701586: Annenberg Hall, 2120 Campus Drive
+42701676: Scott Hall-Cahn Auditorium,  
+42702015: Searle Hall, 633 Emerson Street
+42702286: Ford Design Center, 2133 Sheridan Road
+42702397: Levere Memorial Temple, 1856 Sheridan Road
+42702792: Music Practice Building, 1823 Sherman Avenue
+42702794: Music Administration Building, 711 Elgin Road
+42702796: Office of Human Resources, 720 University Place
+42702797: Lutkin Hall, 700 University Place
+42702830: Rebecca Crown Center, 633 Clark Street
+42702844: , 619 Clark Street
+42702935: , 1808 Chicago Avenue
+42702938: , 1810-1812 Chicago Avenue
+42702940: University Relations, 555 Clark Street
+42702947: , 1809 Chicago Avenue
+42702948: , 1815 Chicago Avenue
+42702957: Admissions and Financial Aid, 1801 Hinman Avenue
+42703496: Catalysis Center, 2137 Tech Drive
+42703497: Dearborn Observatory, 2131 Tech Drive
+42703498: Ryan Hall, 2190 Campus Drive
+42703499: Hogan Biological Sciences Building, 2205 Tech Drive
+42703540: Cook Hall, 2220 Campus Drive
+42703541: Seeley G. Mudd Science and Engineering Library, 2233 Tech Drive
+42703542: Frances Searle Building, 2240 Campus Drive
+42703696: , 600-610 Lincoln Street
+42703697: Patten Gymnasium, 2407 Sheridan Road
+42703716: Alice Millar Chapel, 1870 Sheridan Road
+42703717: Parkes Hall, 1870 Sheridan Road
+42703833: , 619 Emerson Street
+42703834: Chambers Hall, 600 Foster Street
+42706482: , 1922 Sheridan Road
+42706483: , 1918 Sheridan Road
+42706484: , 1914 Sheridan Road
+42706485: , 1908 Sheridan Road
+42706489: Buffett Institute, 1902 Sheridan Road
+42706490: , 1940 Sheridan Road
+42706491: , 1936 Sheridan Road
+42706492: Program in Geography and Department of Sociology, 515 Clark Street
+42706493: Anthropology Department, 1810 Hinman Avenue
+42706494: , 1812 Hinman Avenue
+42706495: , 1818 Hinman Avenue
+42706497: , 1819 Hinman Avenue
+42706498: , 1813 Hinman Avenue
+42706499: Alumni Center, 1800 Sheridan Road
+42706552: Statistics Department, 2006 Sheridan Road
+42706553: , 2000 Sheridan Road
+42706554: , 2010 Sheridan Road
+42706555: , 2016 Sheridan Road
+42706563: Fiedler Hillel, 629 Foster Street
+42706571: , 618 Library Place
+42706572: , 620 Library Place
+42706573: , 626 Library Place
+42708314: , 627 Dartmouth Place
+42708315: , 617 Dartmouth Place
+42708316: , 630 Dartmouth Place
+42708323: Delta Chi Fraternity, 619 Colfax Street
+42708324: , 625 Colfax Street
+42708325: , 629 Colfax Street
+42708357: , 621-623 Garrett Place
+42708369: , 605-615 Garrett Place
+53160129: Silverman Hall, 2150 Campus Drive
+53160796: Cresap Laboratory, 2021 Sheridan Road
+116713965: Shanley Hall, 2031 Sheridan Road
+151311271: Kresge Hall, 1880 Campus Drive
+165094354: Jacobs Center,  
+175187764: Northwestern University Library, 1970 Campus Drive
+182668630: Seabury-Western Theological Seminary, 600 Haven Street
+182668876: Roycemore, 640 Lincoln Street
+214618498: Crowe Hall, 1860 Campus Drive
+214618504: Deering Library, 1937 Sheridan Road
+214618520: Swift Hall, 2029 Sheridan Road
+214630813: McCormick Foundation Center, 1870 Campus Drive
+220670539: Central Utility Plant, 2026 Campus Drive
+249758350: ,  
+249758351: Main, 2121 Sheridan Road
+249758352: Lesemann Hall, 2121 Sheridan Road
+249758354: Pfeiffer Hall,  
+275849772: Patrick G. and Shirley W. Ryan Center for the Musical Arts, 70 Arts Circle Drive
+275851101: Segal Visitors Center/Parking Garage, 1841 Sheridan Road
+275854464: Henry Crown Sports Pavilion and Aquatic Center, 2311 North Campus Drive
+275854486: Regenstein Hall of Music, 60 Arts Circle Drive
+466698283: Kellogg Global Hub, 2211 Campus Drive
+768687038: Walter Athletics Center, 2255 Campus Drive
+913835914: NU SafeRide, 630 Lincoln Street
+913835915: Northwestern Career Advancement, 620 Lincoln Street
+942642224: Canterbury House, 2010 Orrington Avenue
+950303735: , 617 Noyes Street
+950303736: , 629 Noyes Street
+1002826076: , 2040 Sheridan Road
+1002826078: , 2046 Sheridan Road
+Enter building name (partial or complete), or * to list, or $ to end>
+** Done **
+ 
+ 
+**************************************************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** memory errors and memory leaks...            **
+**************************************************
+ 
+ 
+** Well done, no memory errors! **
+ 
+ 
+** End of Test 2 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 3 **
+ 
+ 
+** Test Input:
+nu.osm
+Mudd
+$
+ 
+ 
+** Your output (first 600 lines) **
+OSM file > # of nodes: 15070
+# of buildings: 103
+Enter building name(partial or complete), or * to list, or $ to end>
+Seeley G. Mudd Science and Engineering Library
+Address: 2233 Tech Drive
+Building ID: 42703541
+Nodes:
+  533996670: (42.0586, -87.6747)
+  533996671: (42.0585, -87.6741)
+  533996672: (42.0583, -87.6741)
+  533996673: (42.0582, -87.6739)
+  533996674: (42.0581, -87.6738)
+  4838815124: (42.0581, -87.6737)
+  9119071427: (42.058, -87.6738)
+  9119071426: (42.0579, -87.6738)
+  2240260053: (42.0579, -87.6738)
+  2240260054: (42.0579, -87.6739)
+  533996668: (42.0579, -87.6739)
+  533996675: (42.0579, -87.6741)
+  533996669: (42.0579, -87.6747)
+  533996670: (42.0586, -87.6747)
+Enter building name (partial or complete), or * to list, or $ to end>
+** Done **
+ 
+ 
+**************************************************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** memory errors and memory leaks...            **
+**************************************************
+ 
+ 
+** Well done, no memory errors! **
+ 
+ 
+** End of Test 3 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 4 **
+ 
+ 
+** Test Input:
+nu.osm
+Swift
+fred
+Tech
+$
+ 
+ 
+** Your output (first 600 lines) **
+OSM file > # of nodes: 15070
+# of buildings: 103
+Enter building name(partial or complete), or * to list, or $ to end>
+Annie May Swift Hall
+Address: 1920 Campus Drive
+Building ID: 33908908
+Nodes:
+  388499217: (42.0525, -87.6751)
+  4774714352: (42.0525, -87.6751)
+  4774714353: (42.0525, -87.6752)
+  388499218: (42.0522, -87.6752)
+  4774714360: (42.0522, -87.6751), is entrance
+  388499219: (42.0522, -87.675)
+  4774714354: (42.0524, -87.675)
+  4774714351: (42.0524, -87.675)
+  388499221: (42.0525, -87.6749)
+  2241289408: (42.0525, -87.675)
+  388499217: (42.0525, -87.6751)
+Swift Hall
+Address: 2029 Sheridan Road
+Building ID: 214618520
+Nodes:
+  388499477: (42.0554, -87.6752)
+  2241226890: (42.0554, -87.6748)
+  2241226786: (42.0552, -87.6748)
+  2241227063: (42.0552, -87.6749)
+  2241226843: (42.0551, -87.6749)
+  4733214485: (42.0551, -87.6748)
+  4733214484: (42.0551, -87.6748)
+  4733214483: (42.0551, -87.6748)
+  2241226991: (42.0551, -87.6748)
+  4838610206: (42.0551, -87.6748)
+  2241226853: (42.0551, -87.6748)
+  2241226799: (42.055, -87.6748)
+  2241226810: (42.055, -87.6748)
+  2241226852: (42.055, -87.6748)
+  2241226682: (42.055, -87.6748)
+  2241227037: (42.055, -87.6749)
+  2241226637: (42.0549, -87.6749)
+  4838610207: (42.0549, -87.6751)
+  388499486: (42.0549, -87.6751)
+  2241226898: (42.055, -87.6751)
+  4838610210: (42.0552, -87.6751)
+  4838610211: (42.0552, -87.6751)
+  388499487: (42.0553, -87.6751)
+  388499488: (42.0553, -87.6752)
+  388499477: (42.0554, -87.6752)
+Enter building name (partial or complete), or * to list, or $ to end>
+Enter building name (partial or complete), or * to list, or $ to end>
+Northwestern University Technological Institute
+Address: 2145 Sheridan Road
+Building ID: 35598594
+Nodes:
+  417225813: (42.0571, -87.6768)
+  417225814: (42.0576, -87.6768)
+  417225815: (42.0576, -87.6765)
+  470330834: (42.0576, -87.6765)
+  470330835: (42.0576, -87.6763)
+  417225816: (42.0576, -87.6763)
+  470330836: (42.0576, -87.6762)
+  2239483482: (42.0578, -87.6762), is entrance
+  417225817: (42.058, -87.6762)
+  470330837: (42.058, -87.6762)
+  470330838: (42.0581, -87.6762)
+  470330839: (42.0581, -87.6765)
+  470330840: (42.058, -87.6765)
+  417225818: (42.058, -87.6767)
+  417225819: (42.0585, -87.6767)
+  417225820: (42.0585, -87.6765)
+  417225823: (42.0585, -87.6762)
+  417225824: (42.0585, -87.676)
+  417225825: (42.0585, -87.676)
+  417225826: (42.0585, -87.6757)
+  417225827: (42.0585, -87.6757)
+  417225828: (42.0585, -87.6749)
+  417225829: (42.058, -87.6749)
+  417225830: (42.058, -87.6752)
+  417225831: (42.058, -87.6752)
+  417225832: (42.058, -87.6754)
+  417225833: (42.0581, -87.6754)
+  417225834: (42.0581, -87.6755)
+  417225835: (42.0575, -87.6755)
+  417225836: (42.0575, -87.6754)
+  417225837: (42.0576, -87.6754)
+  417225838: (42.0576, -87.6752)
+  417225839: (42.0576, -87.6752)
+  417225840: (42.0576, -87.675)
+  417225841: (42.0571, -87.675)
+  470330841: (42.0571, -87.6752)
+  470330842: (42.0571, -87.6752)
+  417225842: (42.0571, -87.6757)
+  417225843: (42.0573, -87.6757)
+  417225844: (42.0573, -87.676)
+  417225845: (42.0571, -87.676)
+  417225813: (42.0571, -87.6768)
+Enter building name (partial or complete), or * to list, or $ to end>
+** Done **
+ 
+ 
+**************************************************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** memory errors and memory leaks...            **
+**************************************************
+ 
+ 
+** Well done, no memory errors! **
+ 
+ 
+** End of Test 4 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 5 **
+ 
+ 
+** Test Input:
+nu.osm
+$
+ 
+ 
+** Your output (first 600 lines) **
+** NU open street map **
+
+Enter map filename> 
+# of nodes: 15070
+# of buildings: 103
+
+Enter building name (partial or complete), or * to list, or $ to end> 
+
+** Done  **
+# of calls to getID(): 0
+# of Nodes created: 15070
+# of Nodes copied: 16383
+ 
+ 
+**************************************************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** memory errors and memory leaks...            **
+**************************************************
+ 
+ 
+** Well done, no memory errors! **
+ 
+ 
+** End of Test 5 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 6 **
+ 
+ 
+** Test Input:
+nu.osm
+*
+$
+ 
+ 
+** Your output (first 600 lines) **
+** NU open street map **
+
+Enter map filename> 
+# of nodes: 15070
+# of buildings: 103
+
+Enter building name (partial or complete), or * to list, or $ to end> 
+33908908: Annie May Swift Hall, 1920 Campus Drive
+33908911: Norris University Center, 1999 Campus Drive
+33908912: Pick-Staiger Concert Hall, 50 Arts Circle Drive
+33908919: Fisk Hall, 1845 Sheridan Road
+33908921: Locy Hall, 1850 Campus Drive
+33908926: Harris Hall, 1881 Sheridan Road
+33908928: University Hall, 1897 Sheridan Road
+33908930: Lunt Hall, 2033 Sheridan Road
+33908933: Loder Hall, 2121 Sheridan Road
+33908935: Allen Center, 2169 Campus Drive
+33908936: Pancoe-ENH Life Sciences Pavilion, 2200 Campus Drive
+35598594: Northwestern University Technological Institute, 2145 Sheridan Road
+42701585: Blomquist Recreation Center, 617 Foster Street
+42701586: Annenberg Hall, 2120 Campus Drive
+42701676: Scott Hall-Cahn Auditorium,  
+42702015: Searle Hall, 633 Emerson Street
+42702286: Ford Design Center, 2133 Sheridan Road
+42702397: Levere Memorial Temple, 1856 Sheridan Road
+42702792: Music Practice Building, 1823 Sherman Avenue
+42702794: Music Administration Building, 711 Elgin Road
+42702796: Office of Human Resources, 720 University Place
+42702797: Lutkin Hall, 700 University Place
+42702830: Rebecca Crown Center, 633 Clark Street
+42702844: , 619 Clark Street
+42702935: , 1808 Chicago Avenue
+42702938: , 1810-1812 Chicago Avenue
+42702940: University Relations, 555 Clark Street
+42702947: , 1809 Chicago Avenue
+42702948: , 1815 Chicago Avenue
+42702957: Admissions and Financial Aid, 1801 Hinman Avenue
+42703496: Catalysis Center, 2137 Tech Drive
+42703497: Dearborn Observatory, 2131 Tech Drive
+42703498: Ryan Hall, 2190 Campus Drive
+42703499: Hogan Biological Sciences Building, 2205 Tech Drive
+42703540: Cook Hall, 2220 Campus Drive
+42703541: Seeley G. Mudd Science and Engineering Library, 2233 Tech Drive
+42703542: Frances Searle Building, 2240 Campus Drive
+42703696: , 600-610 Lincoln Street
+42703697: Patten Gymnasium, 2407 Sheridan Road
+42703716: Alice Millar Chapel, 1870 Sheridan Road
+42703717: Parkes Hall, 1870 Sheridan Road
+42703833: , 619 Emerson Street
+42703834: Chambers Hall, 600 Foster Street
+42706482: , 1922 Sheridan Road
+42706483: , 1918 Sheridan Road
+42706484: , 1914 Sheridan Road
+42706485: , 1908 Sheridan Road
+42706489: Buffett Institute, 1902 Sheridan Road
+42706490: , 1940 Sheridan Road
+42706491: , 1936 Sheridan Road
+42706492: Program in Geography and Department of Sociology, 515 Clark Street
+42706493: Anthropology Department, 1810 Hinman Avenue
+42706494: , 1812 Hinman Avenue
+42706495: , 1818 Hinman Avenue
+42706497: , 1819 Hinman Avenue
+42706498: , 1813 Hinman Avenue
+42706499: Alumni Center, 1800 Sheridan Road
+42706552: Statistics Department, 2006 Sheridan Road
+42706553: , 2000 Sheridan Road
+42706554: , 2010 Sheridan Road
+42706555: , 2016 Sheridan Road
+42706563: Fiedler Hillel, 629 Foster Street
+42706571: , 618 Library Place
+42706572: , 620 Library Place
+42706573: , 626 Library Place
+42708314: , 627 Dartmouth Place
+42708315: , 617 Dartmouth Place
+42708316: , 630 Dartmouth Place
+42708323: Delta Chi Fraternity, 619 Colfax Street
+42708324: , 625 Colfax Street
+42708325: , 629 Colfax Street
+42708357: , 621-623 Garrett Place
+42708369: , 605-615 Garrett Place
+53160129: Silverman Hall, 2150 Campus Drive
+53160796: Cresap Laboratory, 2021 Sheridan Road
+116713965: Shanley Hall, 2031 Sheridan Road
+151311271: Kresge Hall, 1880 Campus Drive
+165094354: Jacobs Center,  
+175187764: Northwestern University Library, 1970 Campus Drive
+182668630: Seabury-Western Theological Seminary, 600 Haven Street
+182668876: Roycemore, 640 Lincoln Street
+214618498: Crowe Hall, 1860 Campus Drive
+214618504: Deering Library, 1937 Sheridan Road
+214618520: Swift Hall, 2029 Sheridan Road
+214630813: McCormick Foundation Center, 1870 Campus Drive
+220670539: Central Utility Plant, 2026 Campus Drive
+249758350: ,  
+249758351: Main, 2121 Sheridan Road
+249758352: Lesemann Hall, 2121 Sheridan Road
+249758354: Pfeiffer Hall,  
+275849772: Patrick G. and Shirley W. Ryan Center for the Musical Arts, 70 Arts Circle Drive
+275851101: Segal Visitors Center/Parking Garage, 1841 Sheridan Road
+275854464: Henry Crown Sports Pavilion and Aquatic Center, 2311 North Campus Drive
+275854486: Regenstein Hall of Music, 60 Arts Circle Drive
+466698283: Kellogg Global Hub, 2211 Campus Drive
+768687038: Walter Athletics Center, 2255 Campus Drive
+913835914: NU SafeRide, 630 Lincoln Street
+913835915: Northwestern Career Advancement, 620 Lincoln Street
+942642224: Canterbury House, 2010 Orrington Avenue
+950303735: , 617 Noyes Street
+950303736: , 629 Noyes Street
+1002826076: , 2040 Sheridan Road
+1002826078: , 2046 Sheridan Road
+
+Enter building name (partial or complete), or * to list, or $ to end> 
+
+** Done  **
+# of calls to getID(): 0
+# of Nodes created: 15070
+# of Nodes copied: 16383
+ 
+ 
+**************************************************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** memory errors and memory leaks...            **
+**************************************************
+ 
+ 
+** Well done, no memory errors! **
+ 
+ 
+** End of Test 6 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 7 **
+ 
+ 
+** Test Input:
+nu.osm
+Mudd
+$
+ 
+ 
+** Your output (first 600 lines) **
+** NU open street map **
+
+Enter map filename> 
+# of nodes: 15070
+# of buildings: 103
+
+Enter building name (partial or complete), or * to list, or $ to end> 
+Seeley G. Mudd Science and Engineering Library
+Address: 2233 Tech Drive
+Building ID: 42703541
+Nodes:
+  533996670: (42.0586, -87.6747)
+  533996671: (42.0585, -87.6741)
+  533996672: (42.0583, -87.6741)
+  533996673: (42.0582, -87.6739)
+  533996674: (42.0581, -87.6738)
+  4838815124: (42.0581, -87.6737)
+  9119071427: (42.058, -87.6738)
+  9119071426: (42.0579, -87.6738)
+  2240260053: (42.0579, -87.6738)
+  2240260054: (42.0579, -87.6739)
+  533996668: (42.0579, -87.6739)
+  533996675: (42.0579, -87.6741)
+  533996669: (42.0579, -87.6747)
+  533996670: (42.0586, -87.6747)
+
+Enter building name (partial or complete), or * to list, or $ to end> 
+
+** Done  **
+# of calls to getID(): 171
+# of Nodes created: 15070
+# of Nodes copied: 16383
+ 
+ 
+**************************************************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** memory errors and memory leaks...            **
+**************************************************
+ 
+ 
+** Well done, no memory errors! **
+ 
+ 
+** End of Test 7 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 8 **
+ 
+ 
+** Test Input:
+nu.osm
+Swift
+fred
+Tech
+$
+ 
+ 
+** Your output (first 600 lines) **
+** NU open street map **
+
+Enter map filename> 
+# of nodes: 15070
+# of buildings: 103
+
+Enter building name (partial or complete), or * to list, or $ to end> 
+Annie May Swift Hall
+Address: 1920 Campus Drive
+Building ID: 33908908
+Nodes:
+  388499217: (42.0525, -87.6751)
+  4774714352: (42.0525, -87.6751)
+  4774714353: (42.0525, -87.6752)
+  388499218: (42.0522, -87.6752)
+  4774714360: (42.0522, -87.6751), is entrance
+  388499219: (42.0522, -87.675)
+  4774714354: (42.0524, -87.675)
+  4774714351: (42.0524, -87.675)
+  388499221: (42.0525, -87.6749)
+  2241289408: (42.0525, -87.675)
+  388499217: (42.0525, -87.6751)
+Swift Hall
+Address: 2029 Sheridan Road
+Building ID: 214618520
+Nodes:
+  388499477: (42.0554, -87.6752)
+  2241226890: (42.0554, -87.6748)
+  2241226786: (42.0552, -87.6748)
+  2241227063: (42.0552, -87.6749)
+  2241226843: (42.0551, -87.6749)
+  4733214485: (42.0551, -87.6748)
+  4733214484: (42.0551, -87.6748)
+  4733214483: (42.0551, -87.6748)
+  2241226991: (42.0551, -87.6748)
+  4838610206: (42.0551, -87.6748)
+  2241226853: (42.0551, -87.6748)
+  2241226799: (42.055, -87.6748)
+  2241226810: (42.055, -87.6748)
+  2241226852: (42.055, -87.6748)
+  2241226682: (42.055, -87.6748)
+  2241227037: (42.055, -87.6749)
+  2241226637: (42.0549, -87.6749)
+  4838610207: (42.0549, -87.6751)
+  388499486: (42.0549, -87.6751)
+  2241226898: (42.055, -87.6751)
+  4838610210: (42.0552, -87.6751)
+  4838610211: (42.0552, -87.6751)
+  388499487: (42.0553, -87.6751)
+  388499488: (42.0553, -87.6752)
+  388499477: (42.0554, -87.6752)
+
+Enter building name (partial or complete), or * to list, or $ to end> 
+
+Enter building name (partial or complete), or * to list, or $ to end> 
+Northwestern University Technological Institute
+Address: 2145 Sheridan Road
+Building ID: 35598594
+Nodes:
+  417225813: (42.0571, -87.6768)
+  417225814: (42.0576, -87.6768)
+  417225815: (42.0576, -87.6765)
+  470330834: (42.0576, -87.6765)
+  470330835: (42.0576, -87.6763)
+  417225816: (42.0576, -87.6763)
+  470330836: (42.0576, -87.6762)
+  2239483482: (42.0578, -87.6762), is entrance
+  417225817: (42.058, -87.6762)
+  470330837: (42.058, -87.6762)
+  470330838: (42.0581, -87.6762)
+  470330839: (42.0581, -87.6765)
+  470330840: (42.058, -87.6765)
+  417225818: (42.058, -87.6767)
+  417225819: (42.0585, -87.6767)
+  417225820: (42.0585, -87.6765)
+  417225823: (42.0585, -87.6762)
+  417225824: (42.0585, -87.676)
+  417225825: (42.0585, -87.676)
+  417225826: (42.0585, -87.6757)
+  417225827: (42.0585, -87.6757)
+  417225828: (42.0585, -87.6749)
+  417225829: (42.058, -87.6749)
+  417225830: (42.058, -87.6752)
+  417225831: (42.058, -87.6752)
+  417225832: (42.058, -87.6754)
+  417225833: (42.0581, -87.6754)
+  417225834: (42.0581, -87.6755)
+  417225835: (42.0575, -87.6755)
+  417225836: (42.0575, -87.6754)
+  417225837: (42.0576, -87.6754)
+  417225838: (42.0576, -87.6752)
+  417225839: (42.0576, -87.6752)
+  417225840: (42.0576, -87.675)
+  417225841: (42.0571, -87.675)
+  470330841: (42.0571, -87.6752)
+  470330842: (42.0571, -87.6752)
+  417225842: (42.0571, -87.6757)
+  417225843: (42.0573, -87.6757)
+  417225844: (42.0573, -87.676)
+  417225845: (42.0571, -87.676)
+  417225813: (42.0571, -87.6768)
+
+Enter building name (partial or complete), or * to list, or $ to end> 
+
+** Done  **
+# of calls to getID(): 1016
+# of Nodes created: 15070
+# of Nodes copied: 16383
+ 
+ 
+**************************************************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** memory errors and memory leaks...            **
+**************************************************
+ 
+ 
+** Well done, no memory errors! **
+ 
+ 
+** End of Test 8 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 9 **
+ 
+ 
+** Test Input:
+nu.osm
+Annie May
+Ryan
+nothing
+Alumni
+University Hall
+$
+
+ 
+ 
+** Your output (first 600 lines) **
+** NU open street map **
+
+Enter map filename> 
+# of nodes: 15070
+# of buildings: 103
+
+Enter building name (partial or complete), or * to list, or $ to end> 
+Annie May Swift Hall
+Address: 1920 Campus Drive
+Building ID: 33908908
+Nodes:
+  388499217: (42.0525, -87.6751)
+  4774714352: (42.0525, -87.6751)
+  4774714353: (42.0525, -87.6752)
+  388499218: (42.0522, -87.6752)
+  4774714360: (42.0522, -87.6751), is entrance
+  388499219: (42.0522, -87.675)
+  4774714354: (42.0524, -87.675)
+  4774714351: (42.0524, -87.675)
+  388499221: (42.0525, -87.6749)
+  2241289408: (42.0525, -87.675)
+  388499217: (42.0525, -87.6751)
+
+Enter building name (partial or complete), or * to list, or $ to end> 
+Ryan Hall
+Address: 2190 Campus Drive
+Building ID: 42703498
+Nodes:
+  533996255: (42.0566, -87.6747)
+  533996257: (42.0566, -87.6744)
+  4733207544: (42.0566, -87.6744)
+  4733207543: (42.0566, -87.6743)
+  4837650702: (42.0567, -87.6743)
+  4733207545: (42.0569, -87.6743)
+  4733207546: (42.0569, -87.6743)
+  533996259: (42.0569, -87.6743)
+  4733207547: (42.0569, -87.6744)
+  4733207548: (42.057, -87.6744)
+  4733207549: (42.057, -87.6744)
+  533996262: (42.057, -87.6744)
+  4733207554: (42.057, -87.6745)
+  4733207553: (42.0571, -87.6745)
+  4733207552: (42.0571, -87.6745)
+  4733207551: (42.0571, -87.6745)
+  4733207550: (42.0571, -87.6746)
+  4733207555: (42.0571, -87.6746)
+  533996264: (42.0571, -87.6747)
+  4733207562: (42.057, -87.6747)
+  4733207563: (42.057, -87.6749)
+  4733207557: (42.0569, -87.6749)
+  4733207556: (42.0569, -87.6747)
+  533996255: (42.0566, -87.6747)
+Patrick G. and Shirley W. Ryan Center for the Musical Arts
+Address: 70 Arts Circle Drive
+Building ID: 275849772
+Nodes:
+  2805143880: (42.052, -87.6712)
+  2805143877: (42.0514, -87.6712)
+  2805143873: (42.0514, -87.6713)
+  3673954431: (42.0515, -87.6713)
+  2805143874: (42.0515, -87.6714)
+  3673954430: (42.0514, -87.6714)
+  3673954429: (42.0514, -87.6716)
+  4838551991: (42.0517, -87.6717)
+  2805143892: (42.0517, -87.6717)
+  4838551989: (42.0517, -87.6717), is entrance
+  4838551988: (42.0518, -87.6717)
+  2805143866: (42.0518, -87.6718)
+  4838557446: (42.0523, -87.672)
+  4838557447: (42.0524, -87.6721)
+  4838557448: (42.0524, -87.6719)
+  4838557451: (42.0524, -87.6719)
+  4838557450: (42.0524, -87.6718)
+  4838557453: (42.0523, -87.6718)
+  4838557452: (42.0523, -87.6718)
+  4838557459: (42.0522, -87.6717)
+  4838557461: (42.0522, -87.6717)
+  4837652098: (42.0522, -87.6716)
+  2805143893: (42.0521, -87.6715)
+  2805153655: (42.0521, -87.6716)
+  2805153651: (42.052, -87.6716)
+  2805143896: (42.052, -87.6715)
+  2805143899: (42.052, -87.6714)
+  4838551742: (42.052, -87.6714)
+  4838551741: (42.052, -87.6714)
+  4838551740: (42.052, -87.6713)
+  2805143882: (42.052, -87.6713)
+  2805143880: (42.052, -87.6712)
+
+Enter building name (partial or complete), or * to list, or $ to end> 
+
+Enter building name (partial or complete), or * to list, or $ to end> 
+Alumni Center
+Address: 1800 Sheridan Road
+Building ID: 42706499
+Nodes:
+  534040987: (42.0491, -87.6753)
+  534040988: (42.0492, -87.6752)
+  534040989: (42.0491, -87.6749)
+  2298231713: (42.0491, -87.675)
+  2298231714: (42.0491, -87.675)
+  534040990: (42.049, -87.675)
+  534040987: (42.0491, -87.6753)
+
+Enter building name (partial or complete), or * to list, or $ to end> 
+University Hall
+Address: 1897 Sheridan Road
+Building ID: 33908928
+Nodes:
+  388499432: (42.0518, -87.6758)
+  4774714375: (42.0518, -87.6758)
+  2241369266: (42.0518, -87.6758)
+  2241369264: (42.0518, -87.6759)
+  2241227052: (42.0519, -87.6758), is entrance
+  4774714382: (42.0519, -87.6758)
+  4774714383: (42.0519, -87.6758)
+  388499433: (42.052, -87.6758)
+  388499434: (42.0521, -87.676)
+  1766764521: (42.0519, -87.6761), is entrance
+  4774714381: (42.0519, -87.6761)
+  4774714380: (42.0519, -87.6761)
+  388499436: (42.0518, -87.6762)
+  4774714372: (42.0518, -87.676)
+  2241226778: (42.0518, -87.676)
+  2241227054: (42.0518, -87.676), is entrance
+  2241226814: (42.0517, -87.676)
+  4774714373: (42.0518, -87.676)
+  4774714374: (42.0517, -87.6759)
+  4774714376: (42.0517, -87.6759)
+  4774714377: (42.0517, -87.6758)
+  4774714379: (42.0517, -87.6758)
+  4774714378: (42.0517, -87.6758)
+  388499432: (42.0518, -87.6758)
+
+Enter building name (partial or complete), or * to list, or $ to end> 
+
+** Done  **
+# of calls to getID(): 1283
+# of Nodes created: 15070
+# of Nodes copied: 16383
+ 
+ 
+**************************************************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** memory errors and memory leaks...            **
+**************************************************
+ 
+ 
+** Well done, no memory errors! **
+ 
+ 
+** End of Test 9 **
+********************************************************************

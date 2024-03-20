@@ -1,0 +1,4836 @@
+**************************************************************************
+** Running lizard to analyze coding style, looking to see if functions  **
+** exceed 150 lines of code, which is considered too long...            **
+**************************************************************************
+ 
+
+**************************************************************************
+** Lizard analysis tool reports all is well...                          **
+**************************************************************************
+
+**********************************************************
+This is submission #5
+Submitted @ 23:44 on 2024-1-27 (Chicago time)
+
+Submission history:
+ Submission #4: score=76, submitted @ 23:40 on 2024-1-27 (Chicago time)
+ Submission #3: score=79, submitted @ 23:6 on 2024-1-27 (Chicago time)
+ Submission #2: score=59, submitted @ 22:54 on 2024-1-27 (Chicago time)
+ Submission #1: score=-1, submitted @ 22:12 on 2024-1-27 (Chicago time)
+
+Total # of valid submissions so far: 3
+# of valid submissions since midnight: 3
+# of minutes since last valid submission: 4
+**********************************************************
+You have 3 submissions this 24-hr period.
+
+
+*******************************************************************
+** Number of Submissions This Time Period                        **
+*******************************************************************
+ 
+This is submission #4 in current time period
+ 
+You are allowed a total of 6 submissions per 24-hr time period.
+ 
+*******************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 0 **
+ 
+ 
+** Test Input:
+print('starting')
+
+x = 456
+y = 0.123456789
+z = 123.005
+mytrue = True
+myfalse = False
+a_string_var = "yet another string"
+apple = 9102
+pass
+x = 43.56
+y = 87
+z = "overwriting with a string"
+apple = 1.23498
+
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+starting
+done
+**done
+**MEMORY PRINT**
+Capacity: 8
+Num values: 7
+Contents:
+ 0: x, real, 43.560000
+ 1: y, int, 87
+ 2: z, str, 'overwriting with a string'
+ 3: mytrue, boolean, True
+ 4: myfalse, boolean, False
+ 5: a_string_var, str, 'yet another string'
+ 6: apple, real, 1.234980
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 0 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 1 **
+ 
+ 
+** Test Input:
+print()
+print('starting')
+print()
+
+print(123)
+print(3.14159)
+print(True)
+print(False)
+print("a really long string that doesn't convey much")
+
+pass
+
+print(0.575)
+print("another string")
+print(9993312)
+
+print()
+print('done')
+print()
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+
+starting
+
+123
+3.141590
+True
+False
+a really long string that doesn't convey much
+0.575000
+another string
+9993312
+
+done
+
+**done
+**MEMORY PRINT**
+Capacity: 4
+Num values: 0
+Contents:
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 1 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 2 **
+ 
+ 
+** Test Input:
+print('starting')
+pass
+
+x = 456
+y = 0.123456789
+z = 123.005
+mytrue = True
+myfalse = False
+a_string_var = "yet another string"
+apple = 9102
+
+pass
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+starting
+done
+**done
+**MEMORY PRINT**
+Capacity: 8
+Num values: 7
+Contents:
+ 0: x, int, 456
+ 1: y, real, 0.123457
+ 2: z, real, 123.005000
+ 3: mytrue, boolean, True
+ 4: myfalse, boolean, False
+ 5: a_string_var, str, 'yet another string'
+ 6: apple, int, 9102
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 2 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 3 **
+ 
+ 
+** Test Input:
+print('starting')
+
+x = 456
+y = 0.123456789
+z = 123.005
+mytrue = True
+myfalse = False
+a_string_var = "yet another string"
+apple = 9102
+pass
+x = 43.56
+y = 87
+z = "overwriting with a string"
+apple = 1.23498
+
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+starting
+done
+**done
+**MEMORY PRINT**
+Capacity: 8
+Num values: 7
+Contents:
+ 0: x, real, 43.560000
+ 1: y, int, 87
+ 2: z, str, 'overwriting with a string'
+ 3: mytrue, boolean, True
+ 4: myfalse, boolean, False
+ 5: a_string_var, str, 'yet another string'
+ 6: apple, real, 1.234980
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 3 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 4 **
+ 
+ 
+** Test Input:
+print('starting yet another test')
+print()
+
+x = 456
+y = 0.123456789
+z = 123.005
+print(x)
+print(y)
+print(z)
+
+mytrue = True
+myfalse = False
+a_string_var = "yet another string"
+apple = 9102
+
+print(apple)
+print(a_string_var)
+print(mytrue)
+print(myfalse)
+
+x = 43.56
+y = 87
+z = "overwriting with a string"
+apple = 1.23498
+myfalse = True
+print(x)
+print(y)
+print(z)
+print(myfalse)
+print(apple)
+
+x = False
+print(x)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+starting yet another test
+
+456
+0.123457
+123.005000
+9102
+yet another string
+True
+False
+43.560000
+87
+overwriting with a string
+True
+1.234980
+False
+
+done
+**done
+**MEMORY PRINT**
+Capacity: 8
+Num values: 7
+Contents:
+ 0: x, boolean, False
+ 1: y, int, 87
+ 2: z, str, 'overwriting with a string'
+ 3: mytrue, boolean, True
+ 4: myfalse, boolean, True
+ 5: a_string_var, str, 'yet another string'
+ 6: apple, real, 1.234980
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 4 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 5 **
+ 
+ 
+** Test Input:
+print('starting yet another test')
+print()
+
+x = 456
+y = 0.123456789
+z = 123.005
+print(x)
+print(y)
+print(z)
+
+mytrue = True
+myfalse = False
+a_string_var = "yet another string"
+apple = 9102
+
+print(apple)
+print(a_string_var)
+print(mytrue)
+print(myfalse)
+
+x = 43.56
+y = 87
+z = "overwriting with a string"
+apple = 1.23498
+myfalse = True
+print(x)
+print(y)
+print(z)
+print(myfalse)
+print(banana)   ## semantic error, oops
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+starting yet another test
+
+456
+0.123457
+123.005000
+9102
+yet another string
+True
+False
+43.560000
+87
+overwriting with a string
+True
+**SEMANTIC ERROR: name 'banana' is not defined (line 30)
+**done
+**MEMORY PRINT**
+Capacity: 8
+Num values: 7
+Contents:
+ 0: x, real, 43.560000
+ 1: y, int, 87
+ 2: z, str, 'overwriting with a string'
+ 3: mytrue, boolean, True
+ 4: myfalse, boolean, True
+ 5: a_string_var, str, 'yet another string'
+ 6: apple, real, 1.234980
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 5 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 6 **
+ 
+ 
+** Test Input:
+#
+# operators with integers
+#
+x = 100        # 100
+y = x - 140    # -40
+z = y          # -40
+a = 140 - z    # 180
+
+print("x is:")
+print(x)
+print('y is:')
+print(y)
+print('z is:')
+print(z)
+print('a is:')
+print(a)
+
+z = y * y      # 1600
+print("and now for z:")
+print(z)
+
+test1 = x + y    # 60
+x = 1
+test2 = x + y    # -39
+y = 123
+test3 = x * y    # 123
+test4 = z / 3    # 533
+test5 = z % 11   # 5
+x = 4
+test6 = test5 ** x   # 625
+
+print("test variables:")
+print(test1)
+print(test2)
+print(test3)
+print(test4)
+print(test5)
+print(test6)
+
+divisor = 3
+x = 126 / divisor
+y = 126 % divisor
+print(x)
+print(y)
+
+#
+# random comment
+#
+
+i = 100
+j = 200
+b1_1 = 100 < 200
+b1_2 = i < 200
+b1_3 = 100 < j
+b1_4 = i < j
+
+i = 123
+j = 123
+b2_1 = 123 != 123
+b2_2 = i != 123
+b2_3 = 123 != j
+b2_4 = i != j
+
+i = 90
+j = 90
+b3_1 = 90 >= 90
+b3_2 = i >= 90
+b3_3 = 90 >= j
+b3_4 = i >= j
+
+i = 123
+j = 123
+b4_1 = 123 == 123
+b4_2 = i == 123
+b4_3 = 123 == j
+b4_4 = i == j
+
+i = 100
+j = 200
+b5_1 = 100 > 200
+b5_2 = i > 200
+b5_3 = 100 > j
+b5_4 = i > j
+
+i = 200
+j = 100
+b6_1 = 200 > 100
+b6_2 = i > 100
+b6_3 = 200 > j
+b6_4 = i > j
+
+i = 123
+j = 12
+b7_1 = 123 != 12
+b7_2 = i != 12
+b7_3 = 123 != j
+b7_4 = i != j
+b7_5 = i != i
+
+i = 101
+j = 100
+b8_1 = 101 <= 100
+b8_2 = i <= 100
+b8_3 = 101 <= j
+b8_4 = i <= j
+b8_5 = i <= i
+
+i = 12
+j = 123
+b9_1 = 12 == 123
+b9_2 = i == 123
+b9_3 = 12 == j
+b9_4 = i == j
+b9_5 = j == j
+
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+x is:
+100
+y is:
+-40
+z is:
+-40
+a is:
+180
+and now for z:
+1600
+test variables:
+60
+-39
+123
+533
+5
+625
+42
+0
+**done
+**MEMORY PRINT**
+Capacity: 64
+Num values: 52
+Contents:
+ 0: x, int, 42
+ 1: y, int, 0
+ 2: z, int, 1600
+ 3: a, int, 180
+ 4: test1, int, 60
+ 5: test2, int, -39
+ 6: test3, int, 123
+ 7: test4, int, 533
+ 8: test5, int, 5
+ 9: test6, int, 625
+ 10: divisor, int, 3
+ 11: i, int, 12
+ 12: j, int, 123
+ 13: b1_1, boolean, True
+ 14: b1_2, boolean, True
+ 15: b1_3, boolean, True
+ 16: b1_4, boolean, True
+ 17: b2_1, boolean, False
+ 18: b2_2, boolean, False
+ 19: b2_3, boolean, False
+ 20: b2_4, boolean, False
+ 21: b3_1, boolean, True
+ 22: b3_2, boolean, True
+ 23: b3_3, boolean, True
+ 24: b3_4, boolean, True
+ 25: b4_1, boolean, True
+ 26: b4_2, boolean, True
+ 27: b4_3, boolean, True
+ 28: b4_4, boolean, True
+ 29: b5_1, boolean, False
+ 30: b5_2, boolean, False
+ 31: b5_3, boolean, False
+ 32: b5_4, boolean, False
+ 33: b6_1, boolean, True
+ 34: b6_2, boolean, True
+ 35: b6_3, boolean, True
+ 36: b6_4, boolean, True
+ 37: b7_1, boolean, True
+ 38: b7_2, boolean, True
+ 39: b7_3, boolean, True
+ 40: b7_4, boolean, True
+ 41: b7_5, boolean, False
+ 42: b8_1, boolean, False
+ 43: b8_2, boolean, False
+ 44: b8_3, boolean, False
+ 45: b8_4, boolean, False
+ 46: b8_5, boolean, True
+ 47: b9_1, boolean, False
+ 48: b9_2, boolean, False
+ 49: b9_3, boolean, False
+ 50: b9_4, boolean, False
+ 51: b9_5, boolean, True
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 6 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 7 **
+ 
+ 
+** Test Input:
+#
+# operators with reals
+#
+x = 100.234        
+y = x - 140.9
+z = y         
+a = 1.5 - z    
+
+print("x is:")
+print(x)
+print('y is:')
+print(y)
+print('z is:')
+print(z)
+print('a is:')
+print(a)
+
+z = y * y
+print("and now for z:")
+print(z)
+
+test1 = x + y   
+x = 1.2
+test2 = x + y    
+y = 123.123
+test3 = x * y   
+test4 = z / 3.0
+test5 = z % 11.0
+x = 4.2
+test6 = test5 ** x
+
+print("test variables:")
+print(test1)
+print(test2)
+print(test3)
+print(test4)
+print(test5)
+print(test6)
+
+divisor = 3.0
+x = 126.9 / divisor
+y = 126.9 % divisor
+print(x)
+print(y)
+
+#
+# random comment
+#
+
+i = 100.2
+j = 200.9
+b1_1 = 100.2 < 200.9
+b1_2 = i < 200.9
+b1_3 = 100.2 < j
+b1_4 = i < j
+
+i = 123.0
+j = 123.0
+b2_1 = 123.0 != 123.0
+b2_2 = i != 123.0
+b2_3 = 123.0 != j
+b2_4 = i != j
+
+i = 90.5
+j = 90.5
+b3_1 = 90.5 >= 90.5
+b3_2 = i >= 90.4
+b3_3 = 90.4 >= j
+b3_4 = i >= j
+
+i = 123.625
+j = 123.625
+b4_1 = 123.625 == 123.625
+b4_2 = i == 123.5
+b4_3 = 123.5 == j
+b4_4 = i == j
+
+i = 100.5
+j = 200.5
+b5_1 = 100.5 > 200.5
+b5_2 = i > 200.5
+b5_3 = 100.5 > j
+b5_4 = i > j
+
+i = 200.5
+j = 100.5
+b6_1 = 200.5 > 100.5
+b6_2 = i > 100.625
+b6_3 = 200.625 > j
+b6_4 = i > j
+
+i = 123.123
+j = 12.5
+b7_1 = 123.123 != 123.5
+b7_2 = i != 123.999
+b7_3 = 12.5 != j
+b7_4 = i != j
+b7_5 = j != j
+
+i = 101.25
+j = 100.25
+b8_1 = 101.25 <= 100.25
+b8_2 = i <= 100.25
+b8_3 = 100.5 <= j
+b8_4 = i <= j
+b8_5 = i <= i
+
+i = 12.5
+j = 123.5
+b9_1 = 12.5 == 123.5
+b9_2 = i == 123.5
+b9_3 = 123.25 == j
+b9_4 = i == j
+b9_5 = j == j
+
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+x is:
+100.234000
+y is:
+-40.666000
+z is:
+-40.666000
+a is:
+42.166000
+and now for z:
+1653.723556
+test variables:
+59.568000
+-39.466000
+147.747600
+551.241185
+3.723556
+250.047857
+42.300000
+0.900000
+**done
+**MEMORY PRINT**
+Capacity: 64
+Num values: 52
+Contents:
+ 0: x, real, 42.300000
+ 1: y, real, 0.900000
+ 2: z, real, 1653.723556
+ 3: a, real, 42.166000
+ 4: test1, real, 59.568000
+ 5: test2, real, -39.466000
+ 6: test3, real, 147.747600
+ 7: test4, real, 551.241185
+ 8: test5, real, 3.723556
+ 9: test6, real, 250.047857
+ 10: divisor, real, 3.000000
+ 11: i, real, 12.500000
+ 12: j, real, 123.500000
+ 13: b1_1, boolean, True
+ 14: b1_2, boolean, True
+ 15: b1_3, boolean, True
+ 16: b1_4, boolean, True
+ 17: b2_1, boolean, False
+ 18: b2_2, boolean, False
+ 19: b2_3, boolean, False
+ 20: b2_4, boolean, False
+ 21: b3_1, boolean, True
+ 22: b3_2, boolean, True
+ 23: b3_3, boolean, False
+ 24: b3_4, boolean, True
+ 25: b4_1, boolean, True
+ 26: b4_2, boolean, False
+ 27: b4_3, boolean, False
+ 28: b4_4, boolean, True
+ 29: b5_1, boolean, False
+ 30: b5_2, boolean, False
+ 31: b5_3, boolean, False
+ 32: b5_4, boolean, False
+ 33: b6_1, boolean, True
+ 34: b6_2, boolean, True
+ 35: b6_3, boolean, True
+ 36: b6_4, boolean, True
+ 37: b7_1, boolean, True
+ 38: b7_2, boolean, True
+ 39: b7_3, boolean, False
+ 40: b7_4, boolean, True
+ 41: b7_5, boolean, False
+ 42: b8_1, boolean, False
+ 43: b8_2, boolean, False
+ 44: b8_3, boolean, False
+ 45: b8_4, boolean, False
+ 46: b8_5, boolean, True
+ 47: b9_1, boolean, False
+ 48: b9_2, boolean, False
+ 49: b9_3, boolean, False
+ 50: b9_4, boolean, False
+ 51: b9_5, boolean, True
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 7 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 8 **
+ 
+ 
+** Test Input:
+#
+# operators with mix of ints and reals
+#
+x = 100      
+y = x - 140.9
+z = y         
+a = 1 - z    
+
+print("x is:")
+print(x)
+print('y is:')
+print(y)
+print('z is:')
+print(z)
+print('a is:')
+print(a)
+
+z = a * x
+print("and now for z:")
+print(z)
+
+test1 = x + y   
+x = 1
+test2 = y + x  
+y = 123.123
+test3 = x * y   
+test4 = z / 3
+x = 1000
+test5 = z % 11.1
+x = 4
+test6 = test5 ** x
+
+print("test variables:")
+print(test1)
+print(test2)
+print(test3)
+print(test4)
+print(test5)
+print(test6)
+
+divisor = 3
+x = 126.5 / divisor
+y = 126.5 % divisor
+print(x)
+print(y)
+
+#
+# random comment
+#
+
+i = 100
+j = 200.9
+b1_1 = 100 < 200.9
+b1_2 = i < 200.9
+b1_3 = 100 < j
+b1_4 = i < j
+
+i = 123.0
+j = 123
+b2_1 = 123.0 != 123
+b2_2 = i != 123
+b2_3 = 123.0 != j
+b2_4 = i != j
+
+i = 90.5
+j = 90
+b3_1 = 90.5 >= 90
+b3_2 = i >= 90
+b3_3 = 90.4 >= j
+b3_4 = i >= j
+
+i = 123.625
+j = 124
+b4_1 = 123.625 == 124
+b4_2 = i == 124
+b4_3 = 123.5 == j
+b4_4 = i == j
+
+i = 100.5
+j = 200
+b5_1 = 100.5 > 200
+b5_2 = i > 200
+b5_3 = 100.5 > j
+b5_4 = i > j
+
+i = 200
+j = 100.5
+b6_1 = 200 > 100.5
+b6_2 = i > 100.625
+b6_3 = 200 > j
+b6_4 = i > j
+
+i = 123.123
+j = 12
+b7_1 = 123.123 != 12
+b7_2 = i != 12
+b7_3 = 12.5 != j
+b7_4 = i != j
+b7_5 = j != j
+
+i = 101.25
+j = 100.25
+b8_1 = 101 <= 100.25
+b8_2 = i <= 100.25
+b8_3 = 100 <= j
+b8_4 = i <= j
+b8_5 = i <= i
+
+i = 12.5
+j = 123
+b9_1 = 12.5 == 123
+b9_2 = i == 123
+b9_3 = 123.25 == j
+b9_4 = i == j
+b9_5 = i == i
+
+
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+x is:
+100
+y is:
+-40.900000
+z is:
+-40.900000
+a is:
+41.900000
+and now for z:
+4190.000000
+test variables:
+59.100000
+-39.900000
+123.123000
+1396.666667
+5.300000
+789.048100
+42.166667
+0.500000
+**done
+**MEMORY PRINT**
+Capacity: 64
+Num values: 52
+Contents:
+ 0: x, real, 42.166667
+ 1: y, real, 0.500000
+ 2: z, real, 4190.000000
+ 3: a, real, 41.900000
+ 4: test1, real, 59.100000
+ 5: test2, real, -39.900000
+ 6: test3, real, 123.123000
+ 7: test4, real, 1396.666667
+ 8: test5, real, 5.300000
+ 9: test6, real, 789.048100
+ 10: divisor, int, 3
+ 11: i, real, 12.500000
+ 12: j, int, 123
+ 13: b1_1, boolean, True
+ 14: b1_2, boolean, True
+ 15: b1_3, boolean, True
+ 16: b1_4, boolean, True
+ 17: b2_1, boolean, False
+ 18: b2_2, boolean, False
+ 19: b2_3, boolean, False
+ 20: b2_4, boolean, False
+ 21: b3_1, boolean, True
+ 22: b3_2, boolean, True
+ 23: b3_3, boolean, True
+ 24: b3_4, boolean, True
+ 25: b4_1, boolean, False
+ 26: b4_2, boolean, False
+ 27: b4_3, boolean, False
+ 28: b4_4, boolean, False
+ 29: b5_1, boolean, False
+ 30: b5_2, boolean, False
+ 31: b5_3, boolean, False
+ 32: b5_4, boolean, False
+ 33: b6_1, boolean, True
+ 34: b6_2, boolean, True
+ 35: b6_3, boolean, True
+ 36: b6_4, boolean, True
+ 37: b7_1, boolean, True
+ 38: b7_2, boolean, True
+ 39: b7_3, boolean, True
+ 40: b7_4, boolean, True
+ 41: b7_5, boolean, False
+ 42: b8_1, boolean, False
+ 43: b8_2, boolean, False
+ 44: b8_3, boolean, True
+ 45: b8_4, boolean, False
+ 46: b8_5, boolean, True
+ 47: b9_1, boolean, False
+ 48: b9_2, boolean, False
+ 49: b9_3, boolean, False
+ 50: b9_4, boolean, False
+ 51: b9_5, boolean, True
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 8 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 9 **
+ 
+ 
+** Test Input:
+#
+# int, real, string concat
+#
+print("starting")
+print("")
+
+x = 1
+y = 10.5
+z = "shorter"
+x = 2
+
+print(x)
+print(y)
+print(z)
+
+a = z + " string"
+print(a)
+
+b = x + 3.675
+c = y + 10
+d = x + 1
+some_var = "cs"
+
+print(b)
+print(c)
+print(d)
+
+e = z + "+a very long string of word that could be many many words --- did you dynamically allocate?"
+print(e)
+
+f = some_var + " 211"
+print(f)
+
+x = 1
+y = 10.5
+z = "shorter"
+
+a = 10
+b = 3.675
+c = "cs "
+d = "a very long string of word that could be many many words --- did you dynamically allocate? "
+
+e = "211"
+print("")
+
+var1 = x + a
+var2 = b + y
+var3 = c + e
+var4 = d + z
+var5 = b + x
+var6 = a + y
+
+x = x + x
+b = b + b
+e = e + e
+
+print(var1)
+print(var2)
+print(var3)
+print(var4)
+print(var5)
+print(var6)
+print(x)
+print(b)
+print(e)
+
+s1 = "apple"
+s2 = "APPLE"
+s3 = "banana"
+s4 = "pear"
+s5 = "banana"
+
+b1_1 = s1 == s2
+b1_2 = s1 == "APPLE"
+b1_3 = s1 == "apple"
+b1_4 = s1 == "applesauce"
+b1_5 = "APPLE" == s2
+b1_6 = "APPLE" == s1
+b1_7 = s3 == s5
+b1_8 = s3 == s4
+b1_9 = s3 == s3
+
+b2_1 = s1 != s2
+b2_2 = s1 != "APPLE"
+b2_3 = s1 != "apple"
+b2_4 = s1 != "applesauce"
+b2_5 = "APPLE" != s2
+b2_6 = "APPLE" != s1
+b2_7 = s3 != s5
+b2_8 = s3 != s4
+b2_9 = s3 != s3
+
+b3_1 = s1 < s2
+b3_2 = s1 < "APPLE"
+b3_3 = s1 < "apple"
+b3_4 = s1 < "applesauce"
+b3_5 = "APPLE" < s2
+b3_6 = "APPLE" < s1
+b3_7 = s3 < s5
+b3_8 = s3 < s4
+b3_9 = s3 < s3
+
+b4_1 = s1 > s2
+b4_2 = s1 > "APPLE"
+b4_3 = s1 > "apple"
+b4_4 = s1 > "applesauce"
+b4_5 = "APPLE" > s2
+b4_6 = "APPLE" > s1
+b4_7 = s3 > s5
+b4_8 = s3 > s4
+b4_9 = s3 > s3
+
+b5_1 = s1 <= s2
+b5_2 = s1 <= "APPLE"
+b5_3 = s1 <= "apple"
+b5_4 = s1 <= "applesauce"
+b5_5 = "APPLE" <= s2
+b5_6 = "APPLE" <= s1
+b5_7 = s3 <= s5
+b5_8 = s3 <= s4
+b5_9 = s3 <= s3
+
+b6_1 = s1 >= s2
+b6_2 = s1 >= "APPLE"
+b6_3 = s1 >= "apple"
+b6_4 = s1 >= "applesauce"
+b6_5 = "APPLE" >= s2
+b6_6 = "APPLE" >= s1
+b6_7 = s3 >= s5
+b6_8 = s3 >= s4
+b6_9 = s3 >= s3
+
+print("")
+print("done")
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+starting
+
+2
+10.500000
+shorter
+shorter string
+5.675000
+20.500000
+3
+shorter+a very long string of word that could be many many words --- did you dynamically allocate?
+cs 211
+
+11
+14.175000
+cs 211
+a very long string of word that could be many many words --- did you dynamically allocate? shorter
+4.675000
+20.500000
+2
+7.350000
+211211
+
+done
+**done
+**MEMORY PRINT**
+Capacity: 128
+Num values: 75
+Contents:
+ 0: x, int, 2
+ 1: y, real, 10.500000
+ 2: z, str, 'shorter'
+ 3: a, int, 10
+ 4: b, real, 7.350000
+ 5: c, str, 'cs '
+ 6: d, str, 'a very long string of word that could be many many words --- did you dynamically allocate? '
+ 7: some_var, str, 'cs'
+ 8: e, str, '211211'
+ 9: f, str, 'cs 211'
+ 10: var1, int, 11
+ 11: var2, real, 14.175000
+ 12: var3, str, 'cs 211'
+ 13: var4, str, 'a very long string of word that could be many many words --- did you dynamically allocate? shorter'
+ 14: var5, real, 4.675000
+ 15: var6, real, 20.500000
+ 16: s1, str, 'apple'
+ 17: s2, str, 'APPLE'
+ 18: s3, str, 'banana'
+ 19: s4, str, 'pear'
+ 20: s5, str, 'banana'
+ 21: b1_1, boolean, False
+ 22: b1_2, boolean, False
+ 23: b1_3, boolean, True
+ 24: b1_4, boolean, False
+ 25: b1_5, boolean, True
+ 26: b1_6, boolean, False
+ 27: b1_7, boolean, True
+ 28: b1_8, boolean, False
+ 29: b1_9, boolean, True
+ 30: b2_1, boolean, True
+ 31: b2_2, boolean, True
+ 32: b2_3, boolean, False
+ 33: b2_4, boolean, True
+ 34: b2_5, boolean, False
+ 35: b2_6, boolean, True
+ 36: b2_7, boolean, False
+ 37: b2_8, boolean, True
+ 38: b2_9, boolean, False
+ 39: b3_1, boolean, False
+ 40: b3_2, boolean, False
+ 41: b3_3, boolean, False
+ 42: b3_4, boolean, True
+ 43: b3_5, boolean, False
+ 44: b3_6, boolean, True
+ 45: b3_7, boolean, False
+ 46: b3_8, boolean, True
+ 47: b3_9, boolean, False
+ 48: b4_1, boolean, True
+ 49: b4_2, boolean, True
+ 50: b4_3, boolean, False
+ 51: b4_4, boolean, False
+ 52: b4_5, boolean, False
+ 53: b4_6, boolean, False
+ 54: b4_7, boolean, False
+ 55: b4_8, boolean, False
+ 56: b4_9, boolean, False
+ 57: b5_1, boolean, False
+ 58: b5_2, boolean, False
+ 59: b5_3, boolean, True
+ 60: b5_4, boolean, True
+ 61: b5_5, boolean, True
+ 62: b5_6, boolean, True
+ 63: b5_7, boolean, True
+ 64: b5_8, boolean, True
+ 65: b5_9, boolean, True
+ 66: b6_1, boolean, True
+ 67: b6_2, boolean, True
+ 68: b6_3, boolean, True
+ 69: b6_4, boolean, False
+ 70: b6_5, boolean, True
+ 71: b6_6, boolean, False
+ 72: b6_7, boolean, True
+ 73: b6_8, boolean, False
+ 74: b6_9, boolean, True
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 9 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 10 **
+ 
+ 
+** Test Input:
+#
+# operators with integers -- semantic error
+#
+x = 100        # 100
+y = x - 140    # -40
+z = y          # -40
+a = 140 - z    # 180
+
+print("x is:")
+print(x)
+print('y is:')
+print(y)
+print('z is:')
+print(z)
+print('a is:')
+print(a)
+
+z = y * y      # 1600
+print("and now for z:")
+print(z)
+
+test1 = x + y    # 60
+x = 1
+test2 = x + y    # -39
+y = 123
+test3 = x * y    # 123
+test4 = z / 3    # 533
+test5 = z % 11   # 5
+x = 4
+test6 = test5 ** x   # 625
+
+print("test variables:")
+print(test1)
+print(test2)
+print(test3)
+print(test4)
+print(test5)
+print(test6)
+
+divisor = 3
+x = 126 / divisor
+y = 126 % divisorrr   ## error: undefined
+print(x)
+print(y)
+
+print()
+print('done')
+
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+x is:
+100
+y is:
+-40
+z is:
+-40
+a is:
+180
+and now for z:
+1600
+test variables:
+60
+-39
+123
+533
+5
+625
+**SEMANTIC ERROR: name 'divisorrr' is not defined (line 42)
+**done
+**MEMORY PRINT**
+Capacity: 16
+Num values: 11
+Contents:
+ 0: x, int, 42
+ 1: y, int, 123
+ 2: z, int, 1600
+ 3: a, int, 180
+ 4: test1, int, 60
+ 5: test2, int, -39
+ 6: test3, int, 123
+ 7: test4, int, 533
+ 8: test5, int, 5
+ 9: test6, int, 625
+ 10: divisor, int, 3
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 10 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 11 **
+ 
+ 
+** Test Input:
+#
+# operators with reals -- semantic error
+#
+x = 100.234        
+y = x - 140.9
+z = y         
+a = 1.5 - z    
+
+print("x is:")
+print(x)
+print('y is:')
+print(y)
+print('z is:')
+print(z)
+print('a is:')
+print(a)
+
+z = y * y
+print("and now for z:")
+print(z)
+
+test1 = x + y   
+x = 1.2
+test2 = x + y    
+y = 123.123
+test3 = x * y   
+test4 = xyz / 3.0    ## error: undefined
+test5 = z % 11.0
+x = 4.2
+test6 = test5 ** x
+
+print("test variables:")
+print(test1)
+print(test2)
+print(test3)
+print(test4)
+print(test5)
+print(test6)
+
+divisor = 3.0
+x = 126.9 / divisor
+y = 126.9 % divisor
+print(x)
+print(y)
+
+print()
+print('done')
+
+
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+x is:
+100.234000
+y is:
+-40.666000
+z is:
+-40.666000
+a is:
+42.166000
+and now for z:
+1653.723556
+**SEMANTIC ERROR: name 'xyz' is not defined (line 27)
+**done
+**MEMORY PRINT**
+Capacity: 8
+Num values: 7
+Contents:
+ 0: x, real, 1.200000
+ 1: y, real, 123.123000
+ 2: z, real, 1653.723556
+ 3: a, real, 42.166000
+ 4: test1, real, 59.568000
+ 5: test2, real, -39.466000
+ 6: test3, real, 147.747600
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 11 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 12 **
+ 
+ 
+** Test Input:
+#
+# int, real, string concat
+#
+print("starting")
+print("")
+
+x = 1
+y = 10.5
+z = "shorter"
+x = 2
+
+print(x)
+print(y)
+print(z)
+
+a = z + " string"
+print(a)
+
+b = x + 3.675
+c = y + 10
+d = x + 1
+some_var = "cs"
+
+print(b)
+print(c)
+print(d)
+
+e = z + "+a very long string of word that could be many many words --- did you dynamically allocate?"
+print(e)
+
+f = some_variable + " 211"      ## error: undefined
+print(f)
+
+x = 1
+y = 10.5
+z = "shorter"
+
+a = 10
+b = 3.675
+c = "cs "
+d = "a very long string of word that could be many many words --- did you dynamically allocate? "
+
+e = "211"
+print("")
+
+var1 = x + a
+var2 = b + y
+var3 = c + e
+var4 = d + z
+var5 = b + x
+var6 = a + y
+
+x = x + x
+b = b + b
+e = e + e
+
+print(var1)
+print(var2)
+print(var3)
+print(var4)
+print(var5)
+print(var6)
+print(x)
+print(b)
+print(e)
+
+print("")
+print("done")
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+starting
+
+2
+10.500000
+shorter
+shorter string
+5.675000
+20.500000
+3
+shorter+a very long string of word that could be many many words --- did you dynamically allocate?
+**SEMANTIC ERROR: name 'some_variable' is not defined (line 31)
+**done
+**MEMORY PRINT**
+Capacity: 16
+Num values: 9
+Contents:
+ 0: x, int, 2
+ 1: y, real, 10.500000
+ 2: z, str, 'shorter'
+ 3: a, str, 'shorter string'
+ 4: b, real, 5.675000
+ 5: c, real, 20.500000
+ 6: d, int, 3
+ 7: some_var, str, 'cs'
+ 8: e, str, 'shorter+a very long string of word that could be many many words --- did you dynamically allocate?'
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 12 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 13 **
+ 
+ 
+** Test Input:
+#
+# operators with mix of ints and reals -- semantic error
+#
+x = 100      
+y = x - 140.9
+z = y         
+a = 1 - z    
+
+print("x is:")
+print(x)
+print('y is:')
+print(y)
+print('z is:')
+print(z)
+print('a is:')
+print(a)
+
+z = a * x
+print("and now for z:")
+print(z)
+
+test1 = x + y   
+x = 1
+test2 = y + x  
+y = 123.123
+test3 = x * y   
+test4 = z / 3
+x = 1000
+test5 = z % 11.1
+x = 4
+test6 = test5 ** x
+
+print("test variables:")
+print(test1)
+print(test2)
+print(test3)
+print(test4)
+print(test5)
+print(test6)
+
+divisor = 3
+x = 126.5 / divisor
+y = 126.5 % divisor
+print(x)
+print(y)
+
+z = fred    ## error: undefined
+
+#
+# random comment
+#
+
+i = 100
+j = 200.9
+b1_1 = 100 < 200.9
+b1_2 = i < 200.9
+b1_3 = 100 < j
+b1_4 = i < j
+
+print()
+print('done')
+
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+x is:
+100
+y is:
+-40.900000
+z is:
+-40.900000
+a is:
+41.900000
+and now for z:
+4190.000000
+test variables:
+59.100000
+-39.900000
+123.123000
+1396.666667
+5.300000
+789.048100
+42.166667
+0.500000
+**SEMANTIC ERROR: name 'fred' is not defined (line 47)
+**done
+**MEMORY PRINT**
+Capacity: 16
+Num values: 11
+Contents:
+ 0: x, real, 42.166667
+ 1: y, real, 0.500000
+ 2: z, real, 4190.000000
+ 3: a, real, 41.900000
+ 4: test1, real, 59.100000
+ 5: test2, real, -39.900000
+ 6: test3, real, 123.123000
+ 7: test4, real, 1396.666667
+ 8: test5, real, 5.300000
+ 9: test6, real, 789.048100
+ 10: divisor, int, 3
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 13 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 14 **
+ 
+ 
+** Test Input:
+#
+# operators with integers -- semantic error
+#
+x = 100        # 100
+y = x - 140    # -40
+z = y          # -40
+a = 140 - z    # 180
+
+print("x is:")
+print(x)
+print('y is:')
+print(y)
+print('z is:')
+print(z)
+print('a is:')
+print(a)
+
+z = y * y      # 1600
+print("and now for z:")
+print(z)
+
+test1 = x + y    # 60
+x = 1
+test2 = x + y    # -39
+y = 123
+test3 = x * y    # 123
+test4 = z / 3    # 533
+test5 = z % 11   # 5
+x = 4
+test6 = test5 ** x   # 625
+
+print("test variables:")
+print(test1)
+print(test2)
+print(test3)
+print(test4)
+print(test5)
+print(test6)
+
+divisor = 3
+x = 126 / divisor
+y = 126 % divisor
+print(x)
+print(y)
+
+#
+# random comment
+#
+
+i = 100
+j = 200
+b1_1 = 100 < 200
+b1_2 = i < 200
+b1_3 = 100 < j
+b1_4 = i < j
+
+i = 123
+j = 123
+b2_1 = 123 != 123
+b2_2 = i != 123
+b2_3 = 123 != j
+b2_4 = i != j
+
+i = 90
+j = 90
+b3_1 = 90 >= 90
+b3_2 = i >= 90
+b3_3 = 90 >= j
+b3_4 = i >= j
+
+i = 123
+j = 123
+b4_1 = 123 == 123
+b4_2 = i == 123
+b4_3 = 123 == j
+b4_4 = i == j
+
+i = 100
+j = 200
+b5_1 = 100 > 200
+b5_2 = i > 200
+b5_3 = 100 > j
+b5_4 = i > j
+
+i = 200
+j = 100
+b6_1 = 200 > 100
+b6_2 = i > 100
+b6_3 = 200 > j
+b6_4 = i > j
+
+i = 123
+j = 12
+b7_1 = 123 != 12
+b7_2 = i != 12
+b7_3 = 123 != j
+b7_4 = i != j
+b7_5 = i != i
+
+i = 101
+j = 100
+b8_1 = 101 <= 100
+b8_2 = abc <= 100             ## error: undefined
+b8_3 = 101 <= j
+b8_4 = i <= j
+b8_5 = i <= i
+
+i = 12
+j = 123
+b9_1 = 12 == 123
+b9_2 = i == 123
+b9_3 = 12 == j
+b9_4 = i == j
+b9_5 = j == j
+
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+x is:
+100
+y is:
+-40
+z is:
+-40
+a is:
+180
+and now for z:
+1600
+test variables:
+60
+-39
+123
+533
+5
+625
+42
+0
+**SEMANTIC ERROR: name 'abc' is not defined (line 103)
+**done
+**MEMORY PRINT**
+Capacity: 64
+Num values: 43
+Contents:
+ 0: x, int, 42
+ 1: y, int, 0
+ 2: z, int, 1600
+ 3: a, int, 180
+ 4: test1, int, 60
+ 5: test2, int, -39
+ 6: test3, int, 123
+ 7: test4, int, 533
+ 8: test5, int, 5
+ 9: test6, int, 625
+ 10: divisor, int, 3
+ 11: i, int, 101
+ 12: j, int, 100
+ 13: b1_1, boolean, True
+ 14: b1_2, boolean, True
+ 15: b1_3, boolean, True
+ 16: b1_4, boolean, True
+ 17: b2_1, boolean, False
+ 18: b2_2, boolean, False
+ 19: b2_3, boolean, False
+ 20: b2_4, boolean, False
+ 21: b3_1, boolean, True
+ 22: b3_2, boolean, True
+ 23: b3_3, boolean, True
+ 24: b3_4, boolean, True
+ 25: b4_1, boolean, True
+ 26: b4_2, boolean, True
+ 27: b4_3, boolean, True
+ 28: b4_4, boolean, True
+ 29: b5_1, boolean, False
+ 30: b5_2, boolean, False
+ 31: b5_3, boolean, False
+ 32: b5_4, boolean, False
+ 33: b6_1, boolean, True
+ 34: b6_2, boolean, True
+ 35: b6_3, boolean, True
+ 36: b6_4, boolean, True
+ 37: b7_1, boolean, True
+ 38: b7_2, boolean, True
+ 39: b7_3, boolean, True
+ 40: b7_4, boolean, True
+ 41: b7_5, boolean, False
+ 42: b8_1, boolean, False
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 14 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 15 **
+ 
+ 
+** Test Input:
+#
+# operators with reals -- semantic error
+#
+x = 100.234        
+y = x - 140.9
+z = y         
+a = 1.5 - z    
+
+print("x is:")
+print(x)
+print('y is:')
+print(y)
+print('z is:')
+print(z)
+print('a is:')
+print(a)
+
+z = y * y
+print("and now for z:")
+print(z)
+
+test1 = x + y   
+x = 1.2
+test2 = x + y    
+y = 123.123
+test3 = x * y   
+test4 = z / 3.0
+test5 = z % 11.0
+x = 4.2
+test6 = test5 ** x
+
+print("test variables:")
+print(test1)
+print(test2)
+print(test3)
+print(test4)
+print(test5)
+print(test6)
+
+divisor = 3.0
+x = 126.9 / divisor
+y = 126.9 % divisor
+print(x)
+print(y)
+
+#
+# random comment
+#
+
+i = 100.2
+j = 200.9
+b1_1 = 100.2 < 200.9
+b1_2 = i < 200.9
+b1_3 = 100.2 < zebra       ## error: undefined
+b1_4 = i < j
+
+i = 123.0
+j = 123.0
+b2_1 = 123.0 != 123.0
+b2_2 = i != 123.0
+b2_3 = 123.0 != j
+b2_4 = i != j
+
+i = 90.5
+j = 90.5
+b3_1 = 90.5 >= 90.5
+b3_2 = i >= 90.4
+b3_3 = 90.4 >= j
+b3_4 = i >= j
+
+i = 123.625
+j = 123.625
+b4_1 = 123.625 == 123.625
+b4_2 = i == 123.5
+b4_3 = 123.5 == j
+b4_4 = i == j
+
+i = 100.5
+j = 200.5
+b5_1 = 100.5 > 200.5
+b5_2 = i > 200.5
+b5_3 = 100.5 > j
+b5_4 = i > j
+
+i = 200.5
+j = 100.5
+b6_1 = 200.5 > 100.5
+b6_2 = i > 100.625
+b6_3 = 200.625 > j
+b6_4 = i > j
+
+i = 123.123
+j = 12.5
+b7_1 = 123.123 != 123.5
+b7_2 = i != 123.999
+b7_3 = 12.5 != j
+b7_4 = i != j
+b7_5 = j != j
+
+i = 101.25
+j = 100.25
+b8_1 = 101.25 <= 100.25
+b8_2 = i <= 100.25
+b8_3 = 100.5 <= j
+b8_4 = i <= j
+b8_5 = i <= i
+
+i = 12.5
+j = 123.5
+b9_1 = 12.5 == 123.5
+b9_2 = i == 123.5
+b9_3 = 123.25 == j
+b9_4 = i == j
+b9_5 = j == j
+
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+x is:
+100.234000
+y is:
+-40.666000
+z is:
+-40.666000
+a is:
+42.166000
+and now for z:
+1653.723556
+test variables:
+59.568000
+-39.466000
+147.747600
+551.241185
+3.723556
+250.047857
+42.300000
+0.900000
+**SEMANTIC ERROR: name 'zebra' is not defined (line 54)
+**done
+**MEMORY PRINT**
+Capacity: 16
+Num values: 15
+Contents:
+ 0: x, real, 42.300000
+ 1: y, real, 0.900000
+ 2: z, real, 1653.723556
+ 3: a, real, 42.166000
+ 4: test1, real, 59.568000
+ 5: test2, real, -39.466000
+ 6: test3, real, 147.747600
+ 7: test4, real, 551.241185
+ 8: test5, real, 3.723556
+ 9: test6, real, 250.047857
+ 10: divisor, real, 3.000000
+ 11: i, real, 100.200000
+ 12: j, real, 200.900000
+ 13: b1_1, boolean, True
+ 14: b1_2, boolean, True
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 15 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 16 **
+ 
+ 
+** Test Input:
+#
+# int, real, string concat -- semantic error
+#
+print("starting")
+print("")
+
+x = 1
+y = 10.5
+z = "shorter"
+x = 2
+
+print(x)
+print(y)
+print(z)
+
+a = z + " string"
+print(a)
+
+b = x + 3.675
+c = y + 10
+d = x + 1
+some_var = "cs"
+
+print(b)
+print(c)
+print(d)
+
+e = z + "+a very long string of word that could be many many words --- did you dynamically allocate?"
+print(e)
+
+f = some_var + " 211"
+print(f)
+
+x = 1
+y = 10.5
+z = "shorter"
+
+a = 10
+b = 3.675
+c = "cs "
+d = "a very long string of word that could be many many words --- did you dynamically allocate? "
+
+e = "211"
+print("")
+
+var1 = x + a
+var2 = b + y
+var3 = c + e
+var4 = d + z
+var5 = b + x
+var6 = a + y
+
+x = x + x
+b = b + b
+e = e + e
+
+print(var1)
+print(var2)
+print(var3)
+print(var4)
+print(var5)
+print(var6)
+print(x)
+print(b)
+print(e)
+
+s1 = "apple"
+s2 = "APPLE"
+s3 = "banana"
+s4 = "pear"
+s5 = "banana"
+
+b1_1 = s1 == s2
+b1_2 = s1 == "APPLE"
+b1_3 = s1 == "apple"
+b1_4 = s1 == "applesauce"
+b1_5 = "APPLE" == s2
+b1_6 = "APPLE" == s123       ## error: undefined:
+b1_7 = s3 == s5
+b1_8 = s3 == s4
+b1_9 = s3 == s3
+
+b2_1 = s1 != s2
+b2_2 = s1 != "APPLE"
+b2_3 = s1 != "apple"
+b2_4 = s1 != "applesauce"
+b2_5 = "APPLE" != s2
+b2_6 = "APPLE" != s1
+b2_7 = s3 != s5
+b2_8 = s3 != s4
+b2_9 = s3 != s3
+
+b3_1 = s1 < s2
+b3_2 = s1 < "APPLE"
+b3_3 = s1 < "apple"
+b3_4 = s1 < "applesauce"
+b3_5 = "APPLE" < s2
+b3_6 = "APPLE" < s1
+b3_7 = s3 < s5
+b3_8 = s3 < s4
+b3_9 = s3 < s3
+
+b4_1 = s1 > s2
+b4_2 = s1 > "APPLE"
+b4_3 = s1 > "apple"
+b4_4 = s1 > "applesauce"
+b4_5 = "APPLE" > s2
+b4_6 = "APPLE" > s1
+b4_7 = s3 > s5
+b4_8 = s3 > s4
+b4_9 = s3 > s3
+
+b5_1 = s1 <= s2
+b5_2 = s1 <= "APPLE"
+b5_3 = s1 <= "apple"
+b5_4 = s1 <= "applesauce"
+b5_5 = "APPLE" <= s2
+b5_6 = "APPLE" <= s1
+b5_7 = s3 <= s5
+b5_8 = s3 <= s4
+b5_9 = s3 <= s3
+
+b6_1 = s1 >= s2
+b6_2 = s1 >= "APPLE"
+b6_3 = s1 >= "apple"
+b6_4 = s1 >= "applesauce"
+b6_5 = "APPLE" >= s2
+b6_6 = "APPLE" >= s1
+b6_7 = s3 >= s5
+b6_8 = s3 >= s4
+b6_9 = s3 >= s3
+
+print("")
+print("done")
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+starting
+
+2
+10.500000
+shorter
+shorter string
+5.675000
+20.500000
+3
+shorter+a very long string of word that could be many many words --- did you dynamically allocate?
+cs 211
+
+11
+14.175000
+cs 211
+a very long string of word that could be many many words --- did you dynamically allocate? shorter
+4.675000
+20.500000
+2
+7.350000
+211211
+**SEMANTIC ERROR: name 's123' is not defined (line 78)
+**done
+**MEMORY PRINT**
+Capacity: 32
+Num values: 26
+Contents:
+ 0: x, int, 2
+ 1: y, real, 10.500000
+ 2: z, str, 'shorter'
+ 3: a, int, 10
+ 4: b, real, 7.350000
+ 5: c, str, 'cs '
+ 6: d, str, 'a very long string of word that could be many many words --- did you dynamically allocate? '
+ 7: some_var, str, 'cs'
+ 8: e, str, '211211'
+ 9: f, str, 'cs 211'
+ 10: var1, int, 11
+ 11: var2, real, 14.175000
+ 12: var3, str, 'cs 211'
+ 13: var4, str, 'a very long string of word that could be many many words --- did you dynamically allocate? shorter'
+ 14: var5, real, 4.675000
+ 15: var6, real, 20.500000
+ 16: s1, str, 'apple'
+ 17: s2, str, 'APPLE'
+ 18: s3, str, 'banana'
+ 19: s4, str, 'pear'
+ 20: s5, str, 'banana'
+ 21: b1_1, boolean, False
+ 22: b1_2, boolean, False
+ 23: b1_3, boolean, True
+ 24: b1_4, boolean, False
+ 25: b1_5, boolean, True
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 16 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 17 **
+ 
+ 
+** Test Input:
+#
+# int, real, string concat -- semantic error
+#
+print("starting")
+print("")
+
+x = 1
+y = 10.5
+z = "shorter"
+x = 2
+
+print(x)
+print(y)
+print(z)
+
+a = z + " string"
+print(a)
+
+b = x + 3.675
+c = y + 10
+d = x + 1
+some_var = "cs"
+
+print(b)
+print(c)
+print(d)
+
+e = z + "+a very long string of word that could be many many words --- did you dynamically allocate?"
+print(e)
+
+f = some_var + " 211"
+print(f)
+
+x = 1
+y = 10.5
+z = "shorter"
+
+a = 10
+b = 3.675
+c = "cs "
+d = "a very long string of word that could be many many words --- did you dynamically allocate? "
+
+e = "211"
+print("")
+
+var1 = x + a
+var2 = b + y
+var3 = c + e
+var4 = d + z
+var5 = b + x
+var6 = a + y
+
+x = x + x
+b = b + b
+e = e + e
+
+print(var1)
+print(var2)
+print(var3)
+print(var4)
+print(var5)
+print(var6)
+print(x)
+print(b)
+print(e)
+
+s1 = "apple"
+s2 = "APPLE"
+s3 = "banana"
+s4 = "pear"
+s5 = "banana"
+
+b1_1 = s1 == s2
+b1_2 = s1 == "APPLE"
+b1_3 = s1 == "apple"
+b1_4 = s1 == "applesauce"
+b1_5 = "APPLE" == s2
+b1_6 = "APPLE" == s1       
+b1_7 = s3 == s5
+b1_8 = s3 == s4
+b1_9 = s3 == s3
+
+b2_1 = s1 != s2
+b2_2 = s1 != "APPLE"
+b2_3 = s1 != "apple"
+b2_4 = s1 != "applesauce"
+b2_5 = "APPLE" != s2
+b2_6 = "APPLE" != s1
+b2_7 = s3 != s5
+b2_8 = s3 != s4
+b2_9 = testing123 != s3      ## error: undefined:
+
+b3_1 = s1 < s2
+b3_2 = s1 < "APPLE"
+b3_3 = s1 < "apple"
+b3_4 = s1 < "applesauce"
+b3_5 = "APPLE" < s2
+b3_6 = "APPLE" < s1
+b3_7 = s3 < s5
+b3_8 = s3 < s4
+b3_9 = s3 < s3
+
+b4_1 = s1 > s2
+b4_2 = s1 > "APPLE"
+b4_3 = s1 > "apple"
+b4_4 = s1 > "applesauce"
+b4_5 = "APPLE" > s2
+b4_6 = "APPLE" > s1
+b4_7 = s3 > s5
+b4_8 = s3 > s4
+b4_9 = s3 > s3
+
+b5_1 = s1 <= s2
+b5_2 = s1 <= "APPLE"
+b5_3 = s1 <= "apple"
+b5_4 = s1 <= "applesauce"
+b5_5 = "APPLE" <= s2
+b5_6 = "APPLE" <= s1
+b5_7 = s3 <= s5
+b5_8 = s3 <= s4
+b5_9 = s3 <= s3
+
+b6_1 = s1 >= s2
+b6_2 = s1 >= "APPLE"
+b6_3 = s1 >= "apple"
+b6_4 = s1 >= "applesauce"
+b6_5 = "APPLE" >= s2
+b6_6 = "APPLE" >= s1
+b6_7 = s3 >= s5
+b6_8 = s3 >= s4
+b6_9 = s3 >= s3
+
+print("")
+print("done")
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+starting
+
+2
+10.500000
+shorter
+shorter string
+5.675000
+20.500000
+3
+shorter+a very long string of word that could be many many words --- did you dynamically allocate?
+cs 211
+
+11
+14.175000
+cs 211
+a very long string of word that could be many many words --- did you dynamically allocate? shorter
+4.675000
+20.500000
+2
+7.350000
+211211
+**SEMANTIC ERROR: name 'testing123' is not defined (line 91)
+**done
+**MEMORY PRINT**
+Capacity: 64
+Num values: 38
+Contents:
+ 0: x, int, 2
+ 1: y, real, 10.500000
+ 2: z, str, 'shorter'
+ 3: a, int, 10
+ 4: b, real, 7.350000
+ 5: c, str, 'cs '
+ 6: d, str, 'a very long string of word that could be many many words --- did you dynamically allocate? '
+ 7: some_var, str, 'cs'
+ 8: e, str, '211211'
+ 9: f, str, 'cs 211'
+ 10: var1, int, 11
+ 11: var2, real, 14.175000
+ 12: var3, str, 'cs 211'
+ 13: var4, str, 'a very long string of word that could be many many words --- did you dynamically allocate? shorter'
+ 14: var5, real, 4.675000
+ 15: var6, real, 20.500000
+ 16: s1, str, 'apple'
+ 17: s2, str, 'APPLE'
+ 18: s3, str, 'banana'
+ 19: s4, str, 'pear'
+ 20: s5, str, 'banana'
+ 21: b1_1, boolean, False
+ 22: b1_2, boolean, False
+ 23: b1_3, boolean, True
+ 24: b1_4, boolean, False
+ 25: b1_5, boolean, True
+ 26: b1_6, boolean, False
+ 27: b1_7, boolean, True
+ 28: b1_8, boolean, False
+ 29: b1_9, boolean, True
+ 30: b2_1, boolean, True
+ 31: b2_2, boolean, True
+ 32: b2_3, boolean, False
+ 33: b2_4, boolean, True
+ 34: b2_5, boolean, False
+ 35: b2_6, boolean, True
+ 36: b2_7, boolean, False
+ 37: b2_8, boolean, True
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 17 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 18 **
+ 
+ 
+** Test Input:
+#
+# operators with integers -- semantic error
+#
+x = 100        # 100
+y = x - 140    # -40
+z = y          # -40
+a = 140 - z    # 180
+
+print("x is:")
+print(x)
+print('y is:')
+print(y)
+print('z is:')
+print(z)
+print('a is:')
+print(a)
+
+z = y * y      # 1600
+print("and now for z:")
+print(z)
+
+test1 = x + y    # 60
+x = 1
+test2 = x + y    # -39
+y = 123
+test3 = x * y    # 123
+test4 = z / 3    # 533
+test5 = z % 11   # 5
+x = 4
+test6 = test5 ** "x"   ## error: type error
+
+print("test variables:")
+print(test1)
+print(test2)
+print(test3)
+print(test4)
+print(test5)
+print(test6)
+
+divisor = 3
+x = 126 / divisor
+y = 126 % divisor
+print(x)
+print(y)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+x is:
+100
+y is:
+-40
+z is:
+-40
+a is:
+180
+and now for z:
+1600
+**SEMANTIC ERROR: invalid operand types (line 30)
+**done
+**MEMORY PRINT**
+Capacity: 16
+Num values: 9
+Contents:
+ 0: x, int, 4
+ 1: y, int, 123
+ 2: z, int, 1600
+ 3: a, int, 180
+ 4: test1, int, 60
+ 5: test2, int, -39
+ 6: test3, int, 123
+ 7: test4, int, 533
+ 8: test5, int, 5
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 18 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 19 **
+ 
+ 
+** Test Input:
+#
+# operators with integers -- semantic error
+#
+x = 100        # 100
+y = x - 140    # -40
+z = y          # -40
+a = 140 - z    # 180
+
+print("x is:")
+print(x)
+print('y is:')
+print(y)
+print('z is:')
+print(z)
+print('a is:')
+print(a)
+
+z = y * y      # 1600
+print("and now for z:")
+print(z)
+
+test1 = x + y    # 60
+x = 1
+test2 = x + y    # -39
+y = True
+test3 = x * y    # error: types
+test4 = z / 3    # 533
+test5 = z % 11   # 5
+x = 4
+test6 = test5 ** x  
+
+print("test variables:")
+print(test1)
+print(test2)
+print(test3)
+print(test4)
+print(test5)
+print(test6)
+
+divisor = 3
+x = 126 / divisor
+y = 126 % divisor
+print(x)
+print(y)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+x is:
+100
+y is:
+-40
+z is:
+-40
+a is:
+180
+and now for z:
+1600
+**SEMANTIC ERROR: invalid operand types (line 26)
+**done
+**MEMORY PRINT**
+Capacity: 8
+Num values: 6
+Contents:
+ 0: x, int, 1
+ 1: y, boolean, True
+ 2: z, int, 1600
+ 3: a, int, 180
+ 4: test1, int, 60
+ 5: test2, int, -39
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 19 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 20 **
+ 
+ 
+** Test Input:
+#
+# operators with mix of ints and reals -- semantic error
+#
+x = 100      
+y = x - 140.9
+z = y         
+a = 1 - z    
+
+print("x is:")
+print(x)
+print('y is:')
+print(y)
+print('z is:')
+print(z)
+print('a is:')
+print(a)
+
+z = a * x
+print("and now for z:")
+print(z)
+
+test1 = x + y   
+x = 1
+test2 = y + x  
+y = 123.123
+test3 = x * y   
+test4 = z / 3
+x = "1000"
+test5 = x % 11.1       ## error: type
+x = 4
+test6 = test5 ** x
+
+print("test variables:")
+print(test1)
+print(test2)
+print(test3)
+print(test4)
+print(test5)
+print(test6)
+
+divisor = 3
+x = 126.5 / divisor
+y = 126.5 % divisor
+print(x)
+print(y)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+x is:
+100
+y is:
+-40.900000
+z is:
+-40.900000
+a is:
+41.900000
+and now for z:
+4190.000000
+**SEMANTIC ERROR: invalid operand types (line 29)
+**done
+**MEMORY PRINT**
+Capacity: 8
+Num values: 8
+Contents:
+ 0: x, str, '1000'
+ 1: y, real, 123.123000
+ 2: z, real, 4190.000000
+ 3: a, real, 41.900000
+ 4: test1, real, 59.100000
+ 5: test2, real, -39.900000
+ 6: test3, real, 123.123000
+ 7: test4, real, 1396.666667
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 20 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 21 **
+ 
+ 
+** Test Input:
+#
+# int, real, string concat -- semantic error
+#
+print("starting")
+print("")
+
+x = 1
+y = 10.5
+z = "shorter"
+x = 2
+
+print(x)
+print(y)
+print(z)
+
+a = z + " string"
+print(a)
+
+b = x + 3.675
+c = y + 10
+d = x + 1
+some_var = "cs"
+
+print(b)
+print(c)
+print(d)
+
+e = z + "+a very long string of word that could be many many words --- did you dynamically allocate?"
+print(e)
+
+f = some_var + " 211"
+print(f)
+
+x = 1
+y = 10.5
+z = "shorter"
+
+a = 10
+b = 3.675
+c = "cs "
+d = "a very long string of word that could be many many words --- did you dynamically allocate? "
+
+e = "211"
+print("")
+
+var1 = x + a
+var2 = b + y
+var3 = c + e
+var4 = d + z
+var5 = b + x
+var6 = c + y     ## error: types
+
+x = x + x
+b = b + b
+e = e + e
+
+print(var1)
+print(var2)
+print(var3)
+print(var4)
+print(var5)
+print(var6)
+print(x)
+print(b)
+print(e)
+
+
+print("")
+print("done")
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+starting
+
+2
+10.500000
+shorter
+shorter string
+5.675000
+20.500000
+3
+shorter+a very long string of word that could be many many words --- did you dynamically allocate?
+cs 211
+
+**SEMANTIC ERROR: invalid operand types (line 51)
+**done
+**MEMORY PRINT**
+Capacity: 16
+Num values: 15
+Contents:
+ 0: x, int, 1
+ 1: y, real, 10.500000
+ 2: z, str, 'shorter'
+ 3: a, int, 10
+ 4: b, real, 3.675000
+ 5: c, str, 'cs '
+ 6: d, str, 'a very long string of word that could be many many words --- did you dynamically allocate? '
+ 7: some_var, str, 'cs'
+ 8: e, str, '211'
+ 9: f, str, 'cs 211'
+ 10: var1, int, 11
+ 11: var2, real, 14.175000
+ 12: var3, str, 'cs 211'
+ 13: var4, str, 'a very long string of word that could be many many words --- did you dynamically allocate? shorter'
+ 14: var5, real, 4.675000
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 21 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 22 **
+ 
+ 
+** Test Input:
+#
+# int, real, string concat -- semantic error
+#
+print("starting")
+print("")
+
+x = 1
+y = 10.5
+z = "shorter"
+x = 2
+
+print(x)
+print(y)
+print(z)
+
+a = z + " string"
+print(a)
+
+b = x + 3.675
+c = y + 10
+d = x + 1
+some_var = "cs"
+
+print(b)
+print(c)
+print(d)
+
+e = z + "+a very long string of word that could be many many words --- did you dynamically allocate?"
+print(e)
+
+f = some_var + " 211"
+print(f)
+
+x = 1
+y = 10.5
+z = "shorter"
+
+a = 10
+b = 3.675
+c = "cs "
+d = "a very long string of word that could be many many words --- did you dynamically allocate? "
+
+e = "211"
+print("")
+
+var1 = True
+var2 = False
+var3 = var1 + var2    ## error: types
+
+print(var1)
+print(var2)
+print(var3)
+
+print("")
+print("done")
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+starting
+
+2
+10.500000
+shorter
+shorter string
+5.675000
+20.500000
+3
+shorter+a very long string of word that could be many many words --- did you dynamically allocate?
+cs 211
+
+**SEMANTIC ERROR: invalid operand types (line 48)
+**done
+**MEMORY PRINT**
+Capacity: 16
+Num values: 12
+Contents:
+ 0: x, int, 1
+ 1: y, real, 10.500000
+ 2: z, str, 'shorter'
+ 3: a, int, 10
+ 4: b, real, 3.675000
+ 5: c, str, 'cs '
+ 6: d, str, 'a very long string of word that could be many many words --- did you dynamically allocate? '
+ 7: some_var, str, 'cs'
+ 8: e, str, '211'
+ 9: f, str, 'cs 211'
+ 10: var1, boolean, True
+ 11: var2, boolean, False
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 22 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 23 **
+ 
+ 
+** Test Input:
+#
+# operators with integers -- semantic error
+#
+x = 100        # 100
+y = x - 140    # -40
+z = y          # -40
+a = 140 - z    # 180
+
+print("x is:")
+print(x)
+print('y is:')
+print(y)
+print('z is:')
+print(z)
+print('a is:')
+print(a)
+
+z = y * y      # 1600
+print("and now for z:")
+print(z)
+
+test1 = x + y    # 60
+x = 1
+test2 = x + y    # -39
+y = 123
+test3 = x * y    # 123
+test4 = z / 3    # 533
+test5 = z % 11   # 5
+x = 4
+test6 = test5 ** x   # 625
+
+print("test variables:")
+print(test1)
+print(test2)
+print(test3)
+print(test4)
+print(test5)
+print(test6)
+
+divisor = 3
+x = 126 / divisor
+y = 126 % divisor
+print(x)
+print(y)
+
+#
+# random comment
+#
+
+i = 100
+j = 200
+b1_1 = 100 < 200
+b1_2 = i < 200
+b1_3 = 100 < j
+b1_4 = i < j
+
+i = 123
+j = 123
+b2_1 = 123 != 123
+b2_2 = i != 123
+b2_3 = 123 != j
+b2_4 = i != j
+
+i = 90
+j = True
+b3_1 = 90 >= 90
+b3_2 = i >= 90
+b3_3 = 90 >= j     ## error: types
+b3_4 = i >= j
+
+i = 123
+j = 123
+b4_1 = 123 == 123
+b4_2 = i == 123
+b4_3 = 123 == j
+b4_4 = i == j
+
+i = 100
+j = 200
+b5_1 = 100 > 200
+b5_2 = i > 200
+b5_3 = 100 > j
+b5_4 = i > j
+
+i = 200
+j = 100
+b6_1 = 200 > 100
+b6_2 = i > 100
+b6_3 = 200 > j
+b6_4 = i > j
+
+i = 123
+j = 12
+b7_1 = 123 != 12
+b7_2 = i != 12
+b7_3 = 123 != j
+b7_4 = i != j
+b7_5 = i != i
+
+i = 101
+j = 100
+b8_1 = 101 <= 100
+b8_2 = i <= 100
+b8_3 = 101 <= j
+b8_4 = i <= j
+b8_5 = i <= i
+
+i = 12
+j = 123
+b9_1 = 12 == 123
+b9_2 = i == 123
+b9_3 = 12 == j
+b9_4 = i == j
+b9_5 = j == j
+
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+x is:
+100
+y is:
+-40
+z is:
+-40
+a is:
+180
+and now for z:
+1600
+test variables:
+60
+-39
+123
+533
+5
+625
+42
+0
+**SEMANTIC ERROR: invalid operand types (line 68)
+**done
+**MEMORY PRINT**
+Capacity: 32
+Num values: 23
+Contents:
+ 0: x, int, 42
+ 1: y, int, 0
+ 2: z, int, 1600
+ 3: a, int, 180
+ 4: test1, int, 60
+ 5: test2, int, -39
+ 6: test3, int, 123
+ 7: test4, int, 533
+ 8: test5, int, 5
+ 9: test6, int, 625
+ 10: divisor, int, 3
+ 11: i, int, 90
+ 12: j, boolean, True
+ 13: b1_1, boolean, True
+ 14: b1_2, boolean, True
+ 15: b1_3, boolean, True
+ 16: b1_4, boolean, True
+ 17: b2_1, boolean, False
+ 18: b2_2, boolean, False
+ 19: b2_3, boolean, False
+ 20: b2_4, boolean, False
+ 21: b3_1, boolean, True
+ 22: b3_2, boolean, True
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 23 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 24 **
+ 
+ 
+** Test Input:
+#
+# operators with integers -- semantic error
+#
+x = 100        # 100
+y = x - 140    # -40
+z = y          # -40
+a = 140 - z    # 180
+
+print("x is:")
+print(x)
+print('y is:')
+print(y)
+print('z is:')
+print(z)
+print('a is:')
+print(a)
+
+z = y * y      # 1600
+print("and now for z:")
+print(z)
+
+test1 = x + y    # 60
+x = 1
+test2 = x + y    # -39
+y = 123
+test3 = x * y    # 123
+test4 = z / 3    # 533
+test5 = z % 11   # 5
+x = 4
+test6 = test5 ** x   # 625
+
+print("test variables:")
+print(test1)
+print(test2)
+print(test3)
+print(test4)
+print(test5)
+print(test6)
+
+divisor = 3
+x = 126 / divisor
+y = 126 % divisor
+print(x)
+print(y)
+
+#
+# random comment
+#
+
+i = 100
+j = 200
+b1_1 = 100 < 200
+b1_2 = i < 200
+b1_3 = 100 < j
+b1_4 = i < j
+
+i = 123.456
+j = "123"
+b2 = i != j        ## error: types
+
+i = 90
+j = 90
+b3_1 = 90 >= 90
+b3_2 = i >= 90
+b3_3 = 90 >= j  
+b3_4 = i >= j
+
+i = 123
+j = 123
+b4_1 = 123 == 123
+b4_2 = i == 123
+b4_3 = 123 == j
+b4_4 = i == j
+
+i = 100
+j = 200
+b5_1 = 100 > 200
+b5_2 = i > 200
+b5_3 = 100 > j
+b5_4 = i > j
+
+i = 200
+j = 100
+b6_1 = 200 > 100
+b6_2 = i > 100
+b6_3 = 200 > j
+b6_4 = i > j
+
+i = 123
+j = 12
+b7_1 = 123 != 12
+b7_2 = i != 12
+b7_3 = 123 != j
+b7_4 = i != j
+b7_5 = i != i
+
+i = 101
+j = 100
+b8_1 = 101 <= 100
+b8_2 = i <= 100
+b8_3 = 101 <= j
+b8_4 = i <= j
+b8_5 = i <= i
+
+i = 12
+j = 123
+b9_1 = 12 == 123
+b9_2 = i == 123
+b9_3 = 12 == j
+b9_4 = i == j
+b9_5 = j == j
+
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+x is:
+100
+y is:
+-40
+z is:
+-40
+a is:
+180
+and now for z:
+1600
+test variables:
+60
+-39
+123
+533
+5
+625
+42
+0
+**SEMANTIC ERROR: invalid operand types (line 59)
+**done
+**MEMORY PRINT**
+Capacity: 32
+Num values: 17
+Contents:
+ 0: x, int, 42
+ 1: y, int, 0
+ 2: z, int, 1600
+ 3: a, int, 180
+ 4: test1, int, 60
+ 5: test2, int, -39
+ 6: test3, int, 123
+ 7: test4, int, 533
+ 8: test5, int, 5
+ 9: test6, int, 625
+ 10: divisor, int, 3
+ 11: i, real, 123.456000
+ 12: j, str, '123'
+ 13: b1_1, boolean, True
+ 14: b1_2, boolean, True
+ 15: b1_3, boolean, True
+ 16: b1_4, boolean, True
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 24 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 25 **
+ 
+ 
+** Test Python:
+#
+# input, int, float
+#
+print("Starting")
+
+x = 1
+y = 10.5
+z = "fruit: "
+print(x)
+print(y)
+print(z)
+
+s = input("enter a number> ")
+print()
+y = int(s)
+y = 2 * y
+
+print(y)
+print(s)
+
+s2 = input("another number> ")
+print()
+x = float(s2)
+x = x ** 2.0
+
+print(x)
+print(s2)
+
+z2 = input("enter whatever you want> ")
+print()
+z = z + z2
+
+print(z)
+
+print("Done")
+ 
+ 
+** Test Keyboard Input:
+7891
+45.625
+apples bananas strawberries
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+Starting
+1
+10.500000
+fruit: 
+enter a number> 
+15782
+7891
+another number> 
+2081.640625
+45.625
+enter whatever you want> 
+fruit: apples bananas strawberries
+Done
+**done
+**MEMORY PRINT**
+Capacity: 8
+Num values: 6
+Contents:
+ 0: x, real, 2081.640625
+ 1: y, int, 15782
+ 2: z, str, 'fruit: apples bananas strawberries'
+ 3: s, str, '7891'
+ 4: s2, str, '45.625'
+ 5: z2, str, 'apples bananas strawberries'
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 25 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 26 **
+ 
+ 
+** Test Python:
+#
+# input, int, float --- with 0 and 0.00 as inputs
+#
+print("Starting")
+
+x = 1
+y = 10.5
+z = "fruit: "
+print(x)
+print(y)
+print(z)
+
+s = input("enter a number> ")
+print()
+y = int(s)
+y = 10 + y
+
+print(y)
+print(s)
+
+s2 = input("another number> ")
+print()
+x = float(s2)
+x = x - y
+
+print(x)
+print(s2)
+
+z2 = input("enter whatever you want> ")
+print()
+z = z + z2
+
+print(z)
+
+print("Done")
+ 
+ 
+** Test Keyboard Input:
+0
+0.00
+apples bananas pears strawberries
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+Starting
+1
+10.500000
+fruit: 
+enter a number> 
+10
+0
+another number> 
+-10.000000
+0.00
+enter whatever you want> 
+fruit: apples bananas pears strawberries
+Done
+**done
+**MEMORY PRINT**
+Capacity: 8
+Num values: 6
+Contents:
+ 0: x, real, -10.000000
+ 1: y, int, 10
+ 2: z, str, 'fruit: apples bananas pears strawberries'
+ 3: s, str, '0'
+ 4: s2, str, '0.00'
+ 5: z2, str, 'apples bananas pears strawberries'
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 26 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 27 **
+ 
+ 
+** Test Python:
+#
+# input, int, float --- with invalid numeric input
+#
+print("Starting")
+
+x = 3
+y = 10.5
+z = " END"
+print(x)
+print(y)
+print(z)
+
+z2 = input("enter some text> ")
+print()
+z = z2 + z
+
+print(z)
+
+s = input("enter a number> ")
+print()
+y = int(s)
+y = 2 * y
+
+print(y)
+print(s)
+
+s = input("enter a number> ")
+print()
+y = int(s)
+y = y + x
+
+print(y)
+print(s)
+
+s2 = input("another number> ")
+print()
+x = float(s2)
+x = x ** 2.0
+
+print(x)
+print(s2)
+
+print("Done")
+ 
+ 
+** Test Keyboard Input:
+apples bananas pears strawberries
+1234
+-99
+apple
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+Starting
+3
+10.500000
+ END
+enter some text> 
+apples bananas pears strawberries END
+enter a number> 
+2468
+1234
+enter a number> 
+-96
+-99
+another number> 
+**SEMANTIC ERROR: invalid string for float() (line 37)
+**done
+**MEMORY PRINT**
+Capacity: 8
+Num values: 6
+Contents:
+ 0: x, int, 3
+ 1: y, int, -96
+ 2: z, str, 'apples bananas pears strawberries END'
+ 3: z2, str, 'apples bananas pears strawberries'
+ 4: s, str, '-99'
+ 5: s2, str, 'apple'
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 27 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 28 **
+ 
+ 
+** Test Python:
+#
+# input, int, float --- with invalid numeric input
+#
+print("Starting")
+
+x = 3
+y = 10.5
+z = "## "
+z2 = " ##"
+print(x)
+print(y)
+print(z)
+
+z3 = input("enter some text> ")
+print()
+z = z + z3
+z = z + z2
+
+print(z)
+
+s = input("enter a number> ")
+print()
+y = int(s)
+y = 2 * y
+
+print(y)
+print(s)
+
+s = input("enter a number> ")
+print()
+y = int(s)
+y = y + x
+
+print(y)
+print(s)
+
+s2 = input("another number> ")
+print()
+x = float(s2)
+x = x ** 2.0
+
+print(x)
+print(s2)
+
+print("Done")
+ 
+ 
+** Test Keyboard Input:
+this is a long string, but in reality not that long in the big scheme of things
+-123
+apple
+3.14
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+Starting
+3
+10.500000
+## 
+enter some text> 
+## this is a long string, but in reality not that long in the big scheme of things ##
+enter a number> 
+-246
+-123
+enter a number> 
+**SEMANTIC ERROR: invalid string for int() (line 31)
+**done
+**MEMORY PRINT**
+Capacity: 8
+Num values: 6
+Contents:
+ 0: x, int, 3
+ 1: y, int, -246
+ 2: z, str, '## this is a long string, but in reality not that long in the big scheme of things ##'
+ 3: z2, str, ' ##'
+ 4: z3, str, 'this is a long string, but in reality not that long in the big scheme of things'
+ 5: s, str, 'apple'
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 28 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 29 **
+ 
+ 
+** Test Python:
+#
+# loop with input:
+#
+s = input('Enter an integer> ')
+print()
+N = int(s)
+result = "project03: "
+
+i = 1
+x = 3.14159
+print('start of loop')
+while i <= N:
+{
+   letter = input('enter a letter> ')
+   print()
+   result = result + letter
+   print(result)
+   x = 0.123456789 + x
+   print(x)
+   i = i + 1
+}
+print('end of loop')
+print(i)
+ 
+ 
+** Test Keyboard Input:
+8
+a
+c
+M
+q
+T
+z
+X
+B
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+Enter an integer> 
+start of loop
+enter a letter> 
+project03: a
+3.265047
+enter a letter> 
+project03: ac
+3.388504
+enter a letter> 
+project03: acM
+3.511960
+enter a letter> 
+project03: acMq
+3.635417
+enter a letter> 
+project03: acMqT
+3.758874
+enter a letter> 
+project03: acMqTz
+3.882331
+enter a letter> 
+project03: acMqTzX
+4.005788
+enter a letter> 
+project03: acMqTzXB
+4.129244
+end of loop
+9
+**done
+**MEMORY PRINT**
+Capacity: 8
+Num values: 6
+Contents:
+ 0: s, str, '8'
+ 1: N, int, 8
+ 2: result, str, 'project03: acMqTzXB'
+ 3: i, int, 9
+ 4: x, real, 4.129244
+ 5: letter, str, 'B'
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 29 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 30 **
+ 
+ 
+** Test Input:
+#
+# loops
+#
+print("STARTING")
+print()
+
+x = 10
+
+while x <= 22:
+{
+   print(x)
+   x = x + 1
+   print(x)
+   x = x + 2
+   print(x)
+   x = 1 + x
+}
+
+print()
+print("DONE")
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+STARTING
+
+10
+11
+13
+14
+15
+17
+18
+19
+21
+22
+23
+25
+
+DONE
+**done
+**MEMORY PRINT**
+Capacity: 4
+Num values: 1
+Contents:
+ 0: x, int, 26
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 30 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 31 **
+ 
+ 
+** Test Input:
+#
+# while loops
+#
+print("starting")
+print("")
+
+print("loop #1:")
+x = 100
+while 112 > x:
+{
+   print(x)
+   x = x + 1
+   x = 2 + x
+   pass
+   pass
+   x = x - 1
+   pass
+   x = x + 2
+   pass
+}
+print(x)
+print()
+
+print("loop #2:")
+y = 0 - 2.5
+z = 0 - 5.5
+while z <= y:
+{
+   pass
+   print(y)
+   pass
+   y = y - 0.5
+}
+print(y)
+print()
+
+print("loop #3:")
+z = "looping with a string?"
+while z != "looping with a string?????????":
+{
+   z = z + "?"
+   print(z)
+}
+print(z)
+
+print("")
+print("done")
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+starting
+
+loop #1:
+100
+104
+108
+112
+
+loop #2:
+-2.500000
+-3.000000
+-3.500000
+-4.000000
+-4.500000
+-5.000000
+-5.500000
+-6.000000
+
+loop #3:
+looping with a string??
+looping with a string???
+looping with a string????
+looping with a string?????
+looping with a string??????
+looping with a string???????
+looping with a string????????
+looping with a string?????????
+looping with a string?????????
+
+done
+**done
+**MEMORY PRINT**
+Capacity: 4
+Num values: 3
+Contents:
+ 0: x, int, 112
+ 1: y, real, -6.000000
+ 2: z, str, 'looping with a string?????????'
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 31 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 32 **
+ 
+ 
+** Test Input:
+#
+# nested loops
+#
+print("NESTED LOOPS")
+print("")
+
+i = 1
+
+while i != 5:
+{
+  j = i + 1
+  
+  while j <= 7:
+  {
+     print("j")  
+     print(j)
+     j = j + 1
+  }
+
+  i = i + 1
+  print("")
+  
+  k = i
+  while k > 2:
+  {
+      print("k")  
+      print(k)
+      k = k - 1
+  }
+  
+  print("")
+}
+
+print(i)
+print(j)
+print(k)
+
+print("")
+print("END")
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+NESTED LOOPS
+
+j
+2
+j
+3
+j
+4
+j
+5
+j
+6
+j
+7
+
+
+j
+3
+j
+4
+j
+5
+j
+6
+j
+7
+
+k
+3
+
+j
+4
+j
+5
+j
+6
+j
+7
+
+k
+4
+k
+3
+
+j
+5
+j
+6
+j
+7
+
+k
+5
+k
+4
+k
+3
+
+5
+8
+2
+
+END
+**done
+**MEMORY PRINT**
+Capacity: 4
+Num values: 3
+Contents:
+ 0: i, int, 5
+ 1: j, int, 8
+ 2: k, int, 2
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 32 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 33 **
+ 
+ 
+** Test Input:
+#
+# nested loops
+#
+print("NESTED LOOPS")
+print("")
+
+i = 10
+loop_end = i + 89
+
+while i >= 0:
+{
+  j = i - 2
+  print(i)
+  while j <= 100:
+  {
+    k = "apple"
+    while k != "APPLE":
+    {
+      var = 99
+      while var != loop_end:
+      {
+        print('level 4 should never appear')
+      }
+      print(k)
+      k = "APPLE"
+    }
+    j = j ** 2
+    print(j)
+  }
+  print()
+  i = i - 5
+}
+
+print('after loop:')
+print(i)
+print(j)
+print(k)
+print(var)
+print(loop_end)
+
+print("")
+print("END")
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+NESTED LOOPS
+
+10
+apple
+64
+apple
+4096
+
+5
+apple
+9
+apple
+81
+apple
+6561
+
+0
+apple
+4
+apple
+16
+apple
+256
+
+after loop:
+-5
+256
+APPLE
+99
+99
+
+END
+**done
+**MEMORY PRINT**
+Capacity: 8
+Num values: 5
+Contents:
+ 0: i, int, -5
+ 1: loop_end, int, 99
+ 2: j, int, 256
+ 3: k, str, 'APPLE'
+ 4: var, int, 99
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 33 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 34 **
+ 
+ 
+** Test Input:
+#
+# loops --- semantic error
+#
+print("starting")
+print("")
+
+s = "string"
+var = 123
+
+while var != "string???":    # type error
+{
+   s = s + "?"
+   print(var)
+}
+
+print("")
+print("done")
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+starting
+
+**SEMANTIC ERROR: invalid operand types (line 10)
+**done
+**MEMORY PRINT**
+Capacity: 4
+Num values: 2
+Contents:
+ 0: s, str, 'string'
+ 1: var, int, 123
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 34 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 35 **
+ 
+ 
+** Test Input:
+#
+# loop --- semantic error
+#
+print("starting")
+print("")
+
+s = "string"
+i = 123
+
+while s != "string???":
+{
+   s = s + "?"
+   print(s)
+
+   while i != 0:  # j is not defined
+   {
+     i = i + j
+   }
+   
+   print(s)
+}
+
+print("")
+print("done")
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+starting
+
+string?
+**SEMANTIC ERROR: name 'j' is not defined (line 17)
+**done
+**MEMORY PRINT**
+Capacity: 4
+Num values: 2
+Contents:
+ 0: s, str, 'string?'
+ 1: i, int, 123
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 35 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 36 **
+ 
+ 
+** Test Input:
+#
+# loop --- semantic error
+#
+print("starting")
+print()
+
+i = 100
+print(i)
+
+while i != 100:
+{
+    print("you should not see this")
+    j = 123
+}  
+
+#
+# the loop never executes so j is not defined above:
+#
+print(j)
+
+print()
+print("done")
+
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+starting
+
+100
+**SEMANTIC ERROR: name 'j' is not defined (line 19)
+**done
+**MEMORY PRINT**
+Capacity: 4
+Num values: 1
+Contents:
+ 0: i, int, 100
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 36 **
+********************************************************************

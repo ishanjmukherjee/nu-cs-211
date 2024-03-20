@@ -1,0 +1,1909 @@
+**************************************************************************
+** Running lizard to analyze coding style, looking to see if functions  **
+** exceed 150 lines of code, which is considered too long...            **
+**************************************************************************
+ 
+
+**************************************************************************
+** Lizard analysis tool reports all is well...                          **
+**************************************************************************
+
+**********************************************************
+This is submission #3
+Submitted @ 3:59 on 2024-2-11 (Chicago time)
+
+Submission history:
+ Submission #2: score=49, submitted @ 3:39 on 2024-2-11 (Chicago time)
+ Submission #1: score=1, submitted @ 23:55 on 2024-2-10 (Chicago time)
+
+Total # of valid submissions so far: 2
+# of valid submissions since midnight: 1
+# of minutes since last valid submission: 20
+**********************************************************
+You have 1 submission this 24-hr period.
+
+
+*******************************************************************
+** Number of Submissions This Time Period                        **
+*******************************************************************
+ 
+This is submission #2 in current time period
+ 
+You are allowed a total of 5 submissions per 24-hr time period.
+ 
+*******************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 1 **
+ 
+ 
+** Test Input:
+print('address of test')
+print()
+
+x = 987
+y = 654.321
+z = True
+
+p1 = &x
+p2 = &y
+p3 = &z
+
+s = "this is a string"
+p4 = &s
+p5 = &p4
+
+print(x)
+print(y)
+print(z)
+print(s)
+print(p1)
+print(p2)
+print(p3)
+print(p4)
+print(p5)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+address of test
+
+987
+654.321000
+True
+this is a string
+0
+1
+2
+6
+7
+
+done
+**done
+**MEMORY PRINT**
+Capacity: 16
+Num values: 9
+Contents:
+ 0: x, int, 987
+ 1: y, real, 654.321000
+ 2: z, boolean, True
+ 3: p1, ptr, 0
+ 4: p2, ptr, 1
+ 5: p3, ptr, 2
+ 6: s, str, 'this is a string'
+ 7: p4, ptr, 6
+ 8: p5, ptr, 7
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 1 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 2 **
+ 
+ 
+** Test Input:
+print('address of test')
+print()
+
+x = 987
+y = 654.321
+z = True
+
+p1 = &x
+p2 = &y
+p3 = &z
+
+s = "this is a string"
+p4 = &s
+p5 = &p44     ## semantic error
+
+print(x)
+print(y)
+print(z)
+print(s)
+print(p1)
+print(p2)
+print(p3)
+print(p4)
+print(p5)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+address of test
+
+**SEMANTIC ERROR: name 'p44' is not defined (line 14)
+**done
+**MEMORY PRINT**
+Capacity: 8
+Num values: 8
+Contents:
+ 0: x, int, 987
+ 1: y, real, 654.321000
+ 2: z, boolean, True
+ 3: p1, ptr, 0
+ 4: p2, ptr, 1
+ 5: p3, ptr, 2
+ 6: s, str, 'this is a string'
+ 7: p4, ptr, 6
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 2 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 3 **
+ 
+ 
+** Test Input:
+print('address of test')
+print()
+
+x = 987
+y = 654.321
+z = True
+
+p1 = &x
+p2 = &y
+p3 = &z
+
+s = "this is a string"
+p4 = &s
+p5 = &p4
+
+print(x)
+print(y)
+print(z)
+print(s)
+print(s2)      ## semantic error
+print(p1)
+print(p2)
+print(p3)
+print(p4)
+print(p5)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+address of test
+
+987
+654.321000
+True
+this is a string
+**SEMANTIC ERROR: name 's2' is not defined (line 20)
+**done
+**MEMORY PRINT**
+Capacity: 16
+Num values: 9
+Contents:
+ 0: x, int, 987
+ 1: y, real, 654.321000
+ 2: z, boolean, True
+ 3: p1, ptr, 0
+ 4: p2, ptr, 1
+ 5: p3, ptr, 2
+ 6: s, str, 'this is a string'
+ 7: p4, ptr, 6
+ 8: p5, ptr, 7
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 3 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 4 **
+ 
+ 
+** Test Input:
+print('pointer arithmetic test')
+print()
+
+x = 3.14159
+y = x + 2
+
+i = 1000
+j = i + 1
+
+p = &i
+pj = p + 1
+
+print(p)
+print(pj)
+
+q = &y
+qx = q - 1
+
+print(q)
+print(qx)
+
+ptr = &j
+ptr_neg = ptr - 123
+ptr_pos = ptr + 456
+
+print(ptr)
+print(ptr_neg)
+print(ptr_pos)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+pointer arithmetic test
+
+2
+3
+1
+0
+3
+-120
+459
+
+done
+**done
+**MEMORY PRINT**
+Capacity: 16
+Num values: 11
+Contents:
+ 0: x, real, 3.141590
+ 1: y, real, 5.141590
+ 2: i, int, 1000
+ 3: j, int, 1001
+ 4: p, ptr, 2
+ 5: pj, ptr, 3
+ 6: q, ptr, 1
+ 7: qx, ptr, 0
+ 8: ptr, ptr, 3
+ 9: ptr_neg, ptr, -120
+ 10: ptr_pos, ptr, 459
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 4 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 5 **
+ 
+ 
+** Test Input:
+print('pointer arithmetic test')
+print()
+
+x = 3.14159
+y = x + 2
+
+i = 1000
+j = i + 1
+
+p = &i
+pj = p + 1
+
+print(p)
+print(pj)
+
+q = &y
+qx = q - 1
+
+print(q)
+print(qx)
+
+ptr = &x
+ptr_neg = ptr1 - 123    ## semantic error
+ptr_pos = ptr + 456
+
+print(ptr)
+print(ptr_neg)
+print(ptr_pos)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+pointer arithmetic test
+
+2
+3
+1
+0
+**SEMANTIC ERROR: name 'ptr1' is not defined (line 23)
+**done
+**MEMORY PRINT**
+Capacity: 16
+Num values: 9
+Contents:
+ 0: x, real, 3.141590
+ 1: y, real, 5.141590
+ 2: i, int, 1000
+ 3: j, int, 1001
+ 4: p, ptr, 2
+ 5: pj, ptr, 3
+ 6: q, ptr, 1
+ 7: qx, ptr, 0
+ 8: ptr, ptr, 0
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 5 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 6 **
+ 
+ 
+** Test Input:
+print('pointer arithmetic test')
+print()
+
+x = 3.14159
+y = x + 2
+
+i = 1000
+j = i + 1
+
+p = &i
+pj = p + 1
+
+print(p)
+print(pj)
+
+q = &y
+qx = q - 1
+
+print(q)
+print(qx)
+
+ptr = &x
+ptr_neg = ptr - 123    
+ptr_pos = ptr2 + 456  ## semantic error
+
+print(ptr)
+print(ptr_neg)
+print(ptr_pos)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+pointer arithmetic test
+
+2
+3
+1
+0
+**SEMANTIC ERROR: name 'ptr2' is not defined (line 24)
+**done
+**MEMORY PRINT**
+Capacity: 16
+Num values: 10
+Contents:
+ 0: x, real, 3.141590
+ 1: y, real, 5.141590
+ 2: i, int, 1000
+ 3: j, int, 1001
+ 4: p, ptr, 2
+ 5: pj, ptr, 3
+ 6: q, ptr, 1
+ 7: qx, ptr, 0
+ 8: ptr, ptr, 0
+ 9: ptr_neg, ptr, -123
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 6 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 7 **
+ 
+ 
+** Test Input:
+print('pointer derefence test')
+print()
+
+x = 3.14159
+y = x + 299
+
+px = &x
+py = &y
+
+i = 12
+j = i ** 2
+
+pi = &i
+pj = &j
+
+s = "this is a string, "
+ps = &s
+
+a = *px + 99.25
+print(a)
+
+b = i - *py
+print(b)
+
+t = *ps + " with more to follow"
+print(t)
+
+c = *pj * *pi
+print(c)
+
+d = *px < *py
+e = *px >= *py
+f = *pj / *pi
+print(d)
+print(e)
+print(f)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+pointer derefence test
+
+102.391590
+-290.141590
+this is a string,  with more to follow
+1728
+True
+False
+12
+
+done
+**done
+**MEMORY PRINT**
+Capacity: 32
+Num values: 17
+Contents:
+ 0: x, real, 3.141590
+ 1: y, real, 302.141590
+ 2: px, ptr, 0
+ 3: py, ptr, 1
+ 4: i, int, 12
+ 5: j, int, 144
+ 6: pi, ptr, 4
+ 7: pj, ptr, 5
+ 8: s, str, 'this is a string, '
+ 9: ps, ptr, 8
+ 10: a, real, 102.391590
+ 11: b, real, -290.141590
+ 12: t, str, 'this is a string,  with more to follow'
+ 13: c, int, 1728
+ 14: d, boolean, True
+ 15: e, boolean, False
+ 16: f, int, 12
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 7 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 8 **
+ 
+ 
+** Test Input:
+print('pointer derefence test')
+print()
+
+x = 3.14159
+y = x + 299
+
+px = &x
+py = &y
+
+i = 12
+j = i ** 2
+
+pi = &i
+pj = &j
+
+s = "this is a string, "
+ps = &s
+
+a = *px + 99.25
+print(a)
+
+b = i - *py
+print(b)
+
+t = *ps + " with more to follow"
+print(t)
+
+c = *pj * *pij      ## semantic error
+print(c)
+
+d = *px < *py
+e = *px >= *py
+f = *pj / *pi
+print(d)
+print(e)
+print(f)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+pointer derefence test
+
+102.391590
+-290.141590
+this is a string,  with more to follow
+**SEMANTIC ERROR: name 'pij' is not defined (line 28)
+**done
+**MEMORY PRINT**
+Capacity: 16
+Num values: 13
+Contents:
+ 0: x, real, 3.141590
+ 1: y, real, 302.141590
+ 2: px, ptr, 0
+ 3: py, ptr, 1
+ 4: i, int, 12
+ 5: j, int, 144
+ 6: pi, ptr, 4
+ 7: pj, ptr, 5
+ 8: s, str, 'this is a string, '
+ 9: ps, ptr, 8
+ 10: a, real, 102.391590
+ 11: b, real, -290.141590
+ 12: t, str, 'this is a string,  with more to follow'
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 8 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 9 **
+ 
+ 
+** Test Input:
+print('pointer derefence test')
+print()
+
+x = 3.14159
+y = x + 299
+
+px = &x
+py = &y
+
+i = 12
+j = i ** 2
+
+pi = &i
+pj = &j
+
+s = "this is a string, "
+ps = &s
+
+a = *px + 99.25
+print(a)
+
+b = i - *py
+print(b)
+
+t = *ps + " with more to follow"
+print(t)
+
+c = *pj * *pi
+print(c)
+
+d = *px < *py
+e = *pxy >= *py       ## semantic error
+f = *pj / *pi
+print(d)
+print(e)
+print(f)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+pointer derefence test
+
+102.391590
+-290.141590
+this is a string,  with more to follow
+1728
+**SEMANTIC ERROR: name 'pxy' is not defined (line 32)
+**done
+**MEMORY PRINT**
+Capacity: 16
+Num values: 15
+Contents:
+ 0: x, real, 3.141590
+ 1: y, real, 302.141590
+ 2: px, ptr, 0
+ 3: py, ptr, 1
+ 4: i, int, 12
+ 5: j, int, 144
+ 6: pi, ptr, 4
+ 7: pj, ptr, 5
+ 8: s, str, 'this is a string, '
+ 9: ps, ptr, 8
+ 10: a, real, 102.391590
+ 11: b, real, -290.141590
+ 12: t, str, 'this is a string,  with more to follow'
+ 13: c, int, 1728
+ 14: d, boolean, True
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 9 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 10 **
+ 
+ 
+** Test Input:
+print('pointer derefence test')
+print()
+
+x = 3.14159
+y = x + 299
+
+px = &x
+py = &y
+
+i = 12
+j = i ** 2
+
+pi = &i
+pj = &j
+
+s = "this is a string, "
+ps = &s
+
+a = *px + 99.25
+print(a)
+
+b = i - *py
+print(b)
+
+t = *ps + " with more to follow"
+print(t)
+
+c = *pj * *pi
+print(c)
+
+fred = *xyz        ## semantic error
+
+d = *px < *py
+e = *pxy >= *py      
+f = *pj / *pi
+print(d)
+print(e)
+print(f)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+pointer derefence test
+
+102.391590
+-290.141590
+this is a string,  with more to follow
+1728
+**SEMANTIC ERROR: name 'xyz' is not defined (line 31)
+**done
+**MEMORY PRINT**
+Capacity: 16
+Num values: 14
+Contents:
+ 0: x, real, 3.141590
+ 1: y, real, 302.141590
+ 2: px, ptr, 0
+ 3: py, ptr, 1
+ 4: i, int, 12
+ 5: j, int, 144
+ 6: pi, ptr, 4
+ 7: pj, ptr, 5
+ 8: s, str, 'this is a string, '
+ 9: ps, ptr, 8
+ 10: a, real, 102.391590
+ 11: b, real, -290.141590
+ 12: t, str, 'this is a string,  with more to follow'
+ 13: c, int, 1728
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 10 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 11 **
+ 
+ 
+** Test Input:
+print('multi-level pointer derefence test')
+print()
+
+count = 412
+p1 = &count
+p2 = &p1
+p3 = &p2
+
+a = *p3
+print(a)
+
+b = *p2
+print(b)
+
+c = *p1
+print(c)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+multi-level pointer derefence test
+
+1
+0
+412
+
+done
+**done
+**MEMORY PRINT**
+Capacity: 8
+Num values: 7
+Contents:
+ 0: count, int, 412
+ 1: p1, ptr, 0
+ 2: p2, ptr, 1
+ 3: p3, ptr, 2
+ 4: a, ptr, 1
+ 5: b, ptr, 0
+ 6: c, int, 412
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 11 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 12 **
+ 
+ 
+** Test Input:
+print('multi-level pointer derefence test')
+print()
+
+count = 412
+p1 = &count
+p2 = &p1
+p3 = &p2
+
+a = *p3
+print(a)
+
+b = *p2
+print(b)
+
+c = *count      ## semantic error
+print(c)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+multi-level pointer derefence test
+
+1
+0
+**SEMANTIC ERROR: invalid operand types (line 15)
+**done
+**MEMORY PRINT**
+Capacity: 8
+Num values: 6
+Contents:
+ 0: count, int, 412
+ 1: p1, ptr, 0
+ 2: p2, ptr, 1
+ 3: p3, ptr, 2
+ 4: a, ptr, 1
+ 5: b, ptr, 0
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 12 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 13 **
+ 
+ 
+** Test Input:
+print('invalid address test')
+print()
+
+x = 3.14159
+y = x + 299
+
+px = &x
+py = &y
+
+i = 12
+j = i ** 2
+
+pi = &i
+pj = &j
+
+s = "this is a string, "
+ps = &s
+
+a = *px + 99.25
+print(a)
+
+b = i - *py
+print(b)
+
+t = *ps + " with more to follow"
+print(t)
+
+px = px - 1
+fred = *px        ## semantic error: invalid address
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+invalid address test
+
+102.391590
+-290.141590
+this is a string,  with more to follow
+**SEMANTIC ERROR: 'px' contains invalid address (line 29)
+**done
+**MEMORY PRINT**
+Capacity: 16
+Num values: 13
+Contents:
+ 0: x, real, 3.141590
+ 1: y, real, 302.141590
+ 2: px, ptr, -1
+ 3: py, ptr, 1
+ 4: i, int, 12
+ 5: j, int, 144
+ 6: pi, ptr, 4
+ 7: pj, ptr, 5
+ 8: s, str, 'this is a string, '
+ 9: ps, ptr, 8
+ 10: a, real, 102.391590
+ 11: b, real, -290.141590
+ 12: t, str, 'this is a string,  with more to follow'
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 13 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 14 **
+ 
+ 
+** Test Input:
+print('invalid address test')
+print()
+
+x = 3.14159
+y = x + 299
+
+px = &x
+py = &y
+
+i = 12
+j = i ** 2
+
+pi = &i
+pj = &j
+
+s = "this is a string, "
+ps = &s
+
+a = *px + 99.25
+print(a)
+
+b = i - *py
+print(b)
+
+t = *ps + " with more to follow"
+print(t)
+
+px = px + 1
+fred = *px
+print(fred)
+
+ps = &ps
+print(ps)
+
+ps = ps + 10
+fred = *ps       ## semantic error: invalid address
+print(fred)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+invalid address test
+
+102.391590
+-290.141590
+this is a string,  with more to follow
+302.141590
+9
+**SEMANTIC ERROR: 'ps' contains invalid address (line 36)
+**done
+**MEMORY PRINT**
+Capacity: 16
+Num values: 14
+Contents:
+ 0: x, real, 3.141590
+ 1: y, real, 302.141590
+ 2: px, ptr, 1
+ 3: py, ptr, 1
+ 4: i, int, 12
+ 5: j, int, 144
+ 6: pi, ptr, 4
+ 7: pj, ptr, 5
+ 8: s, str, 'this is a string, '
+ 9: ps, ptr, 19
+ 10: a, real, 102.391590
+ 11: b, real, -290.141590
+ 12: t, str, 'this is a string,  with more to follow'
+ 13: fred, real, 302.141590
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 14 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 15 **
+ 
+ 
+** Test Input:
+print('short test of all features')
+
+x = 123 
+p = &x 
+print(p) 
+
+y = 456 
+p2 = &y 
+print(p2) 
+
+z = 0 
+rp = &z 
+print(rp) 
+
+*rp = *p + *p2 
+print(z) 
+
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+short test of all features
+0
+2
+4
+579
+done
+**done
+**MEMORY PRINT**
+Capacity: 8
+Num values: 6
+Contents:
+ 0: x, int, 123
+ 1: p, ptr, 0
+ 2: y, int, 456
+ 3: p2, ptr, 2
+ 4: z, int, 579
+ 5: rp, ptr, 4
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 15 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 16 **
+ 
+ 
+** Test Input:
+print('pointer assignment')
+print()
+
+x = 3.14159
+y = x + 299
+
+px = &x
+py = &y
+
+pass
+
+*px = 4.75
+testing = *px
+print(testing)
+
+i = 12
+j = i ** 2
+
+pi = &i
+pj = &j
+
+s = "this is a string, "
+ps = &s
+
+pass
+
+*px = *px + 99.25
+a = *px
+print(a)
+
+b = i - *py
+print(b)
+
+pass
+
+*py = *ps + " with more to follow"
+t = *py
+print(t)
+
+pass
+
+*pi = *pj * *pi
+c = *pi
+print(c)
+
+pz = &testing
+
+d = *px < *pz
+e = *px >= *pz
+
+pass
+
+*pi = *pj / *pi
+f = *pi
+print(d)
+print(e)
+print(f)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+pointer assignment
+
+4.750000
+104.000000
+-290.141590
+this is a string,  with more to follow
+1728
+False
+True
+0
+
+done
+**done
+**MEMORY PRINT**
+Capacity: 32
+Num values: 19
+Contents:
+ 0: x, real, 104.000000
+ 1: y, str, 'this is a string,  with more to follow'
+ 2: px, ptr, 0
+ 3: py, ptr, 1
+ 4: testing, real, 4.750000
+ 5: i, int, 0
+ 6: j, int, 144
+ 7: pi, ptr, 5
+ 8: pj, ptr, 6
+ 9: s, str, 'this is a string, '
+ 10: ps, ptr, 9
+ 11: a, real, 104.000000
+ 12: b, real, -290.141590
+ 13: t, str, 'this is a string,  with more to follow'
+ 14: c, int, 1728
+ 15: pz, ptr, 4
+ 16: d, boolean, False
+ 17: e, boolean, True
+ 18: f, int, 0
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 16 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 17 **
+ 
+ 
+** Test Input:
+print('pointer assignment')
+print()
+
+x = 3.14159
+y = x + 299
+
+px = &x
+py = &y
+
+pass
+
+*px = 4.75
+testing = *px
+print(testing)
+
+i = 12
+j = i ** 2
+
+pi = &i
+pj = &j
+
+s = "this is a string, "
+ps = &s
+
+pass
+
+*px = *px + 99.25
+a = *px
+print(a)
+
+b = i - *py
+print(b)
+
+pass
+
+*py = *ps + " with more to follow"
+t = *py
+print(t)
+
+pass
+
+*pi = *pj * *pi
+c = *pi
+print(c)
+
+pz = &b
+
+d = *px < *pz
+e = *px >= *pz
+
+pass
+
+*pijk = *pj / *pi     ## semantic error
+f = *pi
+print(d)
+print(e)
+print(f)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+pointer assignment
+
+4.750000
+104.000000
+-290.141590
+this is a string,  with more to follow
+1728
+**SEMANTIC ERROR: name 'pijk' is not defined (line 53)
+**done
+**MEMORY PRINT**
+Capacity: 32
+Num values: 18
+Contents:
+ 0: x, real, 104.000000
+ 1: y, str, 'this is a string,  with more to follow'
+ 2: px, ptr, 0
+ 3: py, ptr, 1
+ 4: testing, real, 4.750000
+ 5: i, int, 1728
+ 6: j, int, 144
+ 7: pi, ptr, 5
+ 8: pj, ptr, 6
+ 9: s, str, 'this is a string, '
+ 10: ps, ptr, 9
+ 11: a, real, 104.000000
+ 12: b, real, -290.141590
+ 13: t, str, 'this is a string,  with more to follow'
+ 14: c, int, 1728
+ 15: pz, ptr, 12
+ 16: d, boolean, False
+ 17: e, boolean, True
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 17 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 18 **
+ 
+ 
+** Test Input:
+print('pointer assignment')
+print()
+
+x = 3.14159
+y = x + 299
+
+px = &x
+py = &y
+
+pass
+
+*px = 4.75
+testing = *px
+print(testing)
+
+i = 12
+j = i ** 2
+
+pi = &i
+pj = &j
+
+s = "this is a string, "
+ps = &s
+
+pass
+
+*px = *px + 99.25
+a = *px
+print(a)
+
+b = i - *py
+print(b)
+
+pass
+
+*i = *ps + " with more to follow"    ## semantic error
+t = *py
+print(t)
+
+pass
+
+*pi = *pj * *pi
+c = *pi
+print(c)
+
+pz = &b
+
+d = *px < *pz
+e = *px >= *pz
+
+pass
+
+*pi = *pj / *pi
+f = *pi
+print(d)
+print(e)
+print(f)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+pointer assignment
+
+4.750000
+104.000000
+-290.141590
+**SEMANTIC ERROR: invalid operand types (line 36)
+**done
+**MEMORY PRINT**
+Capacity: 16
+Num values: 13
+Contents:
+ 0: x, real, 104.000000
+ 1: y, real, 302.141590
+ 2: px, ptr, 0
+ 3: py, ptr, 1
+ 4: testing, real, 4.750000
+ 5: i, int, 12
+ 6: j, int, 144
+ 7: pi, ptr, 5
+ 8: pj, ptr, 6
+ 9: s, str, 'this is a string, '
+ 10: ps, ptr, 9
+ 11: a, real, 104.000000
+ 12: b, real, -290.141590
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 18 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 19 **
+ 
+ 
+** Test Input:
+print('pointer assignment')
+print()
+
+x = 3.14159
+y = x + 299
+
+px = &x
+py = &y
+
+pass
+
+*px = 4.75
+testing = *px
+print(testing)
+
+i = 12
+j = i ** 2
+
+pi = &i
+pj = &j
+
+s = "this is a string, "
+ps = &s
+
+pass
+
+*px = *px + 99.25
+a = *px
+print(a)
+
+b = i - *py
+print(b)
+
+pass
+
+*py = *ps + " with more to follow"
+t = *py
+print(t)
+
+pass
+
+*pi = *pj * *pi
+c = *pi
+print(c)
+
+pz = &b
+
+d = *px < *pz
+e = *px >= *pz
+
+pi = &c
+pi = pi + 4
+
+pass
+
+*pi = *pj / *pi      ## semantic error 
+f = *pi
+print(d)
+print(e)
+print(f)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+pointer assignment
+
+4.750000
+104.000000
+-290.141590
+this is a string,  with more to follow
+1728
+**SEMANTIC ERROR: 'pi' contains invalid address (line 56)
+**done
+**MEMORY PRINT**
+Capacity: 32
+Num values: 18
+Contents:
+ 0: x, real, 104.000000
+ 1: y, str, 'this is a string,  with more to follow'
+ 2: px, ptr, 0
+ 3: py, ptr, 1
+ 4: testing, real, 4.750000
+ 5: i, int, 1728
+ 6: j, int, 144
+ 7: pi, ptr, 18
+ 8: pj, ptr, 6
+ 9: s, str, 'this is a string, '
+ 10: ps, ptr, 9
+ 11: a, real, 104.000000
+ 12: b, real, -290.141590
+ 13: t, str, 'this is a string,  with more to follow'
+ 14: c, int, 1728
+ 15: pz, ptr, 12
+ 16: d, boolean, False
+ 17: e, boolean, True
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 19 **
+********************************************************************
+ 
+ 
+********************************************************************
+** Test Number: 20 **
+ 
+ 
+** Test Input:
+print('multi-level pointer derefence test')
+print()
+
+count = 412
+p1 = &count
+p2 = &p1
+p3 = &p2
+
+x = 10
+y = 20
+c = 30
+
+a = *p3
+print(a)
+
+b = *p2
+print(b)
+
+c = *p1
+print(c)
+
+p4 = &p3
+
+pass
+*p4 = &p1
+
+pass
+*p3 = 99
+
+print(p1)
+print(p2)
+print(p3)
+print(p4)
+
+print()
+print('done')
+ 
+ 
+** Your output (first 600 lines) **
+**no syntax errors...
+**building program graph...
+**PROGRAM GRAPH PRINT**
+<<omitted to reduce gradescope output>>
+**END PRINT**
+**executing...
+multi-level pointer derefence test
+
+1
+0
+412
+99
+1
+1
+3
+
+done
+**done
+**MEMORY PRINT**
+Capacity: 16
+Num values: 10
+Contents:
+ 0: count, int, 412
+ 1: p1, int, 99
+ 2: p2, ptr, 1
+ 3: p3, ptr, 1
+ 4: x, int, 10
+ 5: y, int, 20
+ 6: c, int, 412
+ 7: a, ptr, 1
+ 8: b, ptr, 0
+ 9: p4, ptr, 3
+**END PRINT**
+ 
+ 
+***************************I**********************
+** Your program generated the correct outputs,  **
+** well done! The last step is to run valgrind, **
+** which runs your program again to look for    **
+** subtle logic and memory errors...            **
+**************************************************
+ 
+ 
+** Well done, no logic or memory errors! **
+ 
+ 
+** End of Test 20 **
+********************************************************************
